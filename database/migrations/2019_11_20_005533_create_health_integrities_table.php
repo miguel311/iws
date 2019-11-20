@@ -3,15 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-//plan
-use App\Integrity_plan_persona;
-// estados
-use App\Estado;
-use App\Municipio;
-use App\Parroquia;
+use App\User;
+use App\PersonIntegrityPlan;
 
 
-class CreateIntegritySaludsTable extends Migration
+class CreateHealthIntegritiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -20,45 +16,8 @@ class CreateIntegritySaludsTable extends Migration
      */
     public function up()
     {
-        //PLAN
-        Schema::create('integrity_plan_personas', function (Blueprint $table) {
+        Schema::create('health_integrities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');//nombre
-            $table->string('price');//precio
-            $table->longText('description');//descripción de plan
-            $table->bigInteger('prima');//prima
-            $table->timestamps();
-        });
-
-        //ESTADO MUNICIPIO Y PARROQUIA
-        Schema::create('estados', function($table)
-        {
-            $table->increments('id');
-            $table->string('estado');;
-        });
-
-        Schema::create('municipios', function($table)
-        {
-            $table->increments('id');
-            $table->integer('estado_id')->unsigned();
-            $table->string('municipio');
-            $table->foreign('estado_id')->references('id')->on('estados');
-        });
-
-        Schema::create('parroquias', function($table)
-        {
-            $table->increments('id');
-            $table->integer('municipio_id')->unsigned();
-            $table->string('parroquia');
-            $table->foreign('municipio_id')->references('id')->on('municipios');
-        });
-
-
-
-        //Registrar Cotizacion 
-        Schema::create('integrity__saluds', function (Blueprint $table) {
-            $table->bigIncrements('id');
-
             //Datos de la persona solicitante
             $table->string('name')->nullable();//nombre
             $table->string('last_name')->nullable();//apellido
@@ -85,7 +44,7 @@ class CreateIntegritySaludsTable extends Migration
 
             // plan comercial
             $table->bigInteger('plan_persona_id')->unsigned();//plan
-            $table->foreign('plan_persona_id')->references('id')->on('integrity_plan_personas');// clave foranea
+            $table->foreign('plan_persona_id')->references('id')->on('person_integrity_plans');// clave foranea
             //Aliado comercial
             $table->string('suma')->nullable();//suma a cancelar
             $table->string('cuota')->nullable();//cuota a cancelar
@@ -93,12 +52,10 @@ class CreateIntegritySaludsTable extends Migration
             $table->string('forma_pago')->nullable();//forma de pago
             $table->bigInteger('user_id')->unsigned();//usuario creador
             $table->foreign('user_id')->references('id')->on('users');// clave foranea
-
-
-            $table->timestamps();//tiempo en que se creo 
+            $table->timestamps();
         });
     }
-                // ->nullable(); //para tablas que pueden estar vacias
+
     /**
      * Reverse the migrations.
      *
@@ -106,10 +63,6 @@ class CreateIntegritySaludsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('integrity_plan_personas');
-        Schema::drop('estados');
-        Schema::drop('municipios');
-        Schema::drop('parroquias');
-        Schema::dropIfExists('integrity__saluds');
+        Schema::dropIfExists('health_integrities');
     }
 }

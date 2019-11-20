@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Vigencia extends Model
+class CarIntegrityPlan extends Model
 {
     //
 }

@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Estado;
-use App\Municipio;
-use App\Parroquia;
+use App\State;
+use App\Municipality;
+use App\Parish;
 
 
 class EstadoTableSeeder extends Seeder
@@ -16,8976 +16,8976 @@ class EstadoTableSeeder extends Seeder
 public function run()
 	{
 
-		/* ESTADOS */
-		$categoria = new Estado();
+		/* states */
+		$categoria = new State();
 		$categoria->id = 1; 
-		$categoria->estado = "Amazonas"; 
+		$categoria->state = "Amazonas"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 2; 
-		$categoria->estado = "Anzoátegui"; 
+		$categoria->state = "Anzoátegui"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 3; 
-		$categoria->estado = "Apure"; 
+		$categoria->state = "Apure"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 4; 
-		$categoria->estado = "Aragua"; 
+		$categoria->state = "Aragua"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 5; 
-		$categoria->estado = "Barinas"; 
+		$categoria->state = "Barinas"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 6; 
-		$categoria->estado = "Bolívar"; 
+		$categoria->state = "Bolívar"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 7; 
-		$categoria->estado = "Carabobo"; 
+		$categoria->state = "Carabobo"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 8; 
-		$categoria->estado = "Cojedes"; 
+		$categoria->state = "Cojedes"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 9; 
-		$categoria->estado = "Delta Amacuro"; 
+		$categoria->state = "Delta Amacuro"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 10; 
-		$categoria->estado = "Falcón"; 
+		$categoria->state = "Falcón"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 11; 
-		$categoria->estado = "Guárico"; 
+		$categoria->state = "Guárico"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 12; 
-		$categoria->estado = "Lara"; 
+		$categoria->state = "Lara"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 13; 
-		$categoria->estado = "Mérida";
+		$categoria->state = "Mérida";
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 14; 
-		$categoria->estado = "Miranda"; 
+		$categoria->state = "Miranda"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 15; 
-		$categoria->estado = "Monagas"; 
+		$categoria->state = "Monagas"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 16; 
-		$categoria->estado = "Nueva Esparta"; 
+		$categoria->state = "Nueva Esparta"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 17; 
-		$categoria->estado = "Portuguesa"; 
+		$categoria->state = "Portuguesa"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 18; 
-		$categoria->estado = "Sucre"; 
+		$categoria->state = "Sucre"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 19; 
-		$categoria->estado = "Táchira"; 
+		$categoria->state = "Táchira"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 20; 
-		$categoria->estado = "Trujillo"; 
+		$categoria->state = "Trujillo"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 21; 
-		$categoria->estado = "Vargas"; 
+		$categoria->state = "Vargas"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 22; 
-		$categoria->estado = "Yaracuy"; 
+		$categoria->state = "Yaracuy"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 23; 
-		$categoria->estado = "Zulia"; 
+		$categoria->state = "Zulia"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 24; 
-		$categoria->estado = "Distrito Capital"; 
+		$categoria->state = "Distrito Capital"; 
 		$categoria->save();
 
-		$categoria = new Estado();
+		$categoria = new State();
 		$categoria->id = 25; 
-		$categoria->estado = "Dependencias Federales"; 
+		$categoria->state = "Dependencias Federales"; 
 		$categoria->save();
 
 
 
 
-		/* MUNICIPIOS */
-		$categoria = new Municipio();
+		/* municipalitiesS */
+		$categoria = new Municipality();
 		$categoria->id = 1; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Alto Orinoco";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Alto Orinoco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 2; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Atabapo";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Atabapo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 3; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Atures";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Atures";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 4; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Autana";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Autana";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 5; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Manapiare";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Manapiare";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 6; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Maroa";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Maroa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 7; 
-		$categoria->estado_id = 1; 
-		$categoria->municipio = "Río Negro";
+		$categoria->states_id = 1; 
+		$categoria->municipalities = "Río Negro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 8; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Anaco";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Anaco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 9; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Aragua";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Aragua";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 10; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Manuel Ezequiel Bruzual";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Manuel Ezequiel Bruzual";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 11; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Diego Bautista Urbaneja";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Diego Bautista Urbaneja";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 12; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Fernando Peñalver";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Fernando Peñalver";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 13; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Francisco Del Carmen Carvajal";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Francisco Del Carmen Carvajal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 14; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "General Sir Arthur McGregor";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "General Sir Arthur McGregor";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 15; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Guanta";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Guanta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 16; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Independencia";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Independencia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 17; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "José Gregorio Monagas";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "José Gregorio Monagas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 18; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Juan Antonio Sotillo";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Juan Antonio Sotillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 19; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Juan Manuel Cajigal";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Juan Manuel Cajigal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 20; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Libertad";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Libertad";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 21; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Francisco de Miranda";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Francisco de Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 22; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Pedro María Freites";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Pedro María Freites";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 23; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Píritu";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Píritu";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 24; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "San José de Guanipa";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "San José de Guanipa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 25; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "San Juan de Capistrano";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "San Juan de Capistrano";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 26; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Santa Ana";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 27; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Simón Bolívar";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Simón Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 28; 
-		$categoria->estado_id = 2; 
-		$categoria->municipio = "Simón Rodríguez";
+		$categoria->states_id = 2; 
+		$categoria->municipalities = "Simón Rodríguez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 29; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Achaguas";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Achaguas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 30; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Biruaca";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Biruaca";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 31; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Muñóz";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Muñóz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 32; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Páez";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Páez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 33; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Pedro Camejo";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Pedro Camejo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 34; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "Rómulo Gallegos";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 35; 
-		$categoria->estado_id = 3; 
-		$categoria->municipio = "San Fernando";
+		$categoria->states_id = 3; 
+		$categoria->municipalities = "San Fernando";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 36; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Atanasio Girardot";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Atanasio Girardot";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 37; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 38; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Camatagua";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Camatagua";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 39; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Francisco Linares Alcántara";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Francisco Linares Alcántara";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 40; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "José Ángel Lamas";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "José Ángel Lamas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 41; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "José Félix Ribas";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "José Félix Ribas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 42; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "José Rafael Revenga";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "José Rafael Revenga";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 43; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 44; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Mario Briceño Iragorry";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Mario Briceño Iragorry";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 45; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Ocumare de la Costa de Oro";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Ocumare de la Costa de Oro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 46; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "San Casimiro";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "San Casimiro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 47; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "San Sebastián";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "San Sebastián";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 48; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Santiago Mariño";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Santiago Mariño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 49; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Santos Michelena";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Santos Michelena";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 50; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 51; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Tovar";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Tovar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 52; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Urdaneta";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 53; 
-		$categoria->estado_id = 4; 
-		$categoria->municipio = "Zamora";
+		$categoria->states_id = 4; 
+		$categoria->municipalities = "Zamora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 54; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Alberto Arvelo Torrealba";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Alberto Arvelo Torrealba";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 55; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Andrés Eloy Blanco";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 56; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Antonio José de Sucre";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Antonio José de Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 57; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Arismendi";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Arismendi";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 58; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Barinas";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Barinas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 59; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 60; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Cruz Paredes";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Cruz Paredes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 61; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Ezequiel Zamora";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Ezequiel Zamora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 62; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Obispos";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Obispos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 63; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Pedraza";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Pedraza";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 64; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Rojas";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Rojas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 65; 
-		$categoria->estado_id = 5; 
-		$categoria->municipio = "Sosa";
+		$categoria->states_id = 5; 
+		$categoria->municipalities = "Sosa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 66; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Caroní";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Caroní";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 67; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Cedeño";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Cedeño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 68; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "El Callao";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "El Callao";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 69; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Gran Sabana";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Gran Sabana";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 70; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Heres";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Heres";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 71; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Piar";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Piar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 72; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Angostura (Raúl Leoni)";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Angostura (Raúl Leoni)";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 73; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Roscio";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Roscio";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 74; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Sifontes";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Sifontes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 75; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 76; 
-		$categoria->estado_id = 6; 
-		$categoria->municipio = "Padre Pedro Chien";
+		$categoria->states_id = 6; 
+		$categoria->municipalities = "Padre Pedro Chien";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 77; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Bejuma";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Bejuma";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 78; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Carlos Arvelo";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Carlos Arvelo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 79; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Diego Ibarra";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Diego Ibarra";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 80; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Guacara";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Guacara";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 81; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Juan José Mora";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Juan José Mora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 82; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 83; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Los Guayos";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Los Guayos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 84; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Miranda";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 85; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Montalbán";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Montalbán";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 86; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Naguanagua";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Naguanagua";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 87; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Puerto Cabello";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Puerto Cabello";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 88; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "San Diego";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "San Diego";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 89; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "San Joaquín";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "San Joaquín";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 90; 
-		$categoria->estado_id = 7; 
-		$categoria->municipio = "Valencia";
+		$categoria->states_id = 7; 
+		$categoria->municipalities = "Valencia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 91; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Anzoátegui";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Anzoátegui";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 92; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Tinaquillo";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Tinaquillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 93; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Girardot";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Girardot";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 94; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Lima Blanco";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Lima Blanco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 95; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Pao de San Juan Bautista";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Pao de San Juan Bautista";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 96; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Ricaurte";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Ricaurte";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 97; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Rómulo Gallegos";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 98; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "San Carlos";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "San Carlos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 99; 
-		$categoria->estado_id = 8; 
-		$categoria->municipio = "Tinaco";
+		$categoria->states_id = 8; 
+		$categoria->municipalities = "Tinaco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 100; 
-		$categoria->estado_id = 9; 
-		$categoria->municipio = "Antonio Díaz";
+		$categoria->states_id = 9; 
+		$categoria->municipalities = "Antonio Díaz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 101; 
-		$categoria->estado_id = 9; 
-		$categoria->municipio = "Casacoima";
+		$categoria->states_id = 9; 
+		$categoria->municipalities = "Casacoima";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 102; 
-		$categoria->estado_id = 9; 
-		$categoria->municipio = "Pedernales";
+		$categoria->states_id = 9; 
+		$categoria->municipalities = "Pedernales";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 103; 
-		$categoria->estado_id = 9; 
-		$categoria->municipio = "Tucupita";
+		$categoria->states_id = 9; 
+		$categoria->municipalities = "Tucupita";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 104; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Acosta";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Acosta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 105; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 106; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Buchivacoa";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Buchivacoa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 107; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Cacique Manaure";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Cacique Manaure";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 108; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Carirubana";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Carirubana";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 109; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Colina";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Colina";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 110; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Dabajuro";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Dabajuro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 111; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Democracia";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Democracia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 112; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Falcón";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Falcón";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 113; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Federación";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Federación";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 114; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Jacura";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Jacura";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 115; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "José Laurencio Silva";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "José Laurencio Silva";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 116; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Los Taques";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Los Taques";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 117; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Mauroa";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Mauroa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 118; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Miranda";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 119; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Monseñor Iturriza";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Monseñor Iturriza";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 120; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Palmasola";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Palmasola";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 121; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Petit";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Petit";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 122; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Píritu";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Píritu";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 123; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "San Francisco";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 124; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 125; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Tocópero";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Tocópero";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 126; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Unión";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Unión";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 127; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Urumaco";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Urumaco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 128; 
-		$categoria->estado_id = 10; 
-		$categoria->municipio = "Zamora";
+		$categoria->states_id = 10; 
+		$categoria->municipalities = "Zamora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 129; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Camaguán";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Camaguán";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 130; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Chaguaramas";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Chaguaramas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 131; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "El Socorro";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "El Socorro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 132; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "José Félix Ribas";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "José Félix Ribas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 133; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "José Tadeo Monagas";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "José Tadeo Monagas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 134; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Juan Germán Roscio";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Juan Germán Roscio";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 135; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Julián Mellado";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Julián Mellado";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 136; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Las Mercedes";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Las Mercedes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 137; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Leonardo Infante";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Leonardo Infante";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 138; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Pedro Zaraza";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Pedro Zaraza";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 139; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Ortíz";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Ortíz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 140; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "San Gerónimo de Guayabal";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "San Gerónimo de Guayabal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 141; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "San José de Guaribe";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "San José de Guaribe";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 142; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Santa María de Ipire";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Santa María de Ipire";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 143; 
-		$categoria->estado_id = 11; 
-		$categoria->municipio = "Sebastián Francisco de Miranda";
+		$categoria->states_id = 11; 
+		$categoria->municipalities = "Sebastián Francisco de Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 144; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Andrés Eloy Blanco";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 145; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Crespo";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Crespo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 146; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Iribarren";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Iribarren";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 147; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Jiménez";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Jiménez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 148; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Morán";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Morán";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 149; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Palavecino";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Palavecino";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 150; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Simón Planas";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Simón Planas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 151; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Torres";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Torres";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 152; 
-		$categoria->estado_id = 12; 
-		$categoria->municipio = "Urdaneta";
+		$categoria->states_id = 12; 
+		$categoria->municipalities = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 179; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Alberto Adriani";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Alberto Adriani";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 180; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Andrés Bello";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 181; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Antonio Pinto Salinas";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Antonio Pinto Salinas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 182; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Aricagua";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Aricagua";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 183; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Arzobispo Chacón";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Arzobispo Chacón";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 184; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Campo Elías";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Campo Elías";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 185; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Caracciolo Parra Olmedo";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Caracciolo Parra Olmedo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 186; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Cardenal Quintero";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Cardenal Quintero";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 187; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Guaraque";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Guaraque";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 188; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Julio César Salas";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Julio César Salas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 189; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Justo Briceño";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Justo Briceño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 190; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 191; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Miranda";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 192; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Obispo Ramos de Lora";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Obispo Ramos de Lora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 193; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Padre Noguera";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Padre Noguera";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 194; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Pueblo Llano";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Pueblo Llano";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 195; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Rangel";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Rangel";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 196; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Rivas Dávila";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Rivas Dávila";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 197; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Santos Marquina";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Santos Marquina";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 198; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 199; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Tovar";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Tovar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 200; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Tulio Febres Cordero";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Tulio Febres Cordero";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 201; 
-		$categoria->estado_id = 13; 
-		$categoria->municipio = "Zea";
+		$categoria->states_id = 13; 
+		$categoria->municipalities = "Zea";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 223; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Acevedo";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Acevedo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 224; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Andrés Bello";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 225; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Baruta";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Baruta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 226; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Brión";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Brión";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 227; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Buroz";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Buroz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 228; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Carrizal";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Carrizal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 229; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Chacao";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Chacao";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 230; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Cristóbal Rojas";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Cristóbal Rojas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 231; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "El Hatillo";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "El Hatillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 232; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Guaicaipuro";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Guaicaipuro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 233; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Independencia";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Independencia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 234; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Lander";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Lander";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 235; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Los Salias";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Los Salias";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 236; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Páez";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Páez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 237; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Paz Castillo";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Paz Castillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 238; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Pedro Gual";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Pedro Gual";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 239; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Plaza";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Plaza";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 240; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Simón Bolívar";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Simón Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 241; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 242; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Urdaneta";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 243; 
-		$categoria->estado_id = 14; 
-		$categoria->municipio = "Zamora";
+		$categoria->states_id = 14; 
+		$categoria->municipalities = "Zamora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 258; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Acosta";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Acosta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 259; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Aguasay";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Aguasay";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 260; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 261; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Caripe";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Caripe";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 262; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Cedeño";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Cedeño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 263; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Ezequiel Zamora";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Ezequiel Zamora";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 264; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 265; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Maturín";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Maturín";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 266; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Piar";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Piar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 267; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Punceres";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Punceres";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 268; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Santa Bárbara";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 269; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Sotillo";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Sotillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 270; 
-		$categoria->estado_id = 15; 
-		$categoria->municipio = "Uracoa";
+		$categoria->states_id = 15; 
+		$categoria->municipalities = "Uracoa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 271; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Antolín del Campo";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Antolín del Campo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 272; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Arismendi";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Arismendi";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 273; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "García";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "García";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 274; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Gómez";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Gómez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 275; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Maneiro";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Maneiro";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 276; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Marcano";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Marcano";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 277; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Mariño";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Mariño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 278; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Península de Macanao";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Península de Macanao";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 279; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Tubores";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Tubores";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 280; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Villalba";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Villalba";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 281; 
-		$categoria->estado_id = 16; 
-		$categoria->municipio = "Díaz";
+		$categoria->states_id = 16; 
+		$categoria->municipalities = "Díaz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 282; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Agua Blanca";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Agua Blanca";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 283; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Araure";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Araure";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 284; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Esteller";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Esteller";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 285; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Guanare";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Guanare";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 286; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Guanarito";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Guanarito";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 287; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Monseñor José Vicente de Unda";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Monseñor José Vicente de Unda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 288; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Ospino";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Ospino";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 289; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Páez";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Páez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 290; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Papelón";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Papelón";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 291; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "San Genaro de Boconoíto";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "San Genaro de Boconoíto";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 292; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "San Rafael de Onoto";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "San Rafael de Onoto";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 293; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Santa Rosalía";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Santa Rosalía";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 294; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 295; 
-		$categoria->estado_id = 17; 
-		$categoria->municipio = "Turén";
+		$categoria->states_id = 17; 
+		$categoria->municipalities = "Turén";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 296; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Andrés Eloy Blanco";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 297; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Andrés Mata";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Andrés Mata";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 298; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Arismendi";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Arismendi";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 299; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Benítez";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Benítez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 300; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Bermúdez";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Bermúdez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 301; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 302; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Cajigal";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Cajigal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 303; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Cruz Salmerón Acosta";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Cruz Salmerón Acosta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 304; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 305; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Mariño";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Mariño";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 306; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Mejía";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Mejía";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 307; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Montes";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Montes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 308; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Ribero";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Ribero";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 309; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 310; 
-		$categoria->estado_id = 18; 
-		$categoria->municipio = "Valdéz";
+		$categoria->states_id = 18; 
+		$categoria->municipalities = "Valdéz";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 341; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Andrés Bello";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 342; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Antonio Rómulo Costa";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Antonio Rómulo Costa";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 343; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Ayacucho";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Ayacucho";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 344; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 345; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Cárdenas";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Cárdenas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 346; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Córdoba";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Córdoba";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 347; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Fernández Feo";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Fernández Feo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 348; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Francisco de Miranda";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Francisco de Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 349; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "García de Hevia";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "García de Hevia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 350; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Guásimos";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Guásimos";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 351; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Independencia";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Independencia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 352; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Jáuregui";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Jáuregui";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 353; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "José María Vargas";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "José María Vargas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 354; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Junín";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Junín";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 355; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Libertad";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Libertad";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 356; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 357; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Lobatera";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Lobatera";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 358; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Michelena";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Michelena";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 359; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Panamericano";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Panamericano";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 360; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Pedro María Ureña";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Pedro María Ureña";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 361; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Rafael Urdaneta";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Rafael Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 362; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Samuel Darío Maldonado";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Samuel Darío Maldonado";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 363; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "San Cristóbal";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "San Cristóbal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 364; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Seboruco";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Seboruco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 365; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Simón Rodríguez";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Simón Rodríguez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 366; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 367; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Torbes";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Torbes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 368; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "Uribante";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "Uribante";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 369; 
-		$categoria->estado_id = 19; 
-		$categoria->municipio = "San Judas Tadeo";
+		$categoria->states_id = 19; 
+		$categoria->municipalities = "San Judas Tadeo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 370; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Andrés Bello";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 371; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Boconó";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Boconó";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 372; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 373; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Candelaria";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Candelaria";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 374; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Carache";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Carache";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 375; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Escuque";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Escuque";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 376; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "José Felipe Márquez Cañizalez";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "José Felipe Márquez Cañizalez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 377; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Juan Vicente Campos Elías";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Juan Vicente Campos Elías";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 378; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "La Ceiba";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "La Ceiba";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 379; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Miranda";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 380; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Monte Carmelo";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Monte Carmelo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 381; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Motatán";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Motatán";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 382; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Pampán";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Pampán";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 383; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Pampanito";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Pampanito";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 384; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Rafael Rangel";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Rafael Rangel";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 385; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "San Rafael de Carvajal";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "San Rafael de Carvajal";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 386; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 387; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Trujillo";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Trujillo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 388; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Urdaneta";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 389; 
-		$categoria->estado_id = 20; 
-		$categoria->municipio = "Valera";
+		$categoria->states_id = 20; 
+		$categoria->municipalities = "Valera";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 390; 
-		$categoria->estado_id = 21; 
-		$categoria->municipio = "Vargas";
+		$categoria->states_id = 21; 
+		$categoria->municipalities = "Vargas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 391; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Arístides Bastidas";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Arístides Bastidas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 392; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Bolívar";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 407; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Bruzual";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Bruzual";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 408; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Cocorote";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Cocorote";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 409; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Independencia";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Independencia";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 410; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "José Antonio Páez";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "José Antonio Páez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 411; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "La Trinidad";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "La Trinidad";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 412; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Manuel Monge";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Manuel Monge";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 413; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Nirgua";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Nirgua";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 414; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Peña";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Peña";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 415; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "San Felipe";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "San Felipe";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 416; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 417; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "Urachiche";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "Urachiche";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 418; 
-		$categoria->estado_id = 22; 
-		$categoria->municipio = "José Joaquín Veroes";
+		$categoria->states_id = 22; 
+		$categoria->municipalities = "José Joaquín Veroes";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 441; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Almirante Padilla";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Almirante Padilla";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 442; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Baralt";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Baralt";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 443; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Cabimas";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Cabimas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 444; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Catatumbo";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Catatumbo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 445; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Colón";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Colón";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 446; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Francisco Javier Pulgar";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Francisco Javier Pulgar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 447; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Páez";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Páez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 448; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Jesús Enrique Losada";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Jesús Enrique Losada";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 449; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Jesús María Semprún";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Jesús María Semprún";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 450; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "La Cañada de Urdaneta";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "La Cañada de Urdaneta";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 451; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Lagunillas";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Lagunillas";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 452; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Machiques de Perijá";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Machiques de Perijá";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 453; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Mara";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Mara";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 454; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Maracaibo";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Maracaibo";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 455; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Miranda";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Miranda";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 456; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Rosario de Perijá";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Rosario de Perijá";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 457; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "San Francisco";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 458; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Santa Rita";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Santa Rita";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 459; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Simón Bolívar";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Simón Bolívar";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 460; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Sucre";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Sucre";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 461; 
-		$categoria->estado_id = 23; 
-		$categoria->municipio = "Valmore Rodríguez";
+		$categoria->states_id = 23; 
+		$categoria->municipalities = "Valmore Rodríguez";
 		$categoria->save();
 
-		$categoria = new Municipio();
+		$categoria = new Municipality();
 		$categoria->id = 462; 
-		$categoria->estado_id = 24; 
-		$categoria->municipio = "Libertador";
+		$categoria->states_id = 24; 
+		$categoria->municipalities = "Libertador";
 		$categoria->save();
 
 
 
 
-		/* PARROQUIAS */
-		$categoria = new Parroquia();
+		/* parishes */
+		$categoria = new Parish();
 		$categoria->id = 1; 
-		$categoria->municipio_id = 1; 
-		$categoria->parroquia = "Alto Orinoco";
+		$categoria->municipalities_id = 1; 
+		$categoria->parishes = "Alto Orinoco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 2; 
-		$categoria->municipio_id = 1; 
-		$categoria->parroquia = "Huachamacare Acanaña";
+		$categoria->municipalities_id = 1; 
+		$categoria->parishes = "Huachamacare Acanaña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 3; 
-		$categoria->municipio_id = 1; 
-		$categoria->parroquia = "Marawaka Toky Shamanaña";
+		$categoria->municipalities_id = 1; 
+		$categoria->parishes = "Marawaka Toky Shamanaña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 4; 
-		$categoria->municipio_id = 1; 
-		$categoria->parroquia = "Mavaka Mavaka";
+		$categoria->municipalities_id = 1; 
+		$categoria->parishes = "Mavaka Mavaka";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 5; 
-		$categoria->municipio_id = 1; 
-		$categoria->parroquia = "Sierra Parima Parimabé";
+		$categoria->municipalities_id = 1; 
+		$categoria->parishes = "Sierra Parima Parimabé";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 6; 
-		$categoria->municipio_id = 2; 
-		$categoria->parroquia = "Ucata Laja Lisa";
+		$categoria->municipalities_id = 2; 
+		$categoria->parishes = "Ucata Laja Lisa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 7; 
-		$categoria->municipio_id = 2; 
-		$categoria->parroquia = "Yapacana Macuruco";
+		$categoria->municipalities_id = 2; 
+		$categoria->parishes = "Yapacana Macuruco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 8; 
-		$categoria->municipio_id = 2; 
-		$categoria->parroquia = "Caname Guarinuma";
+		$categoria->municipalities_id = 2; 
+		$categoria->parishes = "Caname Guarinuma";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 9; 
-		$categoria->municipio_id = 3; 
-		$categoria->parroquia = "Fernando Girón Tovar";
+		$categoria->municipalities_id = 3; 
+		$categoria->parishes = "Fernando Girón Tovar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 10; 
-		$categoria->municipio_id = 3; 
-		$categoria->parroquia = "Luis Alberto Gómez";
+		$categoria->municipalities_id = 3; 
+		$categoria->parishes = "Luis Alberto Gómez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 11; 
-		$categoria->municipio_id = 3; 
-		$categoria->parroquia = "Pahueña Limón de Parhueña";
+		$categoria->municipalities_id = 3; 
+		$categoria->parishes = "Pahueña Limón de Parhueña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 12; 
-		$categoria->municipio_id = 3; 
-		$categoria->parroquia = "Platanillal Platanillal";
+		$categoria->municipalities_id = 3; 
+		$categoria->parishes = "Platanillal Platanillal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 13; 
-		$categoria->municipio_id = 4; 
-		$categoria->parroquia = "Samariapo";
+		$categoria->municipalities_id = 4; 
+		$categoria->parishes = "Samariapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 14; 
-		$categoria->municipio_id = 4; 
-		$categoria->parroquia = "Sipapo";
+		$categoria->municipalities_id = 4; 
+		$categoria->parishes = "Sipapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 15; 
-		$categoria->municipio_id = 4; 
-		$categoria->parroquia = "Munduapo";
+		$categoria->municipalities_id = 4; 
+		$categoria->parishes = "Munduapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 16; 
-		$categoria->municipio_id = 4; 
-		$categoria->parroquia = "Guayapo";
+		$categoria->municipalities_id = 4; 
+		$categoria->parishes = "Guayapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 17; 
-		$categoria->municipio_id = 5; 
-		$categoria->parroquia = "Alto Ventuari";
+		$categoria->municipalities_id = 5; 
+		$categoria->parishes = "Alto Ventuari";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 18; 
-		$categoria->municipio_id = 5; 
-		$categoria->parroquia = "Medio Ventuari";
+		$categoria->municipalities_id = 5; 
+		$categoria->parishes = "Medio Ventuari";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 19; 
-		$categoria->municipio_id = 5; 
-		$categoria->parroquia = "Bajo Ventuari";
+		$categoria->municipalities_id = 5; 
+		$categoria->parishes = "Bajo Ventuari";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 20; 
-		$categoria->municipio_id = 6; 
-		$categoria->parroquia = "Victorino";
+		$categoria->municipalities_id = 6; 
+		$categoria->parishes = "Victorino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 21; 
-		$categoria->municipio_id = 6; 
-		$categoria->parroquia = "Comunidad";
+		$categoria->municipalities_id = 6; 
+		$categoria->parishes = "Comunidad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 22; 
-		$categoria->municipio_id = 7; 
-		$categoria->parroquia = "Casiquiare";
+		$categoria->municipalities_id = 7; 
+		$categoria->parishes = "Casiquiare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 23; 
-		$categoria->municipio_id = 7; 
-		$categoria->parroquia = "Cocuy";
+		$categoria->municipalities_id = 7; 
+		$categoria->parishes = "Cocuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 24; 
-		$categoria->municipio_id = 7; 
-		$categoria->parroquia = "San Carlos de Río Negro";
+		$categoria->municipalities_id = 7; 
+		$categoria->parishes = "San Carlos de Río Negro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 25; 
-		$categoria->municipio_id = 7; 
-		$categoria->parroquia = "Solano";
+		$categoria->municipalities_id = 7; 
+		$categoria->parishes = "Solano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 26; 
-		$categoria->municipio_id = 8; 
-		$categoria->parroquia = "Anaco";
+		$categoria->municipalities_id = 8; 
+		$categoria->parishes = "Anaco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 27; 
-		$categoria->municipio_id = 8; 
-		$categoria->parroquia = "San Joaquín";
+		$categoria->municipalities_id = 8; 
+		$categoria->parishes = "San Joaquín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 28; 
-		$categoria->municipio_id = 9; 
-		$categoria->parroquia = "Cachipo";
+		$categoria->municipalities_id = 9; 
+		$categoria->parishes = "Cachipo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 29; 
-		$categoria->municipio_id = 9; 
-		$categoria->parroquia = "Aragua de Barcelona";
+		$categoria->municipalities_id = 9; 
+		$categoria->parishes = "Aragua de Barcelona";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 30; 
-		$categoria->municipio_id = 11; 
-		$categoria->parroquia = "Lechería";
+		$categoria->municipalities_id = 11; 
+		$categoria->parishes = "Lechería";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 31; 
-		$categoria->municipio_id = 11; 
-		$categoria->parroquia = "El Morro";
+		$categoria->municipalities_id = 11; 
+		$categoria->parishes = "El Morro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 32; 
-		$categoria->municipio_id = 12; 
-		$categoria->parroquia = "Puerto Píritu";
+		$categoria->municipalities_id = 12; 
+		$categoria->parishes = "Puerto Píritu";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 33; 
-		$categoria->municipio_id = 12; 
-		$categoria->parroquia = "San Miguel";
+		$categoria->municipalities_id = 12; 
+		$categoria->parishes = "San Miguel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 34; 
-		$categoria->municipio_id = 12; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 12; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 35; 
-		$categoria->municipio_id = 13; 
-		$categoria->parroquia = "Valle de Guanape";
+		$categoria->municipalities_id = 13; 
+		$categoria->parishes = "Valle de Guanape";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 36; 
-		$categoria->municipio_id = 13; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 13; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 37; 
-		$categoria->municipio_id = 14; 
-		$categoria->parroquia = "El Chaparro";
+		$categoria->municipalities_id = 14; 
+		$categoria->parishes = "El Chaparro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 38; 
-		$categoria->municipio_id = 14; 
-		$categoria->parroquia = "Tomás Alfaro";
+		$categoria->municipalities_id = 14; 
+		$categoria->parishes = "Tomás Alfaro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 39; 
-		$categoria->municipio_id = 14; 
-		$categoria->parroquia = "Calatrava";
+		$categoria->municipalities_id = 14; 
+		$categoria->parishes = "Calatrava";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 40; 
-		$categoria->municipio_id = 15; 
-		$categoria->parroquia = "Guanta";
+		$categoria->municipalities_id = 15; 
+		$categoria->parishes = "Guanta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 41; 
-		$categoria->municipio_id = 15; 
-		$categoria->parroquia = "Chorrerón";
+		$categoria->municipalities_id = 15; 
+		$categoria->parishes = "Chorrerón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 42; 
-		$categoria->municipio_id = 16; 
-		$categoria->parroquia = "Mamo";
+		$categoria->municipalities_id = 16; 
+		$categoria->parishes = "Mamo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 43; 
-		$categoria->municipio_id = 16; 
-		$categoria->parroquia = "Soledad";
+		$categoria->municipalities_id = 16; 
+		$categoria->parishes = "Soledad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 44; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "Mapire";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "Mapire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 45; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "Piar";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "Piar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 46; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "Santa Clara";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "Santa Clara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 47; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "San Diego de Cabrutica";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "San Diego de Cabrutica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 48; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "Uverito";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "Uverito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 49; 
-		$categoria->municipio_id = 17; 
-		$categoria->parroquia = "Zuata";
+		$categoria->municipalities_id = 17; 
+		$categoria->parishes = "Zuata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 50; 
-		$categoria->municipio_id = 18; 
-		$categoria->parroquia = "Puerto La Cruz";
+		$categoria->municipalities_id = 18; 
+		$categoria->parishes = "Puerto La Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 51; 
-		$categoria->municipio_id = 18; 
-		$categoria->parroquia = "Pozuelos";
+		$categoria->municipalities_id = 18; 
+		$categoria->parishes = "Pozuelos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 52; 
-		$categoria->municipio_id = 19; 
-		$categoria->parroquia = "Onoto";
+		$categoria->municipalities_id = 19; 
+		$categoria->parishes = "Onoto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 53; 
-		$categoria->municipio_id = 19; 
-		$categoria->parroquia = "San Pablo";
+		$categoria->municipalities_id = 19; 
+		$categoria->parishes = "San Pablo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 54; 
-		$categoria->municipio_id = 20; 
-		$categoria->parroquia = "San Mateo";
+		$categoria->municipalities_id = 20; 
+		$categoria->parishes = "San Mateo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 55; 
-		$categoria->municipio_id = 20; 
-		$categoria->parroquia = "El Carito";
+		$categoria->municipalities_id = 20; 
+		$categoria->parishes = "El Carito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 56; 
-		$categoria->municipio_id = 20; 
-		$categoria->parroquia = "Santa Inés";
+		$categoria->municipalities_id = 20; 
+		$categoria->parishes = "Santa Inés";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 57; 
-		$categoria->municipio_id = 20; 
-		$categoria->parroquia = "La Romereña";
+		$categoria->municipalities_id = 20; 
+		$categoria->parishes = "La Romereña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 58; 
-		$categoria->municipio_id = 21; 
-		$categoria->parroquia = "Atapirire";
+		$categoria->municipalities_id = 21; 
+		$categoria->parishes = "Atapirire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 59; 
-		$categoria->municipio_id = 21; 
-		$categoria->parroquia = "Boca del Pao";
+		$categoria->municipalities_id = 21; 
+		$categoria->parishes = "Boca del Pao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 60; 
-		$categoria->municipio_id = 21; 
-		$categoria->parroquia = "El Pao";
+		$categoria->municipalities_id = 21; 
+		$categoria->parishes = "El Pao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 61; 
-		$categoria->municipio_id = 21; 
-		$categoria->parroquia = "Pariaguán";
+		$categoria->municipalities_id = 21; 
+		$categoria->parishes = "Pariaguán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 62; 
-		$categoria->municipio_id = 22; 
-		$categoria->parroquia = "Cantaura";
+		$categoria->municipalities_id = 22; 
+		$categoria->parishes = "Cantaura";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 63; 
-		$categoria->municipio_id = 22; 
-		$categoria->parroquia = "Libertador";
+		$categoria->municipalities_id = 22; 
+		$categoria->parishes = "Libertador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 64; 
-		$categoria->municipio_id = 22; 
-		$categoria->parroquia = "Santa Rosa";
+		$categoria->municipalities_id = 22; 
+		$categoria->parishes = "Santa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 65; 
-		$categoria->municipio_id = 22; 
-		$categoria->parroquia = "Urica";
+		$categoria->municipalities_id = 22; 
+		$categoria->parishes = "Urica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 66; 
-		$categoria->municipio_id = 23; 
-		$categoria->parroquia = "Píritu";
+		$categoria->municipalities_id = 23; 
+		$categoria->parishes = "Píritu";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 67; 
-		$categoria->municipio_id = 23; 
-		$categoria->parroquia = "San Francisco";
+		$categoria->municipalities_id = 23; 
+		$categoria->parishes = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 68; 
-		$categoria->municipio_id = 24; 
-		$categoria->parroquia = "San José de Guanipa";
+		$categoria->municipalities_id = 24; 
+		$categoria->parishes = "San José de Guanipa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 69; 
-		$categoria->municipio_id = 25; 
-		$categoria->parroquia = "Boca de Uchire";
+		$categoria->municipalities_id = 25; 
+		$categoria->parishes = "Boca de Uchire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 70; 
-		$categoria->municipio_id = 25; 
-		$categoria->parroquia = "Boca de Chávez";
+		$categoria->municipalities_id = 25; 
+		$categoria->parishes = "Boca de Chávez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 71; 
-		$categoria->municipio_id = 26; 
-		$categoria->parroquia = "Pueblo Nuevo";
+		$categoria->municipalities_id = 26; 
+		$categoria->parishes = "Pueblo Nuevo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 72; 
-		$categoria->municipio_id = 26; 
-		$categoria->parroquia = "Santa Ana";
+		$categoria->municipalities_id = 26; 
+		$categoria->parishes = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 73; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "Bergatín";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "Bergatín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 74; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "Caigua";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "Caigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 75; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "El Carmen";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "El Carmen";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 76; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "El Pilar";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "El Pilar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 77; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "Naricual";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "Naricual";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 78; 
-		$categoria->municipio_id = 27; 
-		$categoria->parroquia = "San Crsitóbal";
+		$categoria->municipalities_id = 27; 
+		$categoria->parishes = "San Crsitóbal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 79; 
-		$categoria->municipio_id = 28; 
-		$categoria->parroquia = "Edmundo Barrios";
+		$categoria->municipalities_id = 28; 
+		$categoria->parishes = "Edmundo Barrios";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 80; 
-		$categoria->municipio_id = 28; 
-		$categoria->parroquia = "Miguel Otero Silva";
+		$categoria->municipalities_id = 28; 
+		$categoria->parishes = "Miguel Otero Silva";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 81; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "Achaguas";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "Achaguas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 82; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "Apurito";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "Apurito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 83; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "El Yagual";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "El Yagual";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 84; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "Guachara";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "Guachara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 85; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "Mucuritas";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "Mucuritas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 86; 
-		$categoria->municipio_id = 29; 
-		$categoria->parroquia = "Queseras del medio";
+		$categoria->municipalities_id = 29; 
+		$categoria->parishes = "Queseras del medio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 87; 
-		$categoria->municipio_id = 30; 
-		$categoria->parroquia = "Biruaca";
+		$categoria->municipalities_id = 30; 
+		$categoria->parishes = "Biruaca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 88; 
-		$categoria->municipio_id = 31; 
-		$categoria->parroquia = "Bruzual";
+		$categoria->municipalities_id = 31; 
+		$categoria->parishes = "Bruzual";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 89; 
-		$categoria->municipio_id = 31; 
-		$categoria->parroquia = "Mantecal";
+		$categoria->municipalities_id = 31; 
+		$categoria->parishes = "Mantecal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 90; 
-		$categoria->municipio_id = 31; 
-		$categoria->parroquia = "Quintero";
+		$categoria->municipalities_id = 31; 
+		$categoria->parishes = "Quintero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 91; 
-		$categoria->municipio_id = 31; 
-		$categoria->parroquia = "Rincón Hondo";
+		$categoria->municipalities_id = 31; 
+		$categoria->parishes = "Rincón Hondo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 92; 
-		$categoria->municipio_id = 31; 
-		$categoria->parroquia = "San Vicente";
+		$categoria->municipalities_id = 31; 
+		$categoria->parishes = "San Vicente";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 93; 
-		$categoria->municipio_id = 32; 
-		$categoria->parroquia = "Guasdualito";
+		$categoria->municipalities_id = 32; 
+		$categoria->parishes = "Guasdualito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 94; 
-		$categoria->municipio_id = 32; 
-		$categoria->parroquia = "Aramendi";
+		$categoria->municipalities_id = 32; 
+		$categoria->parishes = "Aramendi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 95; 
-		$categoria->municipio_id = 32; 
-		$categoria->parroquia = "El Amparo";
+		$categoria->municipalities_id = 32; 
+		$categoria->parishes = "El Amparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 96; 
-		$categoria->municipio_id = 32; 
-		$categoria->parroquia = "San Camilo";
+		$categoria->municipalities_id = 32; 
+		$categoria->parishes = "San Camilo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 97; 
-		$categoria->municipio_id = 32; 
-		$categoria->parroquia = "Urdaneta";
+		$categoria->municipalities_id = 32; 
+		$categoria->parishes = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 98; 
-		$categoria->municipio_id = 33; 
-		$categoria->parroquia = "San Juan de Payara";
+		$categoria->municipalities_id = 33; 
+		$categoria->parishes = "San Juan de Payara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 99; 
-		$categoria->municipio_id = 33; 
-		$categoria->parroquia = "Codazzi";
+		$categoria->municipalities_id = 33; 
+		$categoria->parishes = "Codazzi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 100; 
-		$categoria->municipio_id = 33; 
-		$categoria->parroquia = "Cunaviche";
+		$categoria->municipalities_id = 33; 
+		$categoria->parishes = "Cunaviche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 101; 
-		$categoria->municipio_id = 34; 
-		$categoria->parroquia = "Elorza";
+		$categoria->municipalities_id = 34; 
+		$categoria->parishes = "Elorza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 102; 
-		$categoria->municipio_id = 34; 
-		$categoria->parroquia = "La Trinidad";
+		$categoria->municipalities_id = 34; 
+		$categoria->parishes = "La Trinidad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 103; 
-		$categoria->municipio_id = 35; 
-		$categoria->parroquia = "San Fernando";
+		$categoria->municipalities_id = 35; 
+		$categoria->parishes = "San Fernando";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 104; 
-		$categoria->municipio_id = 35; 
-		$categoria->parroquia = "El Recreo";
+		$categoria->municipalities_id = 35; 
+		$categoria->parishes = "El Recreo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 105; 
-		$categoria->municipio_id = 35; 
-		$categoria->parroquia = "Peñalver";
+		$categoria->municipalities_id = 35; 
+		$categoria->parishes = "Peñalver";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 106; 
-		$categoria->municipio_id = 35; 
-		$categoria->parroquia = "San Rafael de Atamaica";
+		$categoria->municipalities_id = 35; 
+		$categoria->parishes = "San Rafael de Atamaica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 107; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Pedro José Ovalles";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Pedro José Ovalles";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 108; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Joaquín Crespo";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Joaquín Crespo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 109; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "José Casanova Godoy";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "José Casanova Godoy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 110; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Madre María de San José";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Madre María de San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 111; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Andrés Eloy Blanco";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 112; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Los Tacarigua";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Los Tacarigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 113; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Las Delicias";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Las Delicias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 114; 
-		$categoria->municipio_id = 36; 
-		$categoria->parroquia = "Choroní";
+		$categoria->municipalities_id = 36; 
+		$categoria->parishes = "Choroní";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 115; 
-		$categoria->municipio_id = 37; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 37; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 116; 
-		$categoria->municipio_id = 38; 
-		$categoria->parroquia = "Camatagua";
+		$categoria->municipalities_id = 38; 
+		$categoria->parishes = "Camatagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 117; 
-		$categoria->municipio_id = 38; 
-		$categoria->parroquia = "Carmen de Cura";
+		$categoria->municipalities_id = 38; 
+		$categoria->parishes = "Carmen de Cura";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 118; 
-		$categoria->municipio_id = 39; 
-		$categoria->parroquia = "Santa Rita";
+		$categoria->municipalities_id = 39; 
+		$categoria->parishes = "Santa Rita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 119; 
-		$categoria->municipio_id = 39; 
-		$categoria->parroquia = "Francisco de Miranda";
+		$categoria->municipalities_id = 39; 
+		$categoria->parishes = "Francisco de Miranda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 120; 
-		$categoria->municipio_id = 39; 
-		$categoria->parroquia = "Moseñor Feliciano González";
+		$categoria->municipalities_id = 39; 
+		$categoria->parishes = "Moseñor Feliciano González";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 121; 
-		$categoria->municipio_id = 40; 
-		$categoria->parroquia = "Santa Cruz";
+		$categoria->municipalities_id = 40; 
+		$categoria->parishes = "Santa Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 122; 
-		$categoria->municipio_id = 41; 
-		$categoria->parroquia = "José Félix Ribas";
+		$categoria->municipalities_id = 41; 
+		$categoria->parishes = "José Félix Ribas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 123; 
-		$categoria->municipio_id = 41; 
-		$categoria->parroquia = "Castor Nieves Ríos";
+		$categoria->municipalities_id = 41; 
+		$categoria->parishes = "Castor Nieves Ríos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 124; 
-		$categoria->municipio_id = 41; 
-		$categoria->parroquia = "Las Guacamayas";
+		$categoria->municipalities_id = 41; 
+		$categoria->parishes = "Las Guacamayas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 125; 
-		$categoria->municipio_id = 41; 
-		$categoria->parroquia = "Pao de Zárate";
+		$categoria->municipalities_id = 41; 
+		$categoria->parishes = "Pao de Zárate";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 126; 
-		$categoria->municipio_id = 41; 
-		$categoria->parroquia = "Zuata";
+		$categoria->municipalities_id = 41; 
+		$categoria->parishes = "Zuata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 127; 
-		$categoria->municipio_id = 42; 
-		$categoria->parroquia = "José Rafael Revenga";
+		$categoria->municipalities_id = 42; 
+		$categoria->parishes = "José Rafael Revenga";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 128; 
-		$categoria->municipio_id = 43; 
-		$categoria->parroquia = "Palo Negro";
+		$categoria->municipalities_id = 43; 
+		$categoria->parishes = "Palo Negro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 129; 
-		$categoria->municipio_id = 43; 
-		$categoria->parroquia = "San Martín de Porres";
+		$categoria->municipalities_id = 43; 
+		$categoria->parishes = "San Martín de Porres";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 130; 
-		$categoria->municipio_id = 44; 
-		$categoria->parroquia = "El Limón";
+		$categoria->municipalities_id = 44; 
+		$categoria->parishes = "El Limón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 131; 
-		$categoria->municipio_id = 44; 
-		$categoria->parroquia = "Caña de Azúcar";
+		$categoria->municipalities_id = 44; 
+		$categoria->parishes = "Caña de Azúcar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 132; 
-		$categoria->municipio_id = 45; 
-		$categoria->parroquia = "Ocumare de la Costa";
+		$categoria->municipalities_id = 45; 
+		$categoria->parishes = "Ocumare de la Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 133; 
-		$categoria->municipio_id = 46; 
-		$categoria->parroquia = "San Casimiro";
+		$categoria->municipalities_id = 46; 
+		$categoria->parishes = "San Casimiro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 134; 
-		$categoria->municipio_id = 46; 
-		$categoria->parroquia = "Güiripa";
+		$categoria->municipalities_id = 46; 
+		$categoria->parishes = "Güiripa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 135; 
-		$categoria->municipio_id = 46; 
-		$categoria->parroquia = "Ollas de Caramacate";
+		$categoria->municipalities_id = 46; 
+		$categoria->parishes = "Ollas de Caramacate";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 136; 
-		$categoria->municipio_id = 46; 
-		$categoria->parroquia = "Valle Morín";
+		$categoria->municipalities_id = 46; 
+		$categoria->parishes = "Valle Morín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 137; 
-		$categoria->municipio_id = 47; 
-		$categoria->parroquia = "San Sebastían";
+		$categoria->municipalities_id = 47; 
+		$categoria->parishes = "San Sebastían";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 138; 
-		$categoria->municipio_id = 48; 
-		$categoria->parroquia = "Turmero";
+		$categoria->municipalities_id = 48; 
+		$categoria->parishes = "Turmero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 139; 
-		$categoria->municipio_id = 48; 
-		$categoria->parroquia = "Arevalo Aponte";
+		$categoria->municipalities_id = 48; 
+		$categoria->parishes = "Arevalo Aponte";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 140; 
-		$categoria->municipio_id = 48; 
-		$categoria->parroquia = "Chuao";
+		$categoria->municipalities_id = 48; 
+		$categoria->parishes = "Chuao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 141; 
-		$categoria->municipio_id = 48; 
-		$categoria->parroquia = "Samán de Güere";
+		$categoria->municipalities_id = 48; 
+		$categoria->parishes = "Samán de Güere";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 142; 
-		$categoria->municipio_id = 48; 
-		$categoria->parroquia = "Alfredo Pacheco Miranda";
+		$categoria->municipalities_id = 48; 
+		$categoria->parishes = "Alfredo Pacheco Miranda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 143; 
-		$categoria->municipio_id = 49; 
-		$categoria->parroquia = "Santos Michelena";
+		$categoria->municipalities_id = 49; 
+		$categoria->parishes = "Santos Michelena";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 144; 
-		$categoria->municipio_id = 49; 
-		$categoria->parroquia = "Tiara";
+		$categoria->municipalities_id = 49; 
+		$categoria->parishes = "Tiara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 145; 
-		$categoria->municipio_id = 50; 
-		$categoria->parroquia = "Cagua";
+		$categoria->municipalities_id = 50; 
+		$categoria->parishes = "Cagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 146; 
-		$categoria->municipio_id = 50; 
-		$categoria->parroquia = "Bella Vista";
+		$categoria->municipalities_id = 50; 
+		$categoria->parishes = "Bella Vista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 147; 
-		$categoria->municipio_id = 51; 
-		$categoria->parroquia = "Tovar";
+		$categoria->municipalities_id = 51; 
+		$categoria->parishes = "Tovar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 148; 
-		$categoria->municipio_id = 52; 
-		$categoria->parroquia = "Urdaneta";
+		$categoria->municipalities_id = 52; 
+		$categoria->parishes = "Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 149; 
-		$categoria->municipio_id = 52; 
-		$categoria->parroquia = "Las Peñitas";
+		$categoria->municipalities_id = 52; 
+		$categoria->parishes = "Las Peñitas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 150; 
-		$categoria->municipio_id = 52; 
-		$categoria->parroquia = "San Francisco de Cara";
+		$categoria->municipalities_id = 52; 
+		$categoria->parishes = "San Francisco de Cara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 151; 
-		$categoria->municipio_id = 52; 
-		$categoria->parroquia = "Taguay";
+		$categoria->municipalities_id = 52; 
+		$categoria->parishes = "Taguay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 152; 
-		$categoria->municipio_id = 53; 
-		$categoria->parroquia = "Zamora";
+		$categoria->municipalities_id = 53; 
+		$categoria->parishes = "Zamora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 153; 
-		$categoria->municipio_id = 53; 
-		$categoria->parroquia = "Magdaleno";
+		$categoria->municipalities_id = 53; 
+		$categoria->parishes = "Magdaleno";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 154; 
-		$categoria->municipio_id = 53; 
-		$categoria->parroquia = "San Francisco de Asís";
+		$categoria->municipalities_id = 53; 
+		$categoria->parishes = "San Francisco de Asís";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 155; 
-		$categoria->municipio_id = 53; 
-		$categoria->parroquia = "Valles de Tucutunemo";
+		$categoria->municipalities_id = 53; 
+		$categoria->parishes = "Valles de Tucutunemo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 156; 
-		$categoria->municipio_id = 53; 
-		$categoria->parroquia = "Augusto Mijares";
+		$categoria->municipalities_id = 53; 
+		$categoria->parishes = "Augusto Mijares";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 157; 
-		$categoria->municipio_id = 54; 
-		$categoria->parroquia = "Sabaneta";
+		$categoria->municipalities_id = 54; 
+		$categoria->parishes = "Sabaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 158; 
-		$categoria->municipio_id = 54; 
-		$categoria->parroquia = "Juan Antonio Rodríguez Domínguez";
+		$categoria->municipalities_id = 54; 
+		$categoria->parishes = "Juan Antonio Rodríguez Domínguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 159; 
-		$categoria->municipio_id = 55; 
-		$categoria->parroquia = "El Cantón";
+		$categoria->municipalities_id = 55; 
+		$categoria->parishes = "El Cantón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 160; 
-		$categoria->municipio_id = 55; 
-		$categoria->parroquia = "Santa Cruz de Guacas";
+		$categoria->municipalities_id = 55; 
+		$categoria->parishes = "Santa Cruz de Guacas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 161; 
-		$categoria->municipio_id = 55; 
-		$categoria->parroquia = "Puerto Vivas";
+		$categoria->municipalities_id = 55; 
+		$categoria->parishes = "Puerto Vivas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 162; 
-		$categoria->municipio_id = 56; 
-		$categoria->parroquia = "Ticoporo";
+		$categoria->municipalities_id = 56; 
+		$categoria->parishes = "Ticoporo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 163; 
-		$categoria->municipio_id = 56; 
-		$categoria->parroquia = "Nicolás Pulido";
+		$categoria->municipalities_id = 56; 
+		$categoria->parishes = "Nicolás Pulido";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 164; 
-		$categoria->municipio_id = 56; 
-		$categoria->parroquia = "Andrés Bello";
+		$categoria->municipalities_id = 56; 
+		$categoria->parishes = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 165; 
-		$categoria->municipio_id = 57; 
-		$categoria->parroquia = "Arismendi";
+		$categoria->municipalities_id = 57; 
+		$categoria->parishes = "Arismendi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 166; 
-		$categoria->municipio_id = 57; 
-		$categoria->parroquia = "Guadarrama";
+		$categoria->municipalities_id = 57; 
+		$categoria->parishes = "Guadarrama";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 167; 
-		$categoria->municipio_id = 57; 
-		$categoria->parroquia = "La Unión";
+		$categoria->municipalities_id = 57; 
+		$categoria->parishes = "La Unión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 168; 
-		$categoria->municipio_id = 57; 
-		$categoria->parroquia = "San Antonio";
+		$categoria->municipalities_id = 57; 
+		$categoria->parishes = "San Antonio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 169; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Barinas";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Barinas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 170; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Alberto Arvelo Larriva";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Alberto Arvelo Larriva";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 171; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "San Silvestre";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "San Silvestre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 172; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Santa Inés";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Santa Inés";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 173; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Santa Lucía";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Santa Lucía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 174; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Torumos";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Torumos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 175; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "El Carmen";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "El Carmen";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 176; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Rómulo Betancourt";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Rómulo Betancourt";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 177; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Corazón de Jesús";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Corazón de Jesús";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 178; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Ramón Ignacio Méndez";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Ramón Ignacio Méndez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 179; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Alto Barinas";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Alto Barinas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 180; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Manuel Palacio Fajardo";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Manuel Palacio Fajardo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 181; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Juan Antonio Rodríguez Domínguez";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Juan Antonio Rodríguez Domínguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 182; 
-		$categoria->municipio_id = 58; 
-		$categoria->parroquia = "Dominga Ortiz de Páez";
+		$categoria->municipalities_id = 58; 
+		$categoria->parishes = "Dominga Ortiz de Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 183; 
-		$categoria->municipio_id = 59; 
-		$categoria->parroquia = "Barinitas";
+		$categoria->municipalities_id = 59; 
+		$categoria->parishes = "Barinitas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 184; 
-		$categoria->municipio_id = 59; 
-		$categoria->parroquia = "Altamira de Cáceres";
+		$categoria->municipalities_id = 59; 
+		$categoria->parishes = "Altamira de Cáceres";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 185; 
-		$categoria->municipio_id = 59; 
-		$categoria->parroquia = "Calderas";
+		$categoria->municipalities_id = 59; 
+		$categoria->parishes = "Calderas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 186; 
-		$categoria->municipio_id = 60; 
-		$categoria->parroquia = "Barrancas";
+		$categoria->municipalities_id = 60; 
+		$categoria->parishes = "Barrancas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 187; 
-		$categoria->municipio_id = 60; 
-		$categoria->parroquia = "El Socorro";
+		$categoria->municipalities_id = 60; 
+		$categoria->parishes = "El Socorro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 188; 
-		$categoria->municipio_id = 60; 
-		$categoria->parroquia = "Mazparrito";
+		$categoria->municipalities_id = 60; 
+		$categoria->parishes = "Mazparrito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 189; 
-		$categoria->municipio_id = 61; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 61; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 190; 
-		$categoria->municipio_id = 61; 
-		$categoria->parroquia = "Pedro Briceño Méndez";
+		$categoria->municipalities_id = 61; 
+		$categoria->parishes = "Pedro Briceño Méndez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 191; 
-		$categoria->municipio_id = 61; 
-		$categoria->parroquia = "Ramón Ignacio Méndez";
+		$categoria->municipalities_id = 61; 
+		$categoria->parishes = "Ramón Ignacio Méndez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 192; 
-		$categoria->municipio_id = 61; 
-		$categoria->parroquia = "José Ignacio del Pumar";
+		$categoria->municipalities_id = 61; 
+		$categoria->parishes = "José Ignacio del Pumar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 193; 
-		$categoria->municipio_id = 62; 
-		$categoria->parroquia = "Obispos";
+		$categoria->municipalities_id = 62; 
+		$categoria->parishes = "Obispos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 194; 
-		$categoria->municipio_id = 62; 
-		$categoria->parroquia = "Guasimitos";
+		$categoria->municipalities_id = 62; 
+		$categoria->parishes = "Guasimitos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 195; 
-		$categoria->municipio_id = 62; 
-		$categoria->parroquia = "El Real";
+		$categoria->municipalities_id = 62; 
+		$categoria->parishes = "El Real";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 196; 
-		$categoria->municipio_id = 62; 
-		$categoria->parroquia = "La Luz";
+		$categoria->municipalities_id = 62; 
+		$categoria->parishes = "La Luz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 197; 
-		$categoria->municipio_id = 63; 
-		$categoria->parroquia = "Models\Ciudad Bolívia";
+		$categoria->municipalities_id = 63; 
+		$categoria->parishes = "Models\Ciudad Bolívia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 198; 
-		$categoria->municipio_id = 63; 
-		$categoria->parroquia = "José Ignacio Briceño";
+		$categoria->municipalities_id = 63; 
+		$categoria->parishes = "José Ignacio Briceño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 199; 
-		$categoria->municipio_id = 63; 
-		$categoria->parroquia = "José Félix Ribas";
+		$categoria->municipalities_id = 63; 
+		$categoria->parishes = "José Félix Ribas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 200; 
-		$categoria->municipio_id = 63; 
-		$categoria->parroquia = "Páez";
+		$categoria->municipalities_id = 63; 
+		$categoria->parishes = "Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 201; 
-		$categoria->municipio_id = 64; 
-		$categoria->parroquia = "Libertad";
+		$categoria->municipalities_id = 64; 
+		$categoria->parishes = "Libertad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 202; 
-		$categoria->municipio_id = 64; 
-		$categoria->parroquia = "Dolores";
+		$categoria->municipalities_id = 64; 
+		$categoria->parishes = "Dolores";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 203; 
-		$categoria->municipio_id = 64; 
-		$categoria->parroquia = "Santa Rosa";
+		$categoria->municipalities_id = 64; 
+		$categoria->parishes = "Santa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 204; 
-		$categoria->municipio_id = 64; 
-		$categoria->parroquia = "Palacio Fajardo";
+		$categoria->municipalities_id = 64; 
+		$categoria->parishes = "Palacio Fajardo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 205; 
-		$categoria->municipio_id = 65; 
-		$categoria->parroquia = "Models\Ciudad de Nutrias";
+		$categoria->municipalities_id = 65; 
+		$categoria->parishes = "Models\Ciudad de Nutrias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 206; 
-		$categoria->municipio_id = 65; 
-		$categoria->parroquia = "El Regalo";
+		$categoria->municipalities_id = 65; 
+		$categoria->parishes = "El Regalo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 207; 
-		$categoria->municipio_id = 65; 
-		$categoria->parroquia = "Puerto Nutrias";
+		$categoria->municipalities_id = 65; 
+		$categoria->parishes = "Puerto Nutrias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 208; 
-		$categoria->municipio_id = 65; 
-		$categoria->parroquia = "Santa Catalina";
+		$categoria->municipalities_id = 65; 
+		$categoria->parishes = "Santa Catalina";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 209; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Cachamay";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Cachamay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 210; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Chirica";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Chirica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 211; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Dalla Costa";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Dalla Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 212; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Once de Abril";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Once de Abril";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 213; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Simón Bolívar";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Simón Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 214; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Unare";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Unare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 215; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Universidad";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Universidad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 216; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Vista al Sol";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Vista al Sol";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 217; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Pozo Verde";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Pozo Verde";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 218; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "Yocoima";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "Yocoima";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 219; 
-		$categoria->municipio_id = 66; 
-		$categoria->parroquia = "5 de Julio";
+		$categoria->municipalities_id = 66; 
+		$categoria->parishes = "5 de Julio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 220; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "Cedeño";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "Cedeño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 221; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "Altagracia";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "Altagracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 222; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "Ascensión Farreras";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "Ascensión Farreras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 223; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "Guaniamo";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "Guaniamo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 224; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "La Urbana";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "La Urbana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 225; 
-		$categoria->municipio_id = 67; 
-		$categoria->parroquia = "Pijiguaos";
+		$categoria->municipalities_id = 67; 
+		$categoria->parishes = "Pijiguaos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 226; 
-		$categoria->municipio_id = 68; 
-		$categoria->parroquia = "El Callao";
+		$categoria->municipalities_id = 68; 
+		$categoria->parishes = "El Callao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 227; 
-		$categoria->municipio_id = 69; 
-		$categoria->parroquia = "Gran Sabana";
+		$categoria->municipalities_id = 69; 
+		$categoria->parishes = "Gran Sabana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 228; 
-		$categoria->municipio_id = 69; 
-		$categoria->parroquia = "Ikabarú";
+		$categoria->municipalities_id = 69; 
+		$categoria->parishes = "Ikabarú";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 229; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Catedral";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Catedral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 230; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Zea";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Zea";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 231; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Orinoco";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Orinoco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 232; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "José Antonio Páez";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "José Antonio Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 233; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Marhuanta";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Marhuanta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 234; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Agua Salada";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Agua Salada";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 235; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Vista Hermosa";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Vista Hermosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 236; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "La Sabanita";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "La Sabanita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 237; 
-		$categoria->municipio_id = 70; 
-		$categoria->parroquia = "Panapana";
+		$categoria->municipalities_id = 70; 
+		$categoria->parishes = "Panapana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 238; 
-		$categoria->municipio_id = 71; 
-		$categoria->parroquia = "Andrés Eloy Blanco";
+		$categoria->municipalities_id = 71; 
+		$categoria->parishes = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 239; 
-		$categoria->municipio_id = 71; 
-		$categoria->parroquia = "Pedro Cova";
+		$categoria->municipalities_id = 71; 
+		$categoria->parishes = "Pedro Cova";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 240; 
-		$categoria->municipio_id = 72; 
-		$categoria->parroquia = "Raúl Leoni";
+		$categoria->municipalities_id = 72; 
+		$categoria->parishes = "Raúl Leoni";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 241; 
-		$categoria->municipio_id = 72; 
-		$categoria->parroquia = "Barceloneta";
+		$categoria->municipalities_id = 72; 
+		$categoria->parishes = "Barceloneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 242; 
-		$categoria->municipio_id = 72; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 72; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 243; 
-		$categoria->municipio_id = 72; 
-		$categoria->parroquia = "San Francisco";
+		$categoria->municipalities_id = 72; 
+		$categoria->parishes = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 244; 
-		$categoria->municipio_id = 73; 
-		$categoria->parroquia = "Roscio";
+		$categoria->municipalities_id = 73; 
+		$categoria->parishes = "Roscio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 245; 
-		$categoria->municipio_id = 73; 
-		$categoria->parroquia = "Salóm";
+		$categoria->municipalities_id = 73; 
+		$categoria->parishes = "Salóm";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 246; 
-		$categoria->municipio_id = 74; 
-		$categoria->parroquia = "Sifontes";
+		$categoria->municipalities_id = 74; 
+		$categoria->parishes = "Sifontes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 247; 
-		$categoria->municipio_id = 74; 
-		$categoria->parroquia = "Dalla Costa";
+		$categoria->municipalities_id = 74; 
+		$categoria->parishes = "Dalla Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 248; 
-		$categoria->municipio_id = 74; 
-		$categoria->parroquia = "San Isidro";
+		$categoria->municipalities_id = 74; 
+		$categoria->parishes = "San Isidro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 249; 
-		$categoria->municipio_id = 75; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 75; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 250; 
-		$categoria->municipio_id = 75; 
-		$categoria->parroquia = "Aripao";
+		$categoria->municipalities_id = 75; 
+		$categoria->parishes = "Aripao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 251; 
-		$categoria->municipio_id = 75; 
-		$categoria->parroquia = "Guarataro";
+		$categoria->municipalities_id = 75; 
+		$categoria->parishes = "Guarataro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 252; 
-		$categoria->municipio_id = 75; 
-		$categoria->parroquia = "Las Majadas";
+		$categoria->municipalities_id = 75; 
+		$categoria->parishes = "Las Majadas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 253; 
-		$categoria->municipio_id = 75; 
-		$categoria->parroquia = "Moitaco";
+		$categoria->municipalities_id = 75; 
+		$categoria->parishes = "Moitaco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 254; 
-		$categoria->municipio_id = 76; 
-		$categoria->parroquia = "Padre Pedro Chien";
+		$categoria->municipalities_id = 76; 
+		$categoria->parishes = "Padre Pedro Chien";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 255; 
-		$categoria->municipio_id = 76; 
-		$categoria->parroquia = "Río Grande";
+		$categoria->municipalities_id = 76; 
+		$categoria->parishes = "Río Grande";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 256; 
-		$categoria->municipio_id = 77; 
-		$categoria->parroquia = "Bejuma";
+		$categoria->municipalities_id = 77; 
+		$categoria->parishes = "Bejuma";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 257; 
-		$categoria->municipio_id = 77; 
-		$categoria->parroquia = "Canoabo";
+		$categoria->municipalities_id = 77; 
+		$categoria->parishes = "Canoabo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 258; 
-		$categoria->municipio_id = 77; 
-		$categoria->parroquia = "Simón Bolívar";
+		$categoria->municipalities_id = 77; 
+		$categoria->parishes = "Simón Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 259; 
-		$categoria->municipio_id = 78; 
-		$categoria->parroquia = "Güigüe";
+		$categoria->municipalities_id = 78; 
+		$categoria->parishes = "Güigüe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 260; 
-		$categoria->municipio_id = 78; 
-		$categoria->parroquia = "Carabobo";
+		$categoria->municipalities_id = 78; 
+		$categoria->parishes = "Carabobo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 261; 
-		$categoria->municipio_id = 78; 
-		$categoria->parroquia = "Tacarigua";
+		$categoria->municipalities_id = 78; 
+		$categoria->parishes = "Tacarigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 262; 
-		$categoria->municipio_id = 79; 
-		$categoria->parroquia = "Mariara";
+		$categoria->municipalities_id = 79; 
+		$categoria->parishes = "Mariara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 263; 
-		$categoria->municipio_id = 79; 
-		$categoria->parroquia = "Aguas Calientes";
+		$categoria->municipalities_id = 79; 
+		$categoria->parishes = "Aguas Calientes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 264; 
-		$categoria->municipio_id = 80; 
-		$categoria->parroquia = "Models\Ciudad Alianza";
+		$categoria->municipalities_id = 80; 
+		$categoria->parishes = "Models\Ciudad Alianza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 265; 
-		$categoria->municipio_id = 80; 
-		$categoria->parroquia = "Guacara";
+		$categoria->municipalities_id = 80; 
+		$categoria->parishes = "Guacara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 266; 
-		$categoria->municipio_id = 80; 
-		$categoria->parroquia = "Yagua";
+		$categoria->municipalities_id = 80; 
+		$categoria->parishes = "Yagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 267; 
-		$categoria->municipio_id = 81; 
-		$categoria->parroquia = "Morón";
+		$categoria->municipalities_id = 81; 
+		$categoria->parishes = "Morón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 268; 
-		$categoria->municipio_id = 81; 
-		$categoria->parroquia = "Yagua";
+		$categoria->municipalities_id = 81; 
+		$categoria->parishes = "Yagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 269; 
-		$categoria->municipio_id = 82; 
-		$categoria->parroquia = "Tocuyito";
+		$categoria->municipalities_id = 82; 
+		$categoria->parishes = "Tocuyito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 270; 
-		$categoria->municipio_id = 82; 
-		$categoria->parroquia = "Independencia";
+		$categoria->municipalities_id = 82; 
+		$categoria->parishes = "Independencia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 271; 
-		$categoria->municipio_id = 83; 
-		$categoria->parroquia = "Los Guayos";
+		$categoria->municipalities_id = 83; 
+		$categoria->parishes = "Los Guayos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 272; 
-		$categoria->municipio_id = 84; 
-		$categoria->parroquia = "Miranda";
+		$categoria->municipalities_id = 84; 
+		$categoria->parishes = "Miranda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 273; 
-		$categoria->municipio_id = 85; 
-		$categoria->parroquia = "Montalbán";
+		$categoria->municipalities_id = 85; 
+		$categoria->parishes = "Montalbán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 274; 
-		$categoria->municipio_id = 86; 
-		$categoria->parroquia = "Naguanagua";
+		$categoria->municipalities_id = 86; 
+		$categoria->parishes = "Naguanagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 275; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Bartolomé Salóm";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Bartolomé Salóm";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 276; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Democracia";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Democracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 277; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Fraternidad";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Fraternidad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 278; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Goaigoaza";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Goaigoaza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 279; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Juan José Flores";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Juan José Flores";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 280; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Unión";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Unión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 281; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Borburata";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Borburata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 282; 
-		$categoria->municipio_id = 87; 
-		$categoria->parroquia = "Patanemo";
+		$categoria->municipalities_id = 87; 
+		$categoria->parishes = "Patanemo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 283; 
-		$categoria->municipio_id = 88; 
-		$categoria->parroquia = "San Diego";
+		$categoria->municipalities_id = 88; 
+		$categoria->parishes = "San Diego";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 284; 
-		$categoria->municipio_id = 89; 
-		$categoria->parroquia = "San Joaquín";
+		$categoria->municipalities_id = 89; 
+		$categoria->parishes = "San Joaquín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 285; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Candelaria";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Candelaria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 286; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Catedral";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Catedral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 287; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "El Socorro";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "El Socorro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 288; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Miguel Peña";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Miguel Peña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 289; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Rafael Urdaneta";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Rafael Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 290; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "San Blas";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "San Blas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 291; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 292; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Santa Rosa";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Santa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 293; 
-		$categoria->municipio_id = 90; 
-		$categoria->parroquia = "Negro Primero";
+		$categoria->municipalities_id = 90; 
+		$categoria->parishes = "Negro Primero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 294; 
-		$categoria->municipio_id = 91; 
-		$categoria->parroquia = "Cojedes";
+		$categoria->municipalities_id = 91; 
+		$categoria->parishes = "Cojedes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 295; 
-		$categoria->municipio_id = 91; 
-		$categoria->parroquia = "Juan de Mata Suárez";
+		$categoria->municipalities_id = 91; 
+		$categoria->parishes = "Juan de Mata Suárez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 296; 
-		$categoria->municipio_id = 92; 
-		$categoria->parroquia = "Tinaquillo";
+		$categoria->municipalities_id = 92; 
+		$categoria->parishes = "Tinaquillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 297; 
-		$categoria->municipio_id = 93; 
-		$categoria->parroquia = "El Baúl";
+		$categoria->municipalities_id = 93; 
+		$categoria->parishes = "El Baúl";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 298; 
-		$categoria->municipio_id = 93; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 93; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 299; 
-		$categoria->municipio_id = 94; 
-		$categoria->parroquia = "La Aguadita";
+		$categoria->municipalities_id = 94; 
+		$categoria->parishes = "La Aguadita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 300; 
-		$categoria->municipio_id = 94; 
-		$categoria->parroquia = "Macapo";
+		$categoria->municipalities_id = 94; 
+		$categoria->parishes = "Macapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 301; 
-		$categoria->municipio_id = 95; 
-		$categoria->parroquia = "El Pao";
+		$categoria->municipalities_id = 95; 
+		$categoria->parishes = "El Pao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 302; 
-		$categoria->municipio_id = 96; 
-		$categoria->parroquia = "El Amparo";
+		$categoria->municipalities_id = 96; 
+		$categoria->parishes = "El Amparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 303; 
-		$categoria->municipio_id = 96; 
-		$categoria->parroquia = "Libertad de Cojedes";
+		$categoria->municipalities_id = 96; 
+		$categoria->parishes = "Libertad de Cojedes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 304; 
-		$categoria->municipio_id = 97; 
-		$categoria->parroquia = "Rómulo Gallegos";
+		$categoria->municipalities_id = 97; 
+		$categoria->parishes = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 305; 
-		$categoria->municipio_id = 98; 
-		$categoria->parroquia = "San Carlos de Austria";
+		$categoria->municipalities_id = 98; 
+		$categoria->parishes = "San Carlos de Austria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 306; 
-		$categoria->municipio_id = 98; 
-		$categoria->parroquia = "Juan Ángel Bravo";
+		$categoria->municipalities_id = 98; 
+		$categoria->parishes = "Juan Ángel Bravo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 307; 
-		$categoria->municipio_id = 98; 
-		$categoria->parroquia = "Manuel Manrique";
+		$categoria->municipalities_id = 98; 
+		$categoria->parishes = "Manuel Manrique";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 308; 
-		$categoria->municipio_id = 99; 
-		$categoria->parroquia = "General en Jefe José Laurencio Silva";
+		$categoria->municipalities_id = 99; 
+		$categoria->parishes = "General en Jefe José Laurencio Silva";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 309; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Curiapo";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Curiapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 310; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Almirante Luis Brión";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Almirante Luis Brión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 311; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Francisco Aniceto Lugo";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Francisco Aniceto Lugo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 312; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Manuel Renaud";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Manuel Renaud";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 313; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Padre Barral";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Padre Barral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 314; 
-		$categoria->municipio_id = 100; 
-		$categoria->parroquia = "Santos de Abelgas";
+		$categoria->municipalities_id = 100; 
+		$categoria->parishes = "Santos de Abelgas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 315; 
-		$categoria->municipio_id = 101; 
-		$categoria->parroquia = "Imataca";
+		$categoria->municipalities_id = 101; 
+		$categoria->parishes = "Imataca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 316; 
-		$categoria->municipio_id = 101; 
-		$categoria->parroquia = "Cinco de Julio";
+		$categoria->municipalities_id = 101; 
+		$categoria->parishes = "Cinco de Julio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 317; 
-		$categoria->municipio_id = 101; 
-		$categoria->parroquia = "Juan Bautista Arismendi";
+		$categoria->municipalities_id = 101; 
+		$categoria->parishes = "Juan Bautista Arismendi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 318; 
-		$categoria->municipio_id = 101; 
-		$categoria->parroquia = "Manuel Piar";
+		$categoria->municipalities_id = 101; 
+		$categoria->parishes = "Manuel Piar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 319; 
-		$categoria->municipio_id = 101; 
-		$categoria->parroquia = "Rómulo Gallegos";
+		$categoria->municipalities_id = 101; 
+		$categoria->parishes = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 320; 
-		$categoria->municipio_id = 102; 
-		$categoria->parroquia = "Pedernales";
+		$categoria->municipalities_id = 102; 
+		$categoria->parishes = "Pedernales";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 321; 
-		$categoria->municipio_id = 102; 
-		$categoria->parroquia = "Luis Beltrán Prieto Figueroa";
+		$categoria->municipalities_id = 102; 
+		$categoria->parishes = "Luis Beltrán Prieto Figueroa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 322; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "San José (Delta Amacuro)";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "San José (Delta Amacuro)";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 323; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "José Vidal Marcano";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "José Vidal Marcano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 324; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "Juan Millán";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "Juan Millán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 325; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "Leonardo Ruíz Pineda";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "Leonardo Ruíz Pineda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 326; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "Mariscal Antonio José de Sucre";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "Mariscal Antonio José de Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 327; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "Monseñor Argimiro García";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "Monseñor Argimiro García";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 328; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "San Rafael (Delta Amacuro)";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "San Rafael (Delta Amacuro)";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 329; 
-		$categoria->municipio_id = 103; 
-		$categoria->parroquia = "Virgen del Valle";
+		$categoria->municipalities_id = 103; 
+		$categoria->parishes = "Virgen del Valle";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 330; 
-		$categoria->municipio_id = 10; 
-		$categoria->parroquia = "Clarines";
+		$categoria->municipalities_id = 10; 
+		$categoria->parishes = "Clarines";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 331; 
-		$categoria->municipio_id = 10; 
-		$categoria->parroquia = "Guanape";
+		$categoria->municipalities_id = 10; 
+		$categoria->parishes = "Guanape";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 332; 
-		$categoria->municipio_id = 10; 
-		$categoria->parroquia = "Sabana de Uchire";
+		$categoria->municipalities_id = 10; 
+		$categoria->parishes = "Sabana de Uchire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 333; 
-		$categoria->municipio_id = 104; 
-		$categoria->parroquia = "Capadare";
+		$categoria->municipalities_id = 104; 
+		$categoria->parishes = "Capadare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 334; 
-		$categoria->municipio_id = 104; 
-		$categoria->parroquia = "La Pastora";
+		$categoria->municipalities_id = 104; 
+		$categoria->parishes = "La Pastora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 335; 
-		$categoria->municipio_id = 104; 
-		$categoria->parroquia = "Libertador";
+		$categoria->municipalities_id = 104; 
+		$categoria->parishes = "Libertador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 336; 
-		$categoria->municipio_id = 104; 
-		$categoria->parroquia = "San Juan de los Cayos";
+		$categoria->municipalities_id = 104; 
+		$categoria->parishes = "San Juan de los Cayos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 337; 
-		$categoria->municipio_id = 105; 
-		$categoria->parroquia = "Aracua";
+		$categoria->municipalities_id = 105; 
+		$categoria->parishes = "Aracua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 338; 
-		$categoria->municipio_id = 105; 
-		$categoria->parroquia = "La Peña";
+		$categoria->municipalities_id = 105; 
+		$categoria->parishes = "La Peña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 339; 
-		$categoria->municipio_id = 105; 
-		$categoria->parroquia = "San Luis";
+		$categoria->municipalities_id = 105; 
+		$categoria->parishes = "San Luis";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 340; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Bariro";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Bariro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 341; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Borojó";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Borojó";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 342; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Capatárida";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Capatárida";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 343; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Guajiro";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Guajiro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 344; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Seque";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Seque";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 345; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Zazárida";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Zazárida";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 346; 
-		$categoria->municipio_id = 106; 
-		$categoria->parroquia = "Valle de Eroa";
+		$categoria->municipalities_id = 106; 
+		$categoria->parishes = "Valle de Eroa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 347; 
-		$categoria->municipio_id = 107; 
-		$categoria->parroquia = "Cacique Manaure";
+		$categoria->municipalities_id = 107; 
+		$categoria->parishes = "Cacique Manaure";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 348; 
-		$categoria->municipio_id = 108; 
-		$categoria->parroquia = "Norte";
+		$categoria->municipalities_id = 108; 
+		$categoria->parishes = "Norte";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 349; 
-		$categoria->municipio_id = 108; 
-		$categoria->parroquia = "Carirubana";
+		$categoria->municipalities_id = 108; 
+		$categoria->parishes = "Carirubana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 350; 
-		$categoria->municipio_id = 108; 
-		$categoria->parroquia = "Santa Ana";
+		$categoria->municipalities_id = 108; 
+		$categoria->parishes = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 351; 
-		$categoria->municipio_id = 108; 
-		$categoria->parroquia = "Urbana Punta Cardón";
+		$categoria->municipalities_id = 108; 
+		$categoria->parishes = "Urbana Punta Cardón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 352; 
-		$categoria->municipio_id = 109; 
-		$categoria->parroquia = "La Vela de Coro";
+		$categoria->municipalities_id = 109; 
+		$categoria->parishes = "La Vela de Coro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 353; 
-		$categoria->municipio_id = 109; 
-		$categoria->parroquia = "Acurigua";
+		$categoria->municipalities_id = 109; 
+		$categoria->parishes = "Acurigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 354; 
-		$categoria->municipio_id = 109; 
-		$categoria->parroquia = "Guaibacoa";
+		$categoria->municipalities_id = 109; 
+		$categoria->parishes = "Guaibacoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 355; 
-		$categoria->municipio_id = 109; 
-		$categoria->parroquia = "Las Calderas";
+		$categoria->municipalities_id = 109; 
+		$categoria->parishes = "Las Calderas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 356; 
-		$categoria->municipio_id = 109; 
-		$categoria->parroquia = "Macoruca";
+		$categoria->municipalities_id = 109; 
+		$categoria->parishes = "Macoruca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 357; 
-		$categoria->municipio_id = 110; 
-		$categoria->parroquia = "Dabajuro";
+		$categoria->municipalities_id = 110; 
+		$categoria->parishes = "Dabajuro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 358; 
-		$categoria->municipio_id = 111; 
-		$categoria->parroquia = "Agua Clara";
+		$categoria->municipalities_id = 111; 
+		$categoria->parishes = "Agua Clara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 359; 
-		$categoria->municipio_id = 111; 
-		$categoria->parroquia = "Avaria";
+		$categoria->municipalities_id = 111; 
+		$categoria->parishes = "Avaria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 360; 
-		$categoria->municipio_id = 111; 
-		$categoria->parroquia = "Pedregal";
+		$categoria->municipalities_id = 111; 
+		$categoria->parishes = "Pedregal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 361; 
-		$categoria->municipio_id = 111; 
-		$categoria->parroquia = "Piedra Grande";
+		$categoria->municipalities_id = 111; 
+		$categoria->parishes = "Piedra Grande";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 362; 
-		$categoria->municipio_id = 111; 
-		$categoria->parroquia = "Purureche";
+		$categoria->municipalities_id = 111; 
+		$categoria->parishes = "Purureche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 363; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Adaure";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Adaure";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 364; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Adícora";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Adícora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 365; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Baraived";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Baraived";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 366; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Buena Vista";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Buena Vista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 367; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Jadacaquiva";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Jadacaquiva";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 368; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "El Vínculo";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "El Vínculo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 369; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "El Hato";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "El Hato";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 370; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Moruy";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Moruy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 371; 
-		$categoria->municipio_id = 112; 
-		$categoria->parroquia = "Pueblo Nuevo";
+		$categoria->municipalities_id = 112; 
+		$categoria->parishes = "Pueblo Nuevo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 372; 
-		$categoria->municipio_id = 113; 
-		$categoria->parroquia = "Agua Larga";
+		$categoria->municipalities_id = 113; 
+		$categoria->parishes = "Agua Larga";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 373; 
-		$categoria->municipio_id = 113; 
-		$categoria->parroquia = "El Paují";
+		$categoria->municipalities_id = 113; 
+		$categoria->parishes = "El Paují";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 374; 
-		$categoria->municipio_id = 113; 
-		$categoria->parroquia = "Independencia";
+		$categoria->municipalities_id = 113; 
+		$categoria->parishes = "Independencia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 375; 
-		$categoria->municipio_id = 113; 
-		$categoria->parroquia = "Mapararí";
+		$categoria->municipalities_id = 113; 
+		$categoria->parishes = "Mapararí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 376; 
-		$categoria->municipio_id = 114; 
-		$categoria->parroquia = "Agua Linda";
+		$categoria->municipalities_id = 114; 
+		$categoria->parishes = "Agua Linda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 377; 
-		$categoria->municipio_id = 114; 
-		$categoria->parroquia = "Araurima";
+		$categoria->municipalities_id = 114; 
+		$categoria->parishes = "Araurima";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 378; 
-		$categoria->municipio_id = 114; 
-		$categoria->parroquia = "Jacura";
+		$categoria->municipalities_id = 114; 
+		$categoria->parishes = "Jacura";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 379; 
-		$categoria->municipio_id = 115; 
-		$categoria->parroquia = "Tucacas";
+		$categoria->municipalities_id = 115; 
+		$categoria->parishes = "Tucacas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 380; 
-		$categoria->municipio_id = 115; 
-		$categoria->parroquia = "Boca de Aroa";
+		$categoria->municipalities_id = 115; 
+		$categoria->parishes = "Boca de Aroa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 381; 
-		$categoria->municipio_id = 116; 
-		$categoria->parroquia = "Los Taques";
+		$categoria->municipalities_id = 116; 
+		$categoria->parishes = "Los Taques";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 382; 
-		$categoria->municipio_id = 116; 
-		$categoria->parroquia = "Judibana";
+		$categoria->municipalities_id = 116; 
+		$categoria->parishes = "Judibana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 383; 
-		$categoria->municipio_id = 117; 
-		$categoria->parroquia = "Mene de Mauroa";
+		$categoria->municipalities_id = 117; 
+		$categoria->parishes = "Mene de Mauroa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 384; 
-		$categoria->municipio_id = 117; 
-		$categoria->parroquia = "San Félix";
+		$categoria->municipalities_id = 117; 
+		$categoria->parishes = "San Félix";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 385; 
-		$categoria->municipio_id = 117; 
-		$categoria->parroquia = "Casigua";
+		$categoria->municipalities_id = 117; 
+		$categoria->parishes = "Casigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 386; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "Guzmán Guillermo";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "Guzmán Guillermo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 387; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "Mitare";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "Mitare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 388; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "Río Seco";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "Río Seco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 389; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "Sabaneta";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "Sabaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 390; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "San Antonio";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "San Antonio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 391; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "San Gabriel";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "San Gabriel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 392; 
-		$categoria->municipio_id = 118; 
-		$categoria->parroquia = "Santa Ana";
+		$categoria->municipalities_id = 118; 
+		$categoria->parishes = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 393; 
-		$categoria->municipio_id = 119; 
-		$categoria->parroquia = "Boca del Tocuyo";
+		$categoria->municipalities_id = 119; 
+		$categoria->parishes = "Boca del Tocuyo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 394; 
-		$categoria->municipio_id = 119; 
-		$categoria->parroquia = "Chichiriviche";
+		$categoria->municipalities_id = 119; 
+		$categoria->parishes = "Chichiriviche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 395; 
-		$categoria->municipio_id = 119; 
-		$categoria->parroquia = "Tocuyo de la Costa";
+		$categoria->municipalities_id = 119; 
+		$categoria->parishes = "Tocuyo de la Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 396; 
-		$categoria->municipio_id = 120; 
-		$categoria->parroquia = "Palmasola";
+		$categoria->municipalities_id = 120; 
+		$categoria->parishes = "Palmasola";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 397; 
-		$categoria->municipio_id = 121; 
-		$categoria->parroquia = "Cabure";
+		$categoria->municipalities_id = 121; 
+		$categoria->parishes = "Cabure";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 398; 
-		$categoria->municipio_id = 121; 
-		$categoria->parroquia = "Colina";
+		$categoria->municipalities_id = 121; 
+		$categoria->parishes = "Colina";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 399; 
-		$categoria->municipio_id = 121; 
-		$categoria->parroquia = "Curimagua";
+		$categoria->municipalities_id = 121; 
+		$categoria->parishes = "Curimagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 400; 
-		$categoria->municipio_id = 122; 
-		$categoria->parroquia = "San José de la Costa";
+		$categoria->municipalities_id = 122; 
+		$categoria->parishes = "San José de la Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 401; 
-		$categoria->municipio_id = 122; 
-		$categoria->parroquia = "Píritu";
+		$categoria->municipalities_id = 122; 
+		$categoria->parishes = "Píritu";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 402; 
-		$categoria->municipio_id = 123; 
-		$categoria->parroquia = "San Francisco";
+		$categoria->municipalities_id = 123; 
+		$categoria->parishes = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 403; 
-		$categoria->municipio_id = 124; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 124; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 404; 
-		$categoria->municipio_id = 124; 
-		$categoria->parroquia = "Pecaya";
+		$categoria->municipalities_id = 124; 
+		$categoria->parishes = "Pecaya";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 405; 
-		$categoria->municipio_id = 125; 
-		$categoria->parroquia = "Tocópero";
+		$categoria->municipalities_id = 125; 
+		$categoria->parishes = "Tocópero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 406; 
-		$categoria->municipio_id = 126; 
-		$categoria->parroquia = "El Charal";
+		$categoria->municipalities_id = 126; 
+		$categoria->parishes = "El Charal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 407; 
-		$categoria->municipio_id = 126; 
-		$categoria->parroquia = "Las Vegas del Tuy";
+		$categoria->municipalities_id = 126; 
+		$categoria->parishes = "Las Vegas del Tuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 408; 
-		$categoria->municipio_id = 126; 
-		$categoria->parroquia = "Santa Cruz de Bucaral";
+		$categoria->municipalities_id = 126; 
+		$categoria->parishes = "Santa Cruz de Bucaral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 409; 
-		$categoria->municipio_id = 127; 
-		$categoria->parroquia = "Bruzual";
+		$categoria->municipalities_id = 127; 
+		$categoria->parishes = "Bruzual";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 410; 
-		$categoria->municipio_id = 127; 
-		$categoria->parroquia = "Urumaco";
+		$categoria->municipalities_id = 127; 
+		$categoria->parishes = "Urumaco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 411; 
-		$categoria->municipio_id = 128; 
-		$categoria->parroquia = "Puerto Cumarebo";
+		$categoria->municipalities_id = 128; 
+		$categoria->parishes = "Puerto Cumarebo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 412; 
-		$categoria->municipio_id = 128; 
-		$categoria->parroquia = "La Ciénaga";
+		$categoria->municipalities_id = 128; 
+		$categoria->parishes = "La Ciénaga";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 413; 
-		$categoria->municipio_id = 128; 
-		$categoria->parroquia = "La Soledad";
+		$categoria->municipalities_id = 128; 
+		$categoria->parishes = "La Soledad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 414; 
-		$categoria->municipio_id = 128; 
-		$categoria->parroquia = "Pueblo Cumarebo";
+		$categoria->municipalities_id = 128; 
+		$categoria->parishes = "Pueblo Cumarebo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 415; 
-		$categoria->municipio_id = 128; 
-		$categoria->parroquia = "Zazárida";
+		$categoria->municipalities_id = 128; 
+		$categoria->parishes = "Zazárida";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 416; 
-		$categoria->municipio_id = 113; 
-		$categoria->parroquia = "Churuguara";
+		$categoria->municipalities_id = 113; 
+		$categoria->parishes = "Churuguara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 417; 
-		$categoria->municipio_id = 129; 
-		$categoria->parroquia = "Camaguán";
+		$categoria->municipalities_id = 129; 
+		$categoria->parishes = "Camaguán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 418; 
-		$categoria->municipio_id = 129; 
-		$categoria->parroquia = "Puerto Miranda";
+		$categoria->municipalities_id = 129; 
+		$categoria->parishes = "Puerto Miranda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 419; 
-		$categoria->municipio_id = 129; 
-		$categoria->parroquia = "Uverito";
+		$categoria->municipalities_id = 129; 
+		$categoria->parishes = "Uverito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 420; 
-		$categoria->municipio_id = 130; 
-		$categoria->parroquia = "Chaguaramas";
+		$categoria->municipalities_id = 130; 
+		$categoria->parishes = "Chaguaramas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 421; 
-		$categoria->municipio_id = 131; 
-		$categoria->parroquia = "El Socorro";
+		$categoria->municipalities_id = 131; 
+		$categoria->parishes = "El Socorro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 422; 
-		$categoria->municipio_id = 132; 
-		$categoria->parroquia = "Tucupido";
+		$categoria->municipalities_id = 132; 
+		$categoria->parishes = "Tucupido";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 423; 
-		$categoria->municipio_id = 132; 
-		$categoria->parroquia = "San Rafael de Laya";
+		$categoria->municipalities_id = 132; 
+		$categoria->parishes = "San Rafael de Laya";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 424; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "Altagracia de Orituco";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "Altagracia de Orituco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 425; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "San Rafael de Orituco";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "San Rafael de Orituco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 426; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "San Francisco Javier de Lezama";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "San Francisco Javier de Lezama";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 427; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "Paso Real de Macaira";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "Paso Real de Macaira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 428; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "Carlos Soublette";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "Carlos Soublette";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 429; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "San Francisco de Macaira";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "San Francisco de Macaira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 430; 
-		$categoria->municipio_id = 133; 
-		$categoria->parroquia = "Libertad de Orituco";
+		$categoria->municipalities_id = 133; 
+		$categoria->parishes = "Libertad de Orituco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 431; 
-		$categoria->municipio_id = 134; 
-		$categoria->parroquia = "Cantaclaro";
+		$categoria->municipalities_id = 134; 
+		$categoria->parishes = "Cantaclaro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 432; 
-		$categoria->municipio_id = 134; 
-		$categoria->parroquia = "San Juan de los Morros";
+		$categoria->municipalities_id = 134; 
+		$categoria->parishes = "San Juan de los Morros";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 433; 
-		$categoria->municipio_id = 134; 
-		$categoria->parroquia = "Parapara";
+		$categoria->municipalities_id = 134; 
+		$categoria->parishes = "Parapara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 434; 
-		$categoria->municipio_id = 135; 
-		$categoria->parroquia = "El Sombrero";
+		$categoria->municipalities_id = 135; 
+		$categoria->parishes = "El Sombrero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 435; 
-		$categoria->municipio_id = 135; 
-		$categoria->parroquia = "Sosa";
+		$categoria->municipalities_id = 135; 
+		$categoria->parishes = "Sosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 436; 
-		$categoria->municipio_id = 136; 
-		$categoria->parroquia = "Las Mercedes";
+		$categoria->municipalities_id = 136; 
+		$categoria->parishes = "Las Mercedes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 437; 
-		$categoria->municipio_id = 136; 
-		$categoria->parroquia = "Cabruta";
+		$categoria->municipalities_id = 136; 
+		$categoria->parishes = "Cabruta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 438; 
-		$categoria->municipio_id = 136; 
-		$categoria->parroquia = "Santa Rita de Manapire";
+		$categoria->municipalities_id = 136; 
+		$categoria->parishes = "Santa Rita de Manapire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 439; 
-		$categoria->municipio_id = 137; 
-		$categoria->parroquia = "Valle de la Pascua";
+		$categoria->municipalities_id = 137; 
+		$categoria->parishes = "Valle de la Pascua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 440; 
-		$categoria->municipio_id = 137; 
-		$categoria->parroquia = "Espino";
+		$categoria->municipalities_id = 137; 
+		$categoria->parishes = "Espino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 441; 
-		$categoria->municipio_id = 138; 
-		$categoria->parroquia = "San José de Unare";
+		$categoria->municipalities_id = 138; 
+		$categoria->parishes = "San José de Unare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 442; 
-		$categoria->municipio_id = 138; 
-		$categoria->parroquia = "Zaraza";
+		$categoria->municipalities_id = 138; 
+		$categoria->parishes = "Zaraza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 443; 
-		$categoria->municipio_id = 139; 
-		$categoria->parroquia = "San José de Tiznados";
+		$categoria->municipalities_id = 139; 
+		$categoria->parishes = "San José de Tiznados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 444; 
-		$categoria->municipio_id = 139; 
-		$categoria->parroquia = "San Francisco de Tiznados";
+		$categoria->municipalities_id = 139; 
+		$categoria->parishes = "San Francisco de Tiznados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 445; 
-		$categoria->municipio_id = 139; 
-		$categoria->parroquia = "San Lorenzo de Tiznados";
+		$categoria->municipalities_id = 139; 
+		$categoria->parishes = "San Lorenzo de Tiznados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 446; 
-		$categoria->municipio_id = 139; 
-		$categoria->parroquia = "Ortiz";
+		$categoria->municipalities_id = 139; 
+		$categoria->parishes = "Ortiz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 447; 
-		$categoria->municipio_id = 140; 
-		$categoria->parroquia = "Guayabal";
+		$categoria->municipalities_id = 140; 
+		$categoria->parishes = "Guayabal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 448; 
-		$categoria->municipio_id = 140; 
-		$categoria->parroquia = "Cazorla";
+		$categoria->municipalities_id = 140; 
+		$categoria->parishes = "Cazorla";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 449; 
-		$categoria->municipio_id = 141; 
-		$categoria->parroquia = "San José de Guaribe";
+		$categoria->municipalities_id = 141; 
+		$categoria->parishes = "San José de Guaribe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 450; 
-		$categoria->municipio_id = 141; 
-		$categoria->parroquia = "Uveral";
+		$categoria->municipalities_id = 141; 
+		$categoria->parishes = "Uveral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 451; 
-		$categoria->municipio_id = 142; 
-		$categoria->parroquia = "Santa María de Ipire";
+		$categoria->municipalities_id = 142; 
+		$categoria->parishes = "Santa María de Ipire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 452; 
-		$categoria->municipio_id = 142; 
-		$categoria->parroquia = "Altamira";
+		$categoria->municipalities_id = 142; 
+		$categoria->parishes = "Altamira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 453; 
-		$categoria->municipio_id = 143; 
-		$categoria->parroquia = "El Calvario";
+		$categoria->municipalities_id = 143; 
+		$categoria->parishes = "El Calvario";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 454; 
-		$categoria->municipio_id = 143; 
-		$categoria->parroquia = "El Rastro";
+		$categoria->municipalities_id = 143; 
+		$categoria->parishes = "El Rastro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 455; 
-		$categoria->municipio_id = 143; 
-		$categoria->parroquia = "Guardatinajas";
+		$categoria->municipalities_id = 143; 
+		$categoria->parishes = "Guardatinajas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 456; 
-		$categoria->municipio_id = 143; 
-		$categoria->parroquia = "Capital Urbana Calabozo";
+		$categoria->municipalities_id = 143; 
+		$categoria->parishes = "Capital Urbana Calabozo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 457; 
-		$categoria->municipio_id = 144; 
-		$categoria->parroquia = "Quebrada Honda de Guache";
+		$categoria->municipalities_id = 144; 
+		$categoria->parishes = "Quebrada Honda de Guache";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 458; 
-		$categoria->municipio_id = 144; 
-		$categoria->parroquia = "Pío Tamayo";
+		$categoria->municipalities_id = 144; 
+		$categoria->parishes = "Pío Tamayo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 459; 
-		$categoria->municipio_id = 144; 
-		$categoria->parroquia = "Yacambú";
+		$categoria->municipalities_id = 144; 
+		$categoria->parishes = "Yacambú";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 460; 
-		$categoria->municipio_id = 145; 
-		$categoria->parroquia = "Fréitez";
+		$categoria->municipalities_id = 145; 
+		$categoria->parishes = "Fréitez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 461; 
-		$categoria->municipio_id = 145; 
-		$categoria->parroquia = "José María Blanco";
+		$categoria->municipalities_id = 145; 
+		$categoria->parishes = "José María Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 462; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Catedral";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Catedral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 463; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Concepción";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 464; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "El Cují";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "El Cují";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 465; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Juan de Villegas";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Juan de Villegas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 466; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Santa Rosa";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Santa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 467; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Tamaca";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Tamaca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 468; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Unión";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Unión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 469; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Aguedo Felipe Alvarado";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Aguedo Felipe Alvarado";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 470; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Buena Vista";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Buena Vista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 471; 
-		$categoria->municipio_id = 146; 
-		$categoria->parroquia = "Juárez";
+		$categoria->municipalities_id = 146; 
+		$categoria->parishes = "Juárez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 472; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Juan Bautista Rodríguez";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Juan Bautista Rodríguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 473; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Cuara";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Cuara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 474; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Diego de Lozada";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Diego de Lozada";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 475; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Paraíso de San José";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Paraíso de San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 476; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "San Miguel";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "San Miguel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 477; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Tintorero";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Tintorero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 478; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "José Bernardo Dorante";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "José Bernardo Dorante";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 479; 
-		$categoria->municipio_id = 147; 
-		$categoria->parroquia = "Coronel Mariano Peraza ";
+		$categoria->municipalities_id = 147; 
+		$categoria->parishes = "Coronel Mariano Peraza ";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 480; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 481; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Anzoátegui";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Anzoátegui";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 482; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Guarico";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Guarico";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 483; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Hilario Luna y Luna";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Hilario Luna y Luna";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 484; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Humocaro Alto";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Humocaro Alto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 485; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Humocaro Bajo";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Humocaro Bajo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 486; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "La Candelaria";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "La Candelaria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 487; 
-		$categoria->municipio_id = 148; 
-		$categoria->parroquia = "Morán";
+		$categoria->municipalities_id = 148; 
+		$categoria->parishes = "Morán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 488; 
-		$categoria->municipio_id = 149; 
-		$categoria->parroquia = "Cabudare";
+		$categoria->municipalities_id = 149; 
+		$categoria->parishes = "Cabudare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 489; 
-		$categoria->municipio_id = 149; 
-		$categoria->parroquia = "José Gregorio Bastidas";
+		$categoria->municipalities_id = 149; 
+		$categoria->parishes = "José Gregorio Bastidas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 490; 
-		$categoria->municipio_id = 149; 
-		$categoria->parroquia = "Agua Viva";
+		$categoria->municipalities_id = 149; 
+		$categoria->parishes = "Agua Viva";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 491; 
-		$categoria->municipio_id = 150; 
-		$categoria->parroquia = "Sarare";
+		$categoria->municipalities_id = 150; 
+		$categoria->parishes = "Sarare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 492; 
-		$categoria->municipio_id = 150; 
-		$categoria->parroquia = "Buría";
+		$categoria->municipalities_id = 150; 
+		$categoria->parishes = "Buría";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 493; 
-		$categoria->municipio_id = 150; 
-		$categoria->parroquia = "Gustavo Vegas León";
+		$categoria->municipalities_id = 150; 
+		$categoria->parishes = "Gustavo Vegas León";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 494; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Trinidad Samuel";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Trinidad Samuel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 495; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Antonio Díaz";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Antonio Díaz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 496; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Camacaro";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Camacaro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 497; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Castañeda";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Castañeda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 498; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Cecilio Zubillaga";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Cecilio Zubillaga";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 499; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Chiquinquirá";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Chiquinquirá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 500; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "El Blanco";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "El Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 501; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Espinoza de los Monteros";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Espinoza de los Monteros";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 502; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Lara";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Lara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 503; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Las Mercedes";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Las Mercedes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 504; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Manuel Morillo";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Manuel Morillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 505; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Montaña Verde";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Montaña Verde";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 506; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Montes de Oca";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Montes de Oca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 507; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Torres";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Torres";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 508; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Heriberto Arroyo";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Heriberto Arroyo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 509; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Reyes Vargas";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Reyes Vargas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 510; 
-		$categoria->municipio_id = 151; 
-		$categoria->parroquia = "Altagracia";
+		$categoria->municipalities_id = 151; 
+		$categoria->parishes = "Altagracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 511; 
-		$categoria->municipio_id = 152; 
-		$categoria->parroquia = "Siquisique";
+		$categoria->municipalities_id = 152; 
+		$categoria->parishes = "Siquisique";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 512; 
-		$categoria->municipio_id = 152; 
-		$categoria->parroquia = "Moroturo";
+		$categoria->municipalities_id = 152; 
+		$categoria->parishes = "Moroturo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 513; 
-		$categoria->municipio_id = 152; 
-		$categoria->parroquia = "San Miguel";
+		$categoria->municipalities_id = 152; 
+		$categoria->parishes = "San Miguel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 514; 
-		$categoria->municipio_id = 152; 
-		$categoria->parroquia = "Xaguas";
+		$categoria->municipalities_id = 152; 
+		$categoria->parishes = "Xaguas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 515; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Presidente Betancourt";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Presidente Betancourt";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 516; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Presidente Páez";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Presidente Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 517; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Presidente Rómulo Gallegos";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Presidente Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 518; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Gabriel Picón González";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Gabriel Picón González";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 519; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Héctor Amable Mora";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Héctor Amable Mora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 520; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "José Nucete Sardi";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "José Nucete Sardi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 521; 
-		$categoria->municipio_id = 179; 
-		$categoria->parroquia = "Pulido Méndez";
+		$categoria->municipalities_id = 179; 
+		$categoria->parishes = "Pulido Méndez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 522; 
-		$categoria->municipio_id = 180; 
-		$categoria->parroquia = "La Azulita";
+		$categoria->municipalities_id = 180; 
+		$categoria->parishes = "La Azulita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 523; 
-		$categoria->municipio_id = 181; 
-		$categoria->parroquia = "Santa Cruz de Mora";
+		$categoria->municipalities_id = 181; 
+		$categoria->parishes = "Santa Cruz de Mora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 524; 
-		$categoria->municipio_id = 181; 
-		$categoria->parroquia = "Mesa Bolívar";
+		$categoria->municipalities_id = 181; 
+		$categoria->parishes = "Mesa Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 525; 
-		$categoria->municipio_id = 181; 
-		$categoria->parroquia = "Mesa de Las Palmas";
+		$categoria->municipalities_id = 181; 
+		$categoria->parishes = "Mesa de Las Palmas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 526; 
-		$categoria->municipio_id = 182; 
-		$categoria->parroquia = "Aricagua";
+		$categoria->municipalities_id = 182; 
+		$categoria->parishes = "Aricagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 527; 
-		$categoria->municipio_id = 182; 
-		$categoria->parroquia = "San Antonio";
+		$categoria->municipalities_id = 182; 
+		$categoria->parishes = "San Antonio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 528; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Canagua";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Canagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 529; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Capurí";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Capurí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 530; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Chacantá";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Chacantá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 531; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "El Molino";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "El Molino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 532; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Guaimaral";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Guaimaral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 533; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Mucutuy";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Mucutuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 534; 
-		$categoria->municipio_id = 183; 
-		$categoria->parroquia = "Mucuchachí";
+		$categoria->municipalities_id = 183; 
+		$categoria->parishes = "Mucuchachí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 535; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "Fernández Peña";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "Fernández Peña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 536; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "Matriz";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "Matriz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 537; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "Montalbán";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "Montalbán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 538; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "Acequias";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "Acequias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 539; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "Jají";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "Jají";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 540; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "La Mesa";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "La Mesa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 541; 
-		$categoria->municipio_id = 184; 
-		$categoria->parroquia = "San José del Sur";
+		$categoria->municipalities_id = 184; 
+		$categoria->parishes = "San José del Sur";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 542; 
-		$categoria->municipio_id = 185; 
-		$categoria->parroquia = "Tucaní";
+		$categoria->municipalities_id = 185; 
+		$categoria->parishes = "Tucaní";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 543; 
-		$categoria->municipio_id = 185; 
-		$categoria->parroquia = "Florencio Ramírez";
+		$categoria->municipalities_id = 185; 
+		$categoria->parishes = "Florencio Ramírez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 544; 
-		$categoria->municipio_id = 186; 
-		$categoria->parroquia = "Santo Domingo";
+		$categoria->municipalities_id = 186; 
+		$categoria->parishes = "Santo Domingo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 545; 
-		$categoria->municipio_id = 186; 
-		$categoria->parroquia = "Las Piedras";
+		$categoria->municipalities_id = 186; 
+		$categoria->parishes = "Las Piedras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 546; 
-		$categoria->municipio_id = 187; 
-		$categoria->parroquia = "Guaraque";
+		$categoria->municipalities_id = 187; 
+		$categoria->parishes = "Guaraque";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 547; 
-		$categoria->municipio_id = 187; 
-		$categoria->parroquia = "Mesa de Quintero";
+		$categoria->municipalities_id = 187; 
+		$categoria->parishes = "Mesa de Quintero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 548; 
-		$categoria->municipio_id = 187; 
-		$categoria->parroquia = "Río Negro";
+		$categoria->municipalities_id = 187; 
+		$categoria->parishes = "Río Negro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 549; 
-		$categoria->municipio_id = 188; 
-		$categoria->parroquia = "Arapuey";
+		$categoria->municipalities_id = 188; 
+		$categoria->parishes = "Arapuey";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 550; 
-		$categoria->municipio_id = 188; 
-		$categoria->parroquia = "Palmira";
+		$categoria->municipalities_id = 188; 
+		$categoria->parishes = "Palmira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 551; 
-		$categoria->municipio_id = 189; 
-		$categoria->parroquia = "San Cristóbal de Torondoy";
+		$categoria->municipalities_id = 189; 
+		$categoria->parishes = "San Cristóbal de Torondoy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 552; 
-		$categoria->municipio_id = 189; 
-		$categoria->parroquia = "Torondoy";
+		$categoria->municipalities_id = 189; 
+		$categoria->parishes = "Torondoy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 553; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Antonio Spinetti Dini";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Antonio Spinetti Dini";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 554; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Arias";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Arias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 555; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Caracciolo Parra Pérez";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Caracciolo Parra Pérez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 556; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Domingo Peña";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Domingo Peña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 557; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "El Llano";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "El Llano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 558; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Gonzalo Picón Febres";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Gonzalo Picón Febres";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 559; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Jacinto Plaza";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Jacinto Plaza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 560; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Juan Rodríguez Suárez";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Juan Rodríguez Suárez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 561; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Lasso de la Vega";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Lasso de la Vega";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 562; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Mariano Picón Salas";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Mariano Picón Salas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 563; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Milla";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Milla";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 564; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Osuna Rodríguez";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Osuna Rodríguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 565; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Sagrario";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Sagrario";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 566; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "El Morro";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "El Morro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 567; 
-		$categoria->municipio_id = 190; 
-		$categoria->parroquia = "Los Nevados";
+		$categoria->municipalities_id = 190; 
+		$categoria->parishes = "Los Nevados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 568; 
-		$categoria->municipio_id = 191; 
-		$categoria->parroquia = "Andrés Eloy Blanco";
+		$categoria->municipalities_id = 191; 
+		$categoria->parishes = "Andrés Eloy Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 569; 
-		$categoria->municipio_id = 191; 
-		$categoria->parroquia = "La Venta";
+		$categoria->municipalities_id = 191; 
+		$categoria->parishes = "La Venta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 570; 
-		$categoria->municipio_id = 191; 
-		$categoria->parroquia = "Piñango";
+		$categoria->municipalities_id = 191; 
+		$categoria->parishes = "Piñango";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 571; 
-		$categoria->municipio_id = 191; 
-		$categoria->parroquia = "Timotes";
+		$categoria->municipalities_id = 191; 
+		$categoria->parishes = "Timotes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 572; 
-		$categoria->municipio_id = 192; 
-		$categoria->parroquia = "Eloy Paredes";
+		$categoria->municipalities_id = 192; 
+		$categoria->parishes = "Eloy Paredes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 573; 
-		$categoria->municipio_id = 192; 
-		$categoria->parroquia = "San Rafael de Alcázar";
+		$categoria->municipalities_id = 192; 
+		$categoria->parishes = "San Rafael de Alcázar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 574; 
-		$categoria->municipio_id = 192; 
-		$categoria->parroquia = "Santa Elena de Arenales";
+		$categoria->municipalities_id = 192; 
+		$categoria->parishes = "Santa Elena de Arenales";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 575; 
-		$categoria->municipio_id = 193; 
-		$categoria->parroquia = "Santa María de Caparo";
+		$categoria->municipalities_id = 193; 
+		$categoria->parishes = "Santa María de Caparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 576; 
-		$categoria->municipio_id = 194; 
-		$categoria->parroquia = "Pueblo Llano";
+		$categoria->municipalities_id = 194; 
+		$categoria->parishes = "Pueblo Llano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 577; 
-		$categoria->municipio_id = 195; 
-		$categoria->parroquia = "Cacute";
+		$categoria->municipalities_id = 195; 
+		$categoria->parishes = "Cacute";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 578; 
-		$categoria->municipio_id = 195; 
-		$categoria->parroquia = "La Toma";
+		$categoria->municipalities_id = 195; 
+		$categoria->parishes = "La Toma";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 579; 
-		$categoria->municipio_id = 195; 
-		$categoria->parroquia = "Mucuchíes";
+		$categoria->municipalities_id = 195; 
+		$categoria->parishes = "Mucuchíes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 580; 
-		$categoria->municipio_id = 195; 
-		$categoria->parroquia = "Mucurubá";
+		$categoria->municipalities_id = 195; 
+		$categoria->parishes = "Mucurubá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 581; 
-		$categoria->municipio_id = 195; 
-		$categoria->parroquia = "San Rafael";
+		$categoria->municipalities_id = 195; 
+		$categoria->parishes = "San Rafael";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 582; 
-		$categoria->municipio_id = 196; 
-		$categoria->parroquia = "Gerónimo Maldonado";
+		$categoria->municipalities_id = 196; 
+		$categoria->parishes = "Gerónimo Maldonado";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 583; 
-		$categoria->municipio_id = 196; 
-		$categoria->parroquia = "Bailadores";
+		$categoria->municipalities_id = 196; 
+		$categoria->parishes = "Bailadores";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 584; 
-		$categoria->municipio_id = 197; 
-		$categoria->parroquia = "Tabay";
+		$categoria->municipalities_id = 197; 
+		$categoria->parishes = "Tabay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 585; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "Chiguará";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "Chiguará";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 586; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "Estánquez";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "Estánquez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 587; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "Lagunillas";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "Lagunillas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 588; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "La Trampa";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "La Trampa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 589; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "Pueblo Nuevo del Sur";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "Pueblo Nuevo del Sur";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 590; 
-		$categoria->municipio_id = 198; 
-		$categoria->parroquia = "San Juan";
+		$categoria->municipalities_id = 198; 
+		$categoria->parishes = "San Juan";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 591; 
-		$categoria->municipio_id = 199; 
-		$categoria->parroquia = "El Amparo";
+		$categoria->municipalities_id = 199; 
+		$categoria->parishes = "El Amparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 592; 
-		$categoria->municipio_id = 199; 
-		$categoria->parroquia = "El Llano";
+		$categoria->municipalities_id = 199; 
+		$categoria->parishes = "El Llano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 593; 
-		$categoria->municipio_id = 199; 
-		$categoria->parroquia = "San Francisco";
+		$categoria->municipalities_id = 199; 
+		$categoria->parishes = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 594; 
-		$categoria->municipio_id = 199; 
-		$categoria->parroquia = "Tovar";
+		$categoria->municipalities_id = 199; 
+		$categoria->parishes = "Tovar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 595; 
-		$categoria->municipio_id = 200; 
-		$categoria->parroquia = "Independencia";
+		$categoria->municipalities_id = 200; 
+		$categoria->parishes = "Independencia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 596; 
-		$categoria->municipio_id = 200; 
-		$categoria->parroquia = "María de la Concepción Palacios Blanco";
+		$categoria->municipalities_id = 200; 
+		$categoria->parishes = "María de la Concepción Palacios Blanco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 597; 
-		$categoria->municipio_id = 200; 
-		$categoria->parroquia = "Nueva Bolivia";
+		$categoria->municipalities_id = 200; 
+		$categoria->parishes = "Nueva Bolivia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 598; 
-		$categoria->municipio_id = 200; 
-		$categoria->parroquia = "Santa Apolonia";
+		$categoria->municipalities_id = 200; 
+		$categoria->parishes = "Santa Apolonia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 599; 
-		$categoria->municipio_id = 201; 
-		$categoria->parroquia = "Caño El Tigre";
+		$categoria->municipalities_id = 201; 
+		$categoria->parishes = "Caño El Tigre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 600; 
-		$categoria->municipio_id = 201; 
-		$categoria->parroquia = "Zea";
+		$categoria->municipalities_id = 201; 
+		$categoria->parishes = "Zea";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 601; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Aragüita";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Aragüita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 602; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Arévalo González";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Arévalo González";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 603; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Capaya";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Capaya";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 604; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Caucagua";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Caucagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 605; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Panaquire";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Panaquire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 606; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Ribas";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Ribas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 607; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "El Café";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "El Café";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 608; 
-		$categoria->municipio_id = 223; 
-		$categoria->parroquia = "Marizapa";
+		$categoria->municipalities_id = 223; 
+		$categoria->parishes = "Marizapa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 609; 
-		$categoria->municipio_id = 224; 
-		$categoria->parroquia = "Cumbo";
+		$categoria->municipalities_id = 224; 
+		$categoria->parishes = "Cumbo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 610; 
-		$categoria->municipio_id = 224; 
-		$categoria->parroquia = "San José de Barlovento";
+		$categoria->municipalities_id = 224; 
+		$categoria->parishes = "San José de Barlovento";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 611; 
-		$categoria->municipio_id = 225; 
-		$categoria->parroquia = "El Cafetal";
+		$categoria->municipalities_id = 225; 
+		$categoria->parishes = "El Cafetal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 612; 
-		$categoria->municipio_id = 225; 
-		$categoria->parroquia = "Las Minas";
+		$categoria->municipalities_id = 225; 
+		$categoria->parishes = "Las Minas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 613; 
-		$categoria->municipio_id = 225; 
-		$categoria->parroquia = "Nuestra Señora del Rosario";
+		$categoria->municipalities_id = 225; 
+		$categoria->parishes = "Nuestra Señora del Rosario";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 614; 
-		$categoria->municipio_id = 226; 
-		$categoria->parroquia = "Higuerote";
+		$categoria->municipalities_id = 226; 
+		$categoria->parishes = "Higuerote";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 615; 
-		$categoria->municipio_id = 226; 
-		$categoria->parroquia = "Curiepe";
+		$categoria->municipalities_id = 226; 
+		$categoria->parishes = "Curiepe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 616; 
-		$categoria->municipio_id = 226; 
-		$categoria->parroquia = "Tacarigua de Brión";
+		$categoria->municipalities_id = 226; 
+		$categoria->parishes = "Tacarigua de Brión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 617; 
-		$categoria->municipio_id = 227; 
-		$categoria->parroquia = "Mamporal";
+		$categoria->municipalities_id = 227; 
+		$categoria->parishes = "Mamporal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 618; 
-		$categoria->municipio_id = 228; 
-		$categoria->parroquia = "Carrizal";
+		$categoria->municipalities_id = 228; 
+		$categoria->parishes = "Carrizal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 619; 
-		$categoria->municipio_id = 229; 
-		$categoria->parroquia = "Chacao";
+		$categoria->municipalities_id = 229; 
+		$categoria->parishes = "Chacao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 620; 
-		$categoria->municipio_id = 230; 
-		$categoria->parroquia = "Charallave";
+		$categoria->municipalities_id = 230; 
+		$categoria->parishes = "Charallave";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 621; 
-		$categoria->municipio_id = 230; 
-		$categoria->parroquia = "Las Brisas";
+		$categoria->municipalities_id = 230; 
+		$categoria->parishes = "Las Brisas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 622; 
-		$categoria->municipio_id = 231; 
-		$categoria->parroquia = "El Hatillo";
+		$categoria->municipalities_id = 231; 
+		$categoria->parishes = "El Hatillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 623; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "Altagracia de la Montaña";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "Altagracia de la Montaña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 624; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "Cecilio Acosta";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "Cecilio Acosta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 625; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "Los Teques";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "Los Teques";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 626; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "El Jarillo";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "El Jarillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 627; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "San Pedro";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "San Pedro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 628; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "Tácata";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "Tácata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 629; 
-		$categoria->municipio_id = 232; 
-		$categoria->parroquia = "Paracotos";
+		$categoria->municipalities_id = 232; 
+		$categoria->parishes = "Paracotos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 630; 
-		$categoria->municipio_id = 233; 
-		$categoria->parroquia = "Cartanal";
+		$categoria->municipalities_id = 233; 
+		$categoria->parishes = "Cartanal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 631; 
-		$categoria->municipio_id = 233; 
-		$categoria->parroquia = "Santa Teresa del Tuy";
+		$categoria->municipalities_id = 233; 
+		$categoria->parishes = "Santa Teresa del Tuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 632; 
-		$categoria->municipio_id = 234; 
-		$categoria->parroquia = "La Democracia";
+		$categoria->municipalities_id = 234; 
+		$categoria->parishes = "La Democracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 633; 
-		$categoria->municipio_id = 234; 
-		$categoria->parroquia = "Ocumare del Tuy";
+		$categoria->municipalities_id = 234; 
+		$categoria->parishes = "Ocumare del Tuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 634; 
-		$categoria->municipio_id = 234; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 234; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 635; 
-		$categoria->municipio_id = 235; 
-		$categoria->parroquia = "San Antonio de los Altos";
+		$categoria->municipalities_id = 235; 
+		$categoria->parishes = "San Antonio de los Altos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 636; 
-		$categoria->municipio_id = 236; 
-		$categoria->parroquia = "Río Chico";
+		$categoria->municipalities_id = 236; 
+		$categoria->parishes = "Río Chico";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 637; 
-		$categoria->municipio_id = 236; 
-		$categoria->parroquia = "El Guapo";
+		$categoria->municipalities_id = 236; 
+		$categoria->parishes = "El Guapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 638; 
-		$categoria->municipio_id = 236; 
-		$categoria->parroquia = "Tacarigua de la Laguna";
+		$categoria->municipalities_id = 236; 
+		$categoria->parishes = "Tacarigua de la Laguna";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 639; 
-		$categoria->municipio_id = 236; 
-		$categoria->parroquia = "Paparo";
+		$categoria->municipalities_id = 236; 
+		$categoria->parishes = "Paparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 640; 
-		$categoria->municipio_id = 236; 
-		$categoria->parroquia = "San Fernando del Guapo";
+		$categoria->municipalities_id = 236; 
+		$categoria->parishes = "San Fernando del Guapo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 641; 
-		$categoria->municipio_id = 237; 
-		$categoria->parroquia = "Santa Lucía del Tuy";
+		$categoria->municipalities_id = 237; 
+		$categoria->parishes = "Santa Lucía del Tuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 642; 
-		$categoria->municipio_id = 238; 
-		$categoria->parroquia = "Cúpira";
+		$categoria->municipalities_id = 238; 
+		$categoria->parishes = "Cúpira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 643; 
-		$categoria->municipio_id = 238; 
-		$categoria->parroquia = "Machurucuto";
+		$categoria->municipalities_id = 238; 
+		$categoria->parishes = "Machurucuto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 644; 
-		$categoria->municipio_id = 239; 
-		$categoria->parroquia = "Guarenas";
+		$categoria->municipalities_id = 239; 
+		$categoria->parishes = "Guarenas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 645; 
-		$categoria->municipio_id = 240; 
-		$categoria->parroquia = "San Antonio de Yare";
+		$categoria->municipalities_id = 240; 
+		$categoria->parishes = "San Antonio de Yare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 646; 
-		$categoria->municipio_id = 240; 
-		$categoria->parroquia = "San Francisco de Yare";
+		$categoria->municipalities_id = 240; 
+		$categoria->parishes = "San Francisco de Yare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 647; 
-		$categoria->municipio_id = 241; 
-		$categoria->parroquia = "Leoncio Martínez";
+		$categoria->municipalities_id = 241; 
+		$categoria->parishes = "Leoncio Martínez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 648; 
-		$categoria->municipio_id = 241; 
-		$categoria->parroquia = "Petare";
+		$categoria->municipalities_id = 241; 
+		$categoria->parishes = "Petare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 649; 
-		$categoria->municipio_id = 241; 
-		$categoria->parroquia = "Caucagüita";
+		$categoria->municipalities_id = 241; 
+		$categoria->parishes = "Caucagüita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 650; 
-		$categoria->municipio_id = 241; 
-		$categoria->parroquia = "Filas de Mariche";
+		$categoria->municipalities_id = 241; 
+		$categoria->parishes = "Filas de Mariche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 651; 
-		$categoria->municipio_id = 241; 
-		$categoria->parroquia = "La Dolorita";
+		$categoria->municipalities_id = 241; 
+		$categoria->parishes = "La Dolorita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 652; 
-		$categoria->municipio_id = 242; 
-		$categoria->parroquia = "Cúa";
+		$categoria->municipalities_id = 242; 
+		$categoria->parishes = "Cúa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 653; 
-		$categoria->municipio_id = 242; 
-		$categoria->parroquia = "Nueva Cúa";
+		$categoria->municipalities_id = 242; 
+		$categoria->parishes = "Nueva Cúa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 654; 
-		$categoria->municipio_id = 243; 
-		$categoria->parroquia = "Guatire";
+		$categoria->municipalities_id = 243; 
+		$categoria->parishes = "Guatire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 655; 
-		$categoria->municipio_id = 243; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 243; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 656; 
-		$categoria->municipio_id = 258; 
-		$categoria->parroquia = "San Antonio de Maturín";
+		$categoria->municipalities_id = 258; 
+		$categoria->parishes = "San Antonio de Maturín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 657; 
-		$categoria->municipio_id = 258; 
-		$categoria->parroquia = "San Francisco de Maturín";
+		$categoria->municipalities_id = 258; 
+		$categoria->parishes = "San Francisco de Maturín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 658; 
-		$categoria->municipio_id = 259; 
-		$categoria->parroquia = "Aguasay";
+		$categoria->municipalities_id = 259; 
+		$categoria->parishes = "Aguasay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 659; 
-		$categoria->municipio_id = 260; 
-		$categoria->parroquia = "Caripito";
+		$categoria->municipalities_id = 260; 
+		$categoria->parishes = "Caripito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 660; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "El Guácharo";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "El Guácharo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 661; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "La Guanota";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "La Guanota";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 662; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "Sabana de Piedra";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "Sabana de Piedra";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 663; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "San Agustín";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "San Agustín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 664; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "Teresen";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "Teresen";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 665; 
-		$categoria->municipio_id = 261; 
-		$categoria->parroquia = "Caripe";
+		$categoria->municipalities_id = 261; 
+		$categoria->parishes = "Caripe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 666; 
-		$categoria->municipio_id = 262; 
-		$categoria->parroquia = "Areo";
+		$categoria->municipalities_id = 262; 
+		$categoria->parishes = "Areo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 667; 
-		$categoria->municipio_id = 262; 
-		$categoria->parroquia = "Capital Cedeño";
+		$categoria->municipalities_id = 262; 
+		$categoria->parishes = "Capital Cedeño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 668; 
-		$categoria->municipio_id = 262; 
-		$categoria->parroquia = "San Félix de Cantalicio";
+		$categoria->municipalities_id = 262; 
+		$categoria->parishes = "San Félix de Cantalicio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 669; 
-		$categoria->municipio_id = 262; 
-		$categoria->parroquia = "Viento Fresco";
+		$categoria->municipalities_id = 262; 
+		$categoria->parishes = "Viento Fresco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 670; 
-		$categoria->municipio_id = 263; 
-		$categoria->parroquia = "El Tejero";
+		$categoria->municipalities_id = 263; 
+		$categoria->parishes = "El Tejero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 671; 
-		$categoria->municipio_id = 263; 
-		$categoria->parroquia = "Punta de Mata";
+		$categoria->municipalities_id = 263; 
+		$categoria->parishes = "Punta de Mata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 672; 
-		$categoria->municipio_id = 264; 
-		$categoria->parroquia = "Chaguaramas";
+		$categoria->municipalities_id = 264; 
+		$categoria->parishes = "Chaguaramas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 673; 
-		$categoria->municipio_id = 264; 
-		$categoria->parroquia = "Las Alhuacas";
+		$categoria->municipalities_id = 264; 
+		$categoria->parishes = "Las Alhuacas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 674; 
-		$categoria->municipio_id = 264; 
-		$categoria->parroquia = "Tabasca";
+		$categoria->municipalities_id = 264; 
+		$categoria->parishes = "Tabasca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 675; 
-		$categoria->municipio_id = 264; 
-		$categoria->parroquia = "Temblador";
+		$categoria->municipalities_id = 264; 
+		$categoria->parishes = "Temblador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 676; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "Alto de los Godos";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "Alto de los Godos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 677; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "Boquerón";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "Boquerón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 678; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "Las Cocuizas";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "Las Cocuizas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 679; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "La Cruz";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "La Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 680; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "San Simón";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "San Simón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 681; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "El Corozo";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "El Corozo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 682; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "El Furrial";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "El Furrial";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 683; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "Jusepín";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "Jusepín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 684; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "La Pica";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "La Pica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 685; 
-		$categoria->municipio_id = 265; 
-		$categoria->parroquia = "San Vicente";
+		$categoria->municipalities_id = 265; 
+		$categoria->parishes = "San Vicente";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 686; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "Aparicio";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "Aparicio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 687; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "Aragua de Maturín";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "Aragua de Maturín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 688; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "Chaguamal";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "Chaguamal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 689; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "El Pinto";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "El Pinto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 690; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "Guanaguana";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "Guanaguana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 691; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "La Toscana";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "La Toscana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 692; 
-		$categoria->municipio_id = 266; 
-		$categoria->parroquia = "Taguaya";
+		$categoria->municipalities_id = 266; 
+		$categoria->parishes = "Taguaya";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 693; 
-		$categoria->municipio_id = 267; 
-		$categoria->parroquia = "Cachipo";
+		$categoria->municipalities_id = 267; 
+		$categoria->parishes = "Cachipo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 694; 
-		$categoria->municipio_id = 267; 
-		$categoria->parroquia = "Quiriquire";
+		$categoria->municipalities_id = 267; 
+		$categoria->parishes = "Quiriquire";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 695; 
-		$categoria->municipio_id = 268; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 268; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 696; 
-		$categoria->municipio_id = 269; 
-		$categoria->parroquia = "Barrancas";
+		$categoria->municipalities_id = 269; 
+		$categoria->parishes = "Barrancas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 697; 
-		$categoria->municipio_id = 269; 
-		$categoria->parroquia = "Los Barrancos de Fajardo";
+		$categoria->municipalities_id = 269; 
+		$categoria->parishes = "Los Barrancos de Fajardo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 698; 
-		$categoria->municipio_id = 270; 
-		$categoria->parroquia = "Uracoa";
+		$categoria->municipalities_id = 270; 
+		$categoria->parishes = "Uracoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 699; 
-		$categoria->municipio_id = 271; 
-		$categoria->parroquia = "Antolín del Campo";
+		$categoria->municipalities_id = 271; 
+		$categoria->parishes = "Antolín del Campo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 700; 
-		$categoria->municipio_id = 272; 
-		$categoria->parroquia = "Arismendi";
+		$categoria->municipalities_id = 272; 
+		$categoria->parishes = "Arismendi";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 701; 
-		$categoria->municipio_id = 273; 
-		$categoria->parroquia = "García";
+		$categoria->municipalities_id = 273; 
+		$categoria->parishes = "García";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 702; 
-		$categoria->municipio_id = 273; 
-		$categoria->parroquia = "Francisco Fajardo";
+		$categoria->municipalities_id = 273; 
+		$categoria->parishes = "Francisco Fajardo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 703; 
-		$categoria->municipio_id = 274; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 274; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 704; 
-		$categoria->municipio_id = 274; 
-		$categoria->parroquia = "Guevara";
+		$categoria->municipalities_id = 274; 
+		$categoria->parishes = "Guevara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 705; 
-		$categoria->municipio_id = 274; 
-		$categoria->parroquia = "Matasiete";
+		$categoria->municipalities_id = 274; 
+		$categoria->parishes = "Matasiete";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 706; 
-		$categoria->municipio_id = 274; 
-		$categoria->parroquia = "Santa Ana";
+		$categoria->municipalities_id = 274; 
+		$categoria->parishes = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 707; 
-		$categoria->municipio_id = 274; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 274; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 708; 
-		$categoria->municipio_id = 275; 
-		$categoria->parroquia = "Aguirre";
+		$categoria->municipalities_id = 275; 
+		$categoria->parishes = "Aguirre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 709; 
-		$categoria->municipio_id = 275; 
-		$categoria->parroquia = "Maneiro";
+		$categoria->municipalities_id = 275; 
+		$categoria->parishes = "Maneiro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 710; 
-		$categoria->municipio_id = 276; 
-		$categoria->parroquia = "Adrián";
+		$categoria->municipalities_id = 276; 
+		$categoria->parishes = "Adrián";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 711; 
-		$categoria->municipio_id = 276; 
-		$categoria->parroquia = "Juan Griego";
+		$categoria->municipalities_id = 276; 
+		$categoria->parishes = "Juan Griego";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 712; 
-		$categoria->municipio_id = 276; 
-		$categoria->parroquia = "Yaguaraparo";
+		$categoria->municipalities_id = 276; 
+		$categoria->parishes = "Yaguaraparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 713; 
-		$categoria->municipio_id = 277; 
-		$categoria->parroquia = "Porlamar";
+		$categoria->municipalities_id = 277; 
+		$categoria->parishes = "Porlamar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 714; 
-		$categoria->municipio_id = 278; 
-		$categoria->parroquia = "San Francisco de Macanao";
+		$categoria->municipalities_id = 278; 
+		$categoria->parishes = "San Francisco de Macanao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 715; 
-		$categoria->municipio_id = 278; 
-		$categoria->parroquia = "Boca de Río";
+		$categoria->municipalities_id = 278; 
+		$categoria->parishes = "Boca de Río";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 716; 
-		$categoria->municipio_id = 279; 
-		$categoria->parroquia = "Tubores";
+		$categoria->municipalities_id = 279; 
+		$categoria->parishes = "Tubores";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 717; 
-		$categoria->municipio_id = 279; 
-		$categoria->parroquia = "Los Baleales";
+		$categoria->municipalities_id = 279; 
+		$categoria->parishes = "Los Baleales";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 718; 
-		$categoria->municipio_id = 280; 
-		$categoria->parroquia = "Vicente Fuentes";
+		$categoria->municipalities_id = 280; 
+		$categoria->parishes = "Vicente Fuentes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 719; 
-		$categoria->municipio_id = 280; 
-		$categoria->parroquia = "Villalba";
+		$categoria->municipalities_id = 280; 
+		$categoria->parishes = "Villalba";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 720; 
-		$categoria->municipio_id = 281; 
-		$categoria->parroquia = "San Juan Bautista";
+		$categoria->municipalities_id = 281; 
+		$categoria->parishes = "San Juan Bautista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 721; 
-		$categoria->municipio_id = 281; 
-		$categoria->parroquia = "Zabala";
+		$categoria->municipalities_id = 281; 
+		$categoria->parishes = "Zabala";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 722; 
-		$categoria->municipio_id = 283; 
-		$categoria->parroquia = "Capital Araure";
+		$categoria->municipalities_id = 283; 
+		$categoria->parishes = "Capital Araure";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 723; 
-		$categoria->municipio_id = 283; 
-		$categoria->parroquia = "Río Acarigua";
+		$categoria->municipalities_id = 283; 
+		$categoria->parishes = "Río Acarigua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 724; 
-		$categoria->municipio_id = 284; 
-		$categoria->parroquia = "Capital Esteller";
+		$categoria->municipalities_id = 284; 
+		$categoria->parishes = "Capital Esteller";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 725; 
-		$categoria->municipio_id = 284; 
-		$categoria->parroquia = "Uveral";
+		$categoria->municipalities_id = 284; 
+		$categoria->parishes = "Uveral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 726; 
-		$categoria->municipio_id = 285; 
-		$categoria->parroquia = "Guanare";
+		$categoria->municipalities_id = 285; 
+		$categoria->parishes = "Guanare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 727; 
-		$categoria->municipio_id = 285; 
-		$categoria->parroquia = "Córdoba";
+		$categoria->municipalities_id = 285; 
+		$categoria->parishes = "Córdoba";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 728; 
-		$categoria->municipio_id = 285; 
-		$categoria->parroquia = "San José de la Montaña";
+		$categoria->municipalities_id = 285; 
+		$categoria->parishes = "San José de la Montaña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 729; 
-		$categoria->municipio_id = 285; 
-		$categoria->parroquia = "San Juan de Guanaguanare";
+		$categoria->municipalities_id = 285; 
+		$categoria->parishes = "San Juan de Guanaguanare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 730; 
-		$categoria->municipio_id = 285; 
-		$categoria->parroquia = "Virgen de la Coromoto";
+		$categoria->municipalities_id = 285; 
+		$categoria->parishes = "Virgen de la Coromoto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 731; 
-		$categoria->municipio_id = 286; 
-		$categoria->parroquia = "Guanarito";
+		$categoria->municipalities_id = 286; 
+		$categoria->parishes = "Guanarito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 732; 
-		$categoria->municipio_id = 286; 
-		$categoria->parroquia = "Trinidad de la Capilla";
+		$categoria->municipalities_id = 286; 
+		$categoria->parishes = "Trinidad de la Capilla";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 733; 
-		$categoria->municipio_id = 286; 
-		$categoria->parroquia = "Divina Pastora";
+		$categoria->municipalities_id = 286; 
+		$categoria->parishes = "Divina Pastora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 734; 
-		$categoria->municipio_id = 287; 
-		$categoria->parroquia = "Monseñor José Vicente de Unda";
+		$categoria->municipalities_id = 287; 
+		$categoria->parishes = "Monseñor José Vicente de Unda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 735; 
-		$categoria->municipio_id = 287; 
-		$categoria->parroquia = "Peña Blanca";
+		$categoria->municipalities_id = 287; 
+		$categoria->parishes = "Peña Blanca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 736; 
-		$categoria->municipio_id = 288; 
-		$categoria->parroquia = "Capital Ospino";
+		$categoria->municipalities_id = 288; 
+		$categoria->parishes = "Capital Ospino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 737; 
-		$categoria->municipio_id = 288; 
-		$categoria->parroquia = "Aparición";
+		$categoria->municipalities_id = 288; 
+		$categoria->parishes = "Aparición";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 738; 
-		$categoria->municipio_id = 288; 
-		$categoria->parroquia = "La Estación";
+		$categoria->municipalities_id = 288; 
+		$categoria->parishes = "La Estación";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 739; 
-		$categoria->municipio_id = 289; 
-		$categoria->parroquia = "Páez";
+		$categoria->municipalities_id = 289; 
+		$categoria->parishes = "Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 740; 
-		$categoria->municipio_id = 289; 
-		$categoria->parroquia = "Payara";
+		$categoria->municipalities_id = 289; 
+		$categoria->parishes = "Payara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 741; 
-		$categoria->municipio_id = 289; 
-		$categoria->parroquia = "Pimpinela";
+		$categoria->municipalities_id = 289; 
+		$categoria->parishes = "Pimpinela";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 742; 
-		$categoria->municipio_id = 289; 
-		$categoria->parroquia = "Ramón Peraza";
+		$categoria->municipalities_id = 289; 
+		$categoria->parishes = "Ramón Peraza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 743; 
-		$categoria->municipio_id = 290; 
-		$categoria->parroquia = "Papelón";
+		$categoria->municipalities_id = 290; 
+		$categoria->parishes = "Papelón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 744; 
-		$categoria->municipio_id = 290; 
-		$categoria->parroquia = "Caño Delgadito";
+		$categoria->municipalities_id = 290; 
+		$categoria->parishes = "Caño Delgadito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 745; 
-		$categoria->municipio_id = 291; 
-		$categoria->parroquia = "San Genaro de Boconoito";
+		$categoria->municipalities_id = 291; 
+		$categoria->parishes = "San Genaro de Boconoito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 746; 
-		$categoria->municipio_id = 291; 
-		$categoria->parroquia = "Antolín Tovar";
+		$categoria->municipalities_id = 291; 
+		$categoria->parishes = "Antolín Tovar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 747; 
-		$categoria->municipio_id = 292; 
-		$categoria->parroquia = "San Rafael de Onoto";
+		$categoria->municipalities_id = 292; 
+		$categoria->parishes = "San Rafael de Onoto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 748; 
-		$categoria->municipio_id = 292; 
-		$categoria->parroquia = "Santa Fe";
+		$categoria->municipalities_id = 292; 
+		$categoria->parishes = "Santa Fe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 749; 
-		$categoria->municipio_id = 292; 
-		$categoria->parroquia = "Thermo Morles";
+		$categoria->municipalities_id = 292; 
+		$categoria->parishes = "Thermo Morles";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 750; 
-		$categoria->municipio_id = 293; 
-		$categoria->parroquia = "Santa Rosalía";
+		$categoria->municipalities_id = 293; 
+		$categoria->parishes = "Santa Rosalía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 751; 
-		$categoria->municipio_id = 293; 
-		$categoria->parroquia = "Florida";
+		$categoria->municipalities_id = 293; 
+		$categoria->parishes = "Florida";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 752; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 753; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "Concepción";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 754; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "San Rafael de Palo Alzado";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "San Rafael de Palo Alzado";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 755; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "Uvencio Antonio Velásquez";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "Uvencio Antonio Velásquez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 756; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "San José de Saguaz";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "San José de Saguaz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 757; 
-		$categoria->municipio_id = 294; 
-		$categoria->parroquia = "Villa Rosa";
+		$categoria->municipalities_id = 294; 
+		$categoria->parishes = "Villa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 758; 
-		$categoria->municipio_id = 295; 
-		$categoria->parroquia = "Turén";
+		$categoria->municipalities_id = 295; 
+		$categoria->parishes = "Turén";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 759; 
-		$categoria->municipio_id = 295; 
-		$categoria->parroquia = "Canelones";
+		$categoria->municipalities_id = 295; 
+		$categoria->parishes = "Canelones";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 760; 
-		$categoria->municipio_id = 295; 
-		$categoria->parroquia = "Santa Cruz";
+		$categoria->municipalities_id = 295; 
+		$categoria->parishes = "Santa Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 761; 
-		$categoria->municipio_id = 295; 
-		$categoria->parroquia = "San Isidro Labrador";
+		$categoria->municipalities_id = 295; 
+		$categoria->parishes = "San Isidro Labrador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 762; 
-		$categoria->municipio_id = 296; 
-		$categoria->parroquia = "Mariño";
+		$categoria->municipalities_id = 296; 
+		$categoria->parishes = "Mariño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 763; 
-		$categoria->municipio_id = 296; 
-		$categoria->parroquia = "Rómulo Gallegos";
+		$categoria->municipalities_id = 296; 
+		$categoria->parishes = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 764; 
-		$categoria->municipio_id = 297; 
-		$categoria->parroquia = "San José de Aerocuar";
+		$categoria->municipalities_id = 297; 
+		$categoria->parishes = "San José de Aerocuar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 765; 
-		$categoria->municipio_id = 297; 
-		$categoria->parroquia = "Tavera Acosta";
+		$categoria->municipalities_id = 297; 
+		$categoria->parishes = "Tavera Acosta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 766; 
-		$categoria->municipio_id = 298; 
-		$categoria->parroquia = "Río Caribe";
+		$categoria->municipalities_id = 298; 
+		$categoria->parishes = "Río Caribe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 767; 
-		$categoria->municipio_id = 298; 
-		$categoria->parroquia = "Antonio José de Sucre";
+		$categoria->municipalities_id = 298; 
+		$categoria->parishes = "Antonio José de Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 768; 
-		$categoria->municipio_id = 298; 
-		$categoria->parroquia = "El Morro de Puerto Santo";
+		$categoria->municipalities_id = 298; 
+		$categoria->parishes = "El Morro de Puerto Santo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 769; 
-		$categoria->municipio_id = 298; 
-		$categoria->parroquia = "Puerto Santo";
+		$categoria->municipalities_id = 298; 
+		$categoria->parishes = "Puerto Santo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 770; 
-		$categoria->municipio_id = 298; 
-		$categoria->parroquia = "San Juan de las Galdonas";
+		$categoria->municipalities_id = 298; 
+		$categoria->parishes = "San Juan de las Galdonas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 771; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "El Pilar";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "El Pilar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 772; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "El Rincón";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "El Rincón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 773; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "General Francisco Antonio Váquez";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "General Francisco Antonio Váquez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 774; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "Guaraúnos";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "Guaraúnos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 775; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "Tunapuicito";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "Tunapuicito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 776; 
-		$categoria->municipio_id = 299; 
-		$categoria->parroquia = "Unión";
+		$categoria->municipalities_id = 299; 
+		$categoria->parishes = "Unión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 777; 
-		$categoria->municipio_id = 300; 
-		$categoria->parroquia = "Santa Catalina";
+		$categoria->municipalities_id = 300; 
+		$categoria->parishes = "Santa Catalina";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 778; 
-		$categoria->municipio_id = 300; 
-		$categoria->parroquia = "Santa Rosa";
+		$categoria->municipalities_id = 300; 
+		$categoria->parishes = "Santa Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 779; 
-		$categoria->municipio_id = 300; 
-		$categoria->parroquia = "Santa Teresa";
+		$categoria->municipalities_id = 300; 
+		$categoria->parishes = "Santa Teresa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 780; 
-		$categoria->municipio_id = 300; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 300; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 781; 
-		$categoria->municipio_id = 300; 
-		$categoria->parroquia = "Maracapana";
+		$categoria->municipalities_id = 300; 
+		$categoria->parishes = "Maracapana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 782; 
-		$categoria->municipio_id = 302; 
-		$categoria->parroquia = "Libertad";
+		$categoria->municipalities_id = 302; 
+		$categoria->parishes = "Libertad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 783; 
-		$categoria->municipio_id = 302; 
-		$categoria->parroquia = "El Paujil";
+		$categoria->municipalities_id = 302; 
+		$categoria->parishes = "El Paujil";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 784; 
-		$categoria->municipio_id = 302; 
-		$categoria->parroquia = "Yaguaraparo";
+		$categoria->municipalities_id = 302; 
+		$categoria->parishes = "Yaguaraparo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 785; 
-		$categoria->municipio_id = 303; 
-		$categoria->parroquia = "Cruz Salmerón Acosta";
+		$categoria->municipalities_id = 303; 
+		$categoria->parishes = "Cruz Salmerón Acosta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 786; 
-		$categoria->municipio_id = 303; 
-		$categoria->parroquia = "Chacopata";
+		$categoria->municipalities_id = 303; 
+		$categoria->parishes = "Chacopata";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 787; 
-		$categoria->municipio_id = 303; 
-		$categoria->parroquia = "Manicuare";
+		$categoria->municipalities_id = 303; 
+		$categoria->parishes = "Manicuare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 788; 
-		$categoria->municipio_id = 304; 
-		$categoria->parroquia = "Tunapuy";
+		$categoria->municipalities_id = 304; 
+		$categoria->parishes = "Tunapuy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 789; 
-		$categoria->municipio_id = 304; 
-		$categoria->parroquia = "Campo Elías";
+		$categoria->municipalities_id = 304; 
+		$categoria->parishes = "Campo Elías";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 790; 
-		$categoria->municipio_id = 305; 
-		$categoria->parroquia = "Irapa";
+		$categoria->municipalities_id = 305; 
+		$categoria->parishes = "Irapa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 791; 
-		$categoria->municipio_id = 305; 
-		$categoria->parroquia = "Campo Claro";
+		$categoria->municipalities_id = 305; 
+		$categoria->parishes = "Campo Claro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 792; 
-		$categoria->municipio_id = 305; 
-		$categoria->parroquia = "Maraval";
+		$categoria->municipalities_id = 305; 
+		$categoria->parishes = "Maraval";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 793; 
-		$categoria->municipio_id = 305; 
-		$categoria->parroquia = "San Antonio de Irapa";
+		$categoria->municipalities_id = 305; 
+		$categoria->parishes = "San Antonio de Irapa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 794; 
-		$categoria->municipio_id = 305; 
-		$categoria->parroquia = "Soro";
+		$categoria->municipalities_id = 305; 
+		$categoria->parishes = "Soro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 795; 
-		$categoria->municipio_id = 306; 
-		$categoria->parroquia = "Mejía";
+		$categoria->municipalities_id = 306; 
+		$categoria->parishes = "Mejía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 796; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "Cumanacoa";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "Cumanacoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 797; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "Arenas";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "Arenas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 798; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "Aricagua";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "Aricagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 799; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "Cogollar";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "Cogollar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 800; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "San Fernando";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "San Fernando";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 801; 
-		$categoria->municipio_id = 307; 
-		$categoria->parroquia = "San Lorenzo";
+		$categoria->municipalities_id = 307; 
+		$categoria->parishes = "San Lorenzo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 802; 
-		$categoria->municipio_id = 308; 
-		$categoria->parroquia = "Villa Frontado (Muelle de Cariaco)";
+		$categoria->municipalities_id = 308; 
+		$categoria->parishes = "Villa Frontado (Muelle de Cariaco)";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 803; 
-		$categoria->municipio_id = 308; 
-		$categoria->parroquia = "Catuaro";
+		$categoria->municipalities_id = 308; 
+		$categoria->parishes = "Catuaro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 804; 
-		$categoria->municipio_id = 308; 
-		$categoria->parroquia = "Rendón";
+		$categoria->municipalities_id = 308; 
+		$categoria->parishes = "Rendón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 805; 
-		$categoria->municipio_id = 308; 
-		$categoria->parroquia = "San Cruz";
+		$categoria->municipalities_id = 308; 
+		$categoria->parishes = "San Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 806; 
-		$categoria->municipio_id = 308; 
-		$categoria->parroquia = "Santa María";
+		$categoria->municipalities_id = 308; 
+		$categoria->parishes = "Santa María";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 807; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Altagracia";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Altagracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 808; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Santa Inés";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Santa Inés";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 809; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Valentín Valiente";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Valentín Valiente";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 810; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Ayacucho";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Ayacucho";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 811; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "San Juan";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "San Juan";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 812; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Raúl Leoni";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Raúl Leoni";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 813; 
-		$categoria->municipio_id = 309; 
-		$categoria->parroquia = "Gran Mariscal";
+		$categoria->municipalities_id = 309; 
+		$categoria->parishes = "Gran Mariscal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 814; 
-		$categoria->municipio_id = 310; 
-		$categoria->parroquia = "Cristóbal Colón";
+		$categoria->municipalities_id = 310; 
+		$categoria->parishes = "Cristóbal Colón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 815; 
-		$categoria->municipio_id = 310; 
-		$categoria->parroquia = "Bideau";
+		$categoria->municipalities_id = 310; 
+		$categoria->parishes = "Bideau";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 816; 
-		$categoria->municipio_id = 310; 
-		$categoria->parroquia = "Punta de Piedras";
+		$categoria->municipalities_id = 310; 
+		$categoria->parishes = "Punta de Piedras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 817; 
-		$categoria->municipio_id = 310; 
-		$categoria->parroquia = "Güiria";
+		$categoria->municipalities_id = 310; 
+		$categoria->parishes = "Güiria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 818; 
-		$categoria->municipio_id = 341; 
-		$categoria->parroquia = "Andrés Bello";
+		$categoria->municipalities_id = 341; 
+		$categoria->parishes = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 819; 
-		$categoria->municipio_id = 342; 
-		$categoria->parroquia = "Antonio Rómulo Costa";
+		$categoria->municipalities_id = 342; 
+		$categoria->parishes = "Antonio Rómulo Costa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 820; 
-		$categoria->municipio_id = 343; 
-		$categoria->parroquia = "Ayacucho";
+		$categoria->municipalities_id = 343; 
+		$categoria->parishes = "Ayacucho";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 821; 
-		$categoria->municipio_id = 343; 
-		$categoria->parroquia = "Rivas Berti";
+		$categoria->municipalities_id = 343; 
+		$categoria->parishes = "Rivas Berti";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 822; 
-		$categoria->municipio_id = 343; 
-		$categoria->parroquia = "San Pedro del Río";
+		$categoria->municipalities_id = 343; 
+		$categoria->parishes = "San Pedro del Río";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 823; 
-		$categoria->municipio_id = 344; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 344; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 824; 
-		$categoria->municipio_id = 344; 
-		$categoria->parroquia = "Palotal";
+		$categoria->municipalities_id = 344; 
+		$categoria->parishes = "Palotal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 825; 
-		$categoria->municipio_id = 344; 
-		$categoria->parroquia = "General Juan Vicente Gómez";
+		$categoria->municipalities_id = 344; 
+		$categoria->parishes = "General Juan Vicente Gómez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 826; 
-		$categoria->municipio_id = 344; 
-		$categoria->parroquia = "Isaías Medina Angarita";
+		$categoria->municipalities_id = 344; 
+		$categoria->parishes = "Isaías Medina Angarita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 827; 
-		$categoria->municipio_id = 345; 
-		$categoria->parroquia = "Cárdenas";
+		$categoria->municipalities_id = 345; 
+		$categoria->parishes = "Cárdenas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 828; 
-		$categoria->municipio_id = 345; 
-		$categoria->parroquia = "Amenodoro Ángel Lamus";
+		$categoria->municipalities_id = 345; 
+		$categoria->parishes = "Amenodoro Ángel Lamus";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 829; 
-		$categoria->municipio_id = 345; 
-		$categoria->parroquia = "La Florida";
+		$categoria->municipalities_id = 345; 
+		$categoria->parishes = "La Florida";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 830; 
-		$categoria->municipio_id = 346; 
-		$categoria->parroquia = "Córdoba";
+		$categoria->municipalities_id = 346; 
+		$categoria->parishes = "Córdoba";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 831; 
-		$categoria->municipio_id = 347; 
-		$categoria->parroquia = "Fernández Feo";
+		$categoria->municipalities_id = 347; 
+		$categoria->parishes = "Fernández Feo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 832; 
-		$categoria->municipio_id = 347; 
-		$categoria->parroquia = "Alberto Adriani";
+		$categoria->municipalities_id = 347; 
+		$categoria->parishes = "Alberto Adriani";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 833; 
-		$categoria->municipio_id = 347; 
-		$categoria->parroquia = "Santo Domingo";
+		$categoria->municipalities_id = 347; 
+		$categoria->parishes = "Santo Domingo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 834; 
-		$categoria->municipio_id = 348; 
-		$categoria->parroquia = "Francisco de Miranda";
+		$categoria->municipalities_id = 348; 
+		$categoria->parishes = "Francisco de Miranda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 835; 
-		$categoria->municipio_id = 349; 
-		$categoria->parroquia = "García de Hevia";
+		$categoria->municipalities_id = 349; 
+		$categoria->parishes = "García de Hevia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 836; 
-		$categoria->municipio_id = 349; 
-		$categoria->parroquia = "Boca de Grita";
+		$categoria->municipalities_id = 349; 
+		$categoria->parishes = "Boca de Grita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 837; 
-		$categoria->municipio_id = 349; 
-		$categoria->parroquia = "José Antonio Páez";
+		$categoria->municipalities_id = 349; 
+		$categoria->parishes = "José Antonio Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 838; 
-		$categoria->municipio_id = 350; 
-		$categoria->parroquia = "Guásimos";
+		$categoria->municipalities_id = 350; 
+		$categoria->parishes = "Guásimos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 839; 
-		$categoria->municipio_id = 351; 
-		$categoria->parroquia = "Independencia";
+		$categoria->municipalities_id = 351; 
+		$categoria->parishes = "Independencia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 840; 
-		$categoria->municipio_id = 351; 
-		$categoria->parroquia = "Juan Germán Roscio";
+		$categoria->municipalities_id = 351; 
+		$categoria->parishes = "Juan Germán Roscio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 841; 
-		$categoria->municipio_id = 351; 
-		$categoria->parroquia = "Román Cárdenas";
+		$categoria->municipalities_id = 351; 
+		$categoria->parishes = "Román Cárdenas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 842; 
-		$categoria->municipio_id = 352; 
-		$categoria->parroquia = "Jáuregui";
+		$categoria->municipalities_id = 352; 
+		$categoria->parishes = "Jáuregui";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 843; 
-		$categoria->municipio_id = 352; 
-		$categoria->parroquia = "Emilio Constantino Guerrero";
+		$categoria->municipalities_id = 352; 
+		$categoria->parishes = "Emilio Constantino Guerrero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 844; 
-		$categoria->municipio_id = 352; 
-		$categoria->parroquia = "Monseñor Miguel Antonio Salas";
+		$categoria->municipalities_id = 352; 
+		$categoria->parishes = "Monseñor Miguel Antonio Salas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 845; 
-		$categoria->municipio_id = 353; 
-		$categoria->parroquia = "José María Vargas";
+		$categoria->municipalities_id = 353; 
+		$categoria->parishes = "José María Vargas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 846; 
-		$categoria->municipio_id = 354; 
-		$categoria->parroquia = "Junín";
+		$categoria->municipalities_id = 354; 
+		$categoria->parishes = "Junín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 847; 
-		$categoria->municipio_id = 354; 
-		$categoria->parroquia = "La Petrólea";
+		$categoria->municipalities_id = 354; 
+		$categoria->parishes = "La Petrólea";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 848; 
-		$categoria->municipio_id = 354; 
-		$categoria->parroquia = "Quinimarí";
+		$categoria->municipalities_id = 354; 
+		$categoria->parishes = "Quinimarí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 849; 
-		$categoria->municipio_id = 354; 
-		$categoria->parroquia = "Bramón";
+		$categoria->municipalities_id = 354; 
+		$categoria->parishes = "Bramón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 850; 
-		$categoria->municipio_id = 355; 
-		$categoria->parroquia = "Libertad";
+		$categoria->municipalities_id = 355; 
+		$categoria->parishes = "Libertad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 851; 
-		$categoria->municipio_id = 355; 
-		$categoria->parroquia = "Cipriano Castro";
+		$categoria->municipalities_id = 355; 
+		$categoria->parishes = "Cipriano Castro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 852; 
-		$categoria->municipio_id = 355; 
-		$categoria->parroquia = "Manuel Felipe Rugeles";
+		$categoria->municipalities_id = 355; 
+		$categoria->parishes = "Manuel Felipe Rugeles";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 853; 
-		$categoria->municipio_id = 356; 
-		$categoria->parroquia = "Libertador";
+		$categoria->municipalities_id = 356; 
+		$categoria->parishes = "Libertador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 854; 
-		$categoria->municipio_id = 356; 
-		$categoria->parroquia = "Doradas";
+		$categoria->municipalities_id = 356; 
+		$categoria->parishes = "Doradas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 855; 
-		$categoria->municipio_id = 356; 
-		$categoria->parroquia = "Emeterio Ochoa";
+		$categoria->municipalities_id = 356; 
+		$categoria->parishes = "Emeterio Ochoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 856; 
-		$categoria->municipio_id = 356; 
-		$categoria->parroquia = "San Joaquín de Navay";
+		$categoria->municipalities_id = 356; 
+		$categoria->parishes = "San Joaquín de Navay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 857; 
-		$categoria->municipio_id = 357; 
-		$categoria->parroquia = "Lobatera";
+		$categoria->municipalities_id = 357; 
+		$categoria->parishes = "Lobatera";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 858; 
-		$categoria->municipio_id = 357; 
-		$categoria->parroquia = "Constitución";
+		$categoria->municipalities_id = 357; 
+		$categoria->parishes = "Constitución";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 859; 
-		$categoria->municipio_id = 358; 
-		$categoria->parroquia = "Michelena";
+		$categoria->municipalities_id = 358; 
+		$categoria->parishes = "Michelena";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 860; 
-		$categoria->municipio_id = 359; 
-		$categoria->parroquia = "Panamericano";
+		$categoria->municipalities_id = 359; 
+		$categoria->parishes = "Panamericano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 861; 
-		$categoria->municipio_id = 359; 
-		$categoria->parroquia = "La Palmita";
+		$categoria->municipalities_id = 359; 
+		$categoria->parishes = "La Palmita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 862; 
-		$categoria->municipio_id = 360; 
-		$categoria->parroquia = "Pedro María Ureña";
+		$categoria->municipalities_id = 360; 
+		$categoria->parishes = "Pedro María Ureña";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 863; 
-		$categoria->municipio_id = 360; 
-		$categoria->parroquia = "Nueva Arcadia";
+		$categoria->municipalities_id = 360; 
+		$categoria->parishes = "Nueva Arcadia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 864; 
-		$categoria->municipio_id = 361; 
-		$categoria->parroquia = "Delicias";
+		$categoria->municipalities_id = 361; 
+		$categoria->parishes = "Delicias";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 865; 
-		$categoria->municipio_id = 361; 
-		$categoria->parroquia = "Pecaya";
+		$categoria->municipalities_id = 361; 
+		$categoria->parishes = "Pecaya";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 866; 
-		$categoria->municipio_id = 362; 
-		$categoria->parroquia = "Samuel Darío Maldonado";
+		$categoria->municipalities_id = 362; 
+		$categoria->parishes = "Samuel Darío Maldonado";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 867; 
-		$categoria->municipio_id = 362; 
-		$categoria->parroquia = "Boconó";
+		$categoria->municipalities_id = 362; 
+		$categoria->parishes = "Boconó";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 868; 
-		$categoria->municipio_id = 362; 
-		$categoria->parroquia = "Hernández";
+		$categoria->municipalities_id = 362; 
+		$categoria->parishes = "Hernández";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 869; 
-		$categoria->municipio_id = 363; 
-		$categoria->parroquia = "La Concordia";
+		$categoria->municipalities_id = 363; 
+		$categoria->parishes = "La Concordia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 870; 
-		$categoria->municipio_id = 363; 
-		$categoria->parroquia = "San Juan Bautista";
+		$categoria->municipalities_id = 363; 
+		$categoria->parishes = "San Juan Bautista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 871; 
-		$categoria->municipio_id = 363; 
-		$categoria->parroquia = "Pedro María Morantes";
+		$categoria->municipalities_id = 363; 
+		$categoria->parishes = "Pedro María Morantes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 872; 
-		$categoria->municipio_id = 363; 
-		$categoria->parroquia = "San Sebastián";
+		$categoria->municipalities_id = 363; 
+		$categoria->parishes = "San Sebastián";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 873; 
-		$categoria->municipio_id = 363; 
-		$categoria->parroquia = "Dr. Francisco Romero Lobo";
+		$categoria->municipalities_id = 363; 
+		$categoria->parishes = "Dr. Francisco Romero Lobo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 874; 
-		$categoria->municipio_id = 364; 
-		$categoria->parroquia = "Seboruco";
+		$categoria->municipalities_id = 364; 
+		$categoria->parishes = "Seboruco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 875; 
-		$categoria->municipio_id = 365; 
-		$categoria->parroquia = "Simón Rodríguez";
+		$categoria->municipalities_id = 365; 
+		$categoria->parishes = "Simón Rodríguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 876; 
-		$categoria->municipio_id = 366; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 366; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 877; 
-		$categoria->municipio_id = 366; 
-		$categoria->parroquia = "Eleazar López Contreras";
+		$categoria->municipalities_id = 366; 
+		$categoria->parishes = "Eleazar López Contreras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 878; 
-		$categoria->municipio_id = 366; 
-		$categoria->parroquia = "San Pablo";
+		$categoria->municipalities_id = 366; 
+		$categoria->parishes = "San Pablo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 879; 
-		$categoria->municipio_id = 367; 
-		$categoria->parroquia = "Torbes";
+		$categoria->municipalities_id = 367; 
+		$categoria->parishes = "Torbes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 880; 
-		$categoria->municipio_id = 368; 
-		$categoria->parroquia = "Uribante";
+		$categoria->municipalities_id = 368; 
+		$categoria->parishes = "Uribante";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 881; 
-		$categoria->municipio_id = 368; 
-		$categoria->parroquia = "Cárdenas";
+		$categoria->municipalities_id = 368; 
+		$categoria->parishes = "Cárdenas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 882; 
-		$categoria->municipio_id = 368; 
-		$categoria->parroquia = "Juan Pablo Peñalosa";
+		$categoria->municipalities_id = 368; 
+		$categoria->parishes = "Juan Pablo Peñalosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 883; 
-		$categoria->municipio_id = 368; 
-		$categoria->parroquia = "Potosí";
+		$categoria->municipalities_id = 368; 
+		$categoria->parishes = "Potosí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 884; 
-		$categoria->municipio_id = 369; 
-		$categoria->parroquia = "San Judas Tadeo";
+		$categoria->municipalities_id = 369; 
+		$categoria->parishes = "San Judas Tadeo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 885; 
-		$categoria->municipio_id = 370; 
-		$categoria->parroquia = "Araguaney";
+		$categoria->municipalities_id = 370; 
+		$categoria->parishes = "Araguaney";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 886; 
-		$categoria->municipio_id = 370; 
-		$categoria->parroquia = "El Jaguito";
+		$categoria->municipalities_id = 370; 
+		$categoria->parishes = "El Jaguito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 887; 
-		$categoria->municipio_id = 370; 
-		$categoria->parroquia = "La Esperanza";
+		$categoria->municipalities_id = 370; 
+		$categoria->parishes = "La Esperanza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 888; 
-		$categoria->municipio_id = 370; 
-		$categoria->parroquia = "Santa Isabel";
+		$categoria->municipalities_id = 370; 
+		$categoria->parishes = "Santa Isabel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 889; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Boconó";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Boconó";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 890; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "El Carmen";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "El Carmen";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 891; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Mosquey";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Mosquey";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 892; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Ayacucho";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Ayacucho";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 893; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Burbusay";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Burbusay";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 894; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "General Ribas";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "General Ribas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 895; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Guaramacal";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Guaramacal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 896; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Vega de Guaramacal";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Vega de Guaramacal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 897; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Monseñor Jáuregui";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Monseñor Jáuregui";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 898; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "Rafael Rangel";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "Rafael Rangel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 899; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "San Miguel";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "San Miguel";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 900; 
-		$categoria->municipio_id = 371; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 371; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 901; 
-		$categoria->municipio_id = 372; 
-		$categoria->parroquia = "Sabana Grande";
+		$categoria->municipalities_id = 372; 
+		$categoria->parishes = "Sabana Grande";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 902; 
-		$categoria->municipio_id = 372; 
-		$categoria->parroquia = "Cheregüé";
+		$categoria->municipalities_id = 372; 
+		$categoria->parishes = "Cheregüé";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 903; 
-		$categoria->municipio_id = 372; 
-		$categoria->parroquia = "Granados";
+		$categoria->municipalities_id = 372; 
+		$categoria->parishes = "Granados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 904; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Arnoldo Gabaldón";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Arnoldo Gabaldón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 905; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Bolivia";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Bolivia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 906; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Carrillo";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Carrillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 907; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Cegarra";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Cegarra";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 908; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Chejendé";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Chejendé";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 909; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "Manuel Salvador Ulloa";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "Manuel Salvador Ulloa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 910; 
-		$categoria->municipio_id = 373; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 373; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 911; 
-		$categoria->municipio_id = 374; 
-		$categoria->parroquia = "Carache";
+		$categoria->municipalities_id = 374; 
+		$categoria->parishes = "Carache";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 912; 
-		$categoria->municipio_id = 374; 
-		$categoria->parroquia = "La Concepción";
+		$categoria->municipalities_id = 374; 
+		$categoria->parishes = "La Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 913; 
-		$categoria->municipio_id = 374; 
-		$categoria->parroquia = "Cuicas";
+		$categoria->municipalities_id = 374; 
+		$categoria->parishes = "Cuicas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 914; 
-		$categoria->municipio_id = 374; 
-		$categoria->parroquia = "Panamericana";
+		$categoria->municipalities_id = 374; 
+		$categoria->parishes = "Panamericana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 915; 
-		$categoria->municipio_id = 374; 
-		$categoria->parroquia = "Santa Cruz";
+		$categoria->municipalities_id = 374; 
+		$categoria->parishes = "Santa Cruz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 916; 
-		$categoria->municipio_id = 375; 
-		$categoria->parroquia = "Escuque";
+		$categoria->municipalities_id = 375; 
+		$categoria->parishes = "Escuque";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 917; 
-		$categoria->municipio_id = 375; 
-		$categoria->parroquia = "La Unión";
+		$categoria->municipalities_id = 375; 
+		$categoria->parishes = "La Unión";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 918; 
-		$categoria->municipio_id = 375; 
-		$categoria->parroquia = "Santa Rita";
+		$categoria->municipalities_id = 375; 
+		$categoria->parishes = "Santa Rita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 919; 
-		$categoria->municipio_id = 375; 
-		$categoria->parroquia = "Sabana Libre";
+		$categoria->municipalities_id = 375; 
+		$categoria->parishes = "Sabana Libre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 920; 
-		$categoria->municipio_id = 376; 
-		$categoria->parroquia = "El Socorro";
+		$categoria->municipalities_id = 376; 
+		$categoria->parishes = "El Socorro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 921; 
-		$categoria->municipio_id = 376; 
-		$categoria->parroquia = "Los Caprichos";
+		$categoria->municipalities_id = 376; 
+		$categoria->parishes = "Los Caprichos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 922; 
-		$categoria->municipio_id = 376; 
-		$categoria->parroquia = "Antonio José de Sucre";
+		$categoria->municipalities_id = 376; 
+		$categoria->parishes = "Antonio José de Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 923; 
-		$categoria->municipio_id = 377; 
-		$categoria->parroquia = "Campo Elías";
+		$categoria->municipalities_id = 377; 
+		$categoria->parishes = "Campo Elías";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 924; 
-		$categoria->municipio_id = 377; 
-		$categoria->parroquia = "Arnoldo Gabaldón";
+		$categoria->municipalities_id = 377; 
+		$categoria->parishes = "Arnoldo Gabaldón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 925; 
-		$categoria->municipio_id = 378; 
-		$categoria->parroquia = "Santa Apolonia";
+		$categoria->municipalities_id = 378; 
+		$categoria->parishes = "Santa Apolonia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 926; 
-		$categoria->municipio_id = 378; 
-		$categoria->parroquia = "El Progreso";
+		$categoria->municipalities_id = 378; 
+		$categoria->parishes = "El Progreso";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 927; 
-		$categoria->municipio_id = 378; 
-		$categoria->parroquia = "La Ceiba";
+		$categoria->municipalities_id = 378; 
+		$categoria->parishes = "La Ceiba";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 928; 
-		$categoria->municipio_id = 378; 
-		$categoria->parroquia = "Tres de Febrero";
+		$categoria->municipalities_id = 378; 
+		$categoria->parishes = "Tres de Febrero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 929; 
-		$categoria->municipio_id = 379; 
-		$categoria->parroquia = "El Dividive";
+		$categoria->municipalities_id = 379; 
+		$categoria->parishes = "El Dividive";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 930; 
-		$categoria->municipio_id = 379; 
-		$categoria->parroquia = "Agua Santa";
+		$categoria->municipalities_id = 379; 
+		$categoria->parishes = "Agua Santa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 931; 
-		$categoria->municipio_id = 379; 
-		$categoria->parroquia = "Agua Caliente";
+		$categoria->municipalities_id = 379; 
+		$categoria->parishes = "Agua Caliente";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 932; 
-		$categoria->municipio_id = 379; 
-		$categoria->parroquia = "El Cenizo";
+		$categoria->municipalities_id = 379; 
+		$categoria->parishes = "El Cenizo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 933; 
-		$categoria->municipio_id = 379; 
-		$categoria->parroquia = "Valerita";
+		$categoria->municipalities_id = 379; 
+		$categoria->parishes = "Valerita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 934; 
-		$categoria->municipio_id = 380; 
-		$categoria->parroquia = "Monte Carmelo";
+		$categoria->municipalities_id = 380; 
+		$categoria->parishes = "Monte Carmelo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 935; 
-		$categoria->municipio_id = 380; 
-		$categoria->parroquia = "Buena Vista";
+		$categoria->municipalities_id = 380; 
+		$categoria->parishes = "Buena Vista";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 936; 
-		$categoria->municipio_id = 380; 
-		$categoria->parroquia = "Santa María del Horcón";
+		$categoria->municipalities_id = 380; 
+		$categoria->parishes = "Santa María del Horcón";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 937; 
-		$categoria->municipio_id = 381; 
-		$categoria->parroquia = "Motatán";
+		$categoria->municipalities_id = 381; 
+		$categoria->parishes = "Motatán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 938; 
-		$categoria->municipio_id = 381; 
-		$categoria->parroquia = "El Baño";
+		$categoria->municipalities_id = 381; 
+		$categoria->parishes = "El Baño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 939; 
-		$categoria->municipio_id = 381; 
-		$categoria->parroquia = "Jalisco";
+		$categoria->municipalities_id = 381; 
+		$categoria->parishes = "Jalisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 940; 
-		$categoria->municipio_id = 382; 
-		$categoria->parroquia = "Pampán";
+		$categoria->municipalities_id = 382; 
+		$categoria->parishes = "Pampán";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 941; 
-		$categoria->municipio_id = 382; 
-		$categoria->parroquia = "Flor de Patria";
+		$categoria->municipalities_id = 382; 
+		$categoria->parishes = "Flor de Patria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 942; 
-		$categoria->municipio_id = 382; 
-		$categoria->parroquia = "La Paz";
+		$categoria->municipalities_id = 382; 
+		$categoria->parishes = "La Paz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 943; 
-		$categoria->municipio_id = 382; 
-		$categoria->parroquia = "Santa Ana";
+		$categoria->municipalities_id = 382; 
+		$categoria->parishes = "Santa Ana";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 944; 
-		$categoria->municipio_id = 383; 
-		$categoria->parroquia = "Pampanito";
+		$categoria->municipalities_id = 383; 
+		$categoria->parishes = "Pampanito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 945; 
-		$categoria->municipio_id = 383; 
-		$categoria->parroquia = "La Concepción";
+		$categoria->municipalities_id = 383; 
+		$categoria->parishes = "La Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 946; 
-		$categoria->municipio_id = 383; 
-		$categoria->parroquia = "Pampanito II";
+		$categoria->municipalities_id = 383; 
+		$categoria->parishes = "Pampanito II";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 947; 
-		$categoria->municipio_id = 384; 
-		$categoria->parroquia = "Betijoque";
+		$categoria->municipalities_id = 384; 
+		$categoria->parishes = "Betijoque";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 948; 
-		$categoria->municipio_id = 384; 
-		$categoria->parroquia = "José Gregorio Hernández";
+		$categoria->municipalities_id = 384; 
+		$categoria->parishes = "José Gregorio Hernández";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 949; 
-		$categoria->municipio_id = 384; 
-		$categoria->parroquia = "La Pueblita";
+		$categoria->municipalities_id = 384; 
+		$categoria->parishes = "La Pueblita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 950; 
-		$categoria->municipio_id = 384; 
-		$categoria->parroquia = "Los Cedros";
+		$categoria->municipalities_id = 384; 
+		$categoria->parishes = "Los Cedros";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 951; 
-		$categoria->municipio_id = 385; 
-		$categoria->parroquia = "Carvajal";
+		$categoria->municipalities_id = 385; 
+		$categoria->parishes = "Carvajal";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 952; 
-		$categoria->municipio_id = 385; 
-		$categoria->parroquia = "Campo Alegre";
+		$categoria->municipalities_id = 385; 
+		$categoria->parishes = "Campo Alegre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 953; 
-		$categoria->municipio_id = 385; 
-		$categoria->parroquia = "Antonio Nicolás Briceño";
+		$categoria->municipalities_id = 385; 
+		$categoria->parishes = "Antonio Nicolás Briceño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 954; 
-		$categoria->municipio_id = 385; 
-		$categoria->parroquia = "José Leonardo Suárez";
+		$categoria->municipalities_id = 385; 
+		$categoria->parishes = "José Leonardo Suárez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 955; 
-		$categoria->municipio_id = 386; 
-		$categoria->parroquia = "Sabana de Mendoza";
+		$categoria->municipalities_id = 386; 
+		$categoria->parishes = "Sabana de Mendoza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 956; 
-		$categoria->municipio_id = 386; 
-		$categoria->parroquia = "Junín";
+		$categoria->municipalities_id = 386; 
+		$categoria->parishes = "Junín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 957; 
-		$categoria->municipio_id = 386; 
-		$categoria->parroquia = "Valmore Rodríguez";
+		$categoria->municipalities_id = 386; 
+		$categoria->parishes = "Valmore Rodríguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 958; 
-		$categoria->municipio_id = 386; 
-		$categoria->parroquia = "El Paraíso";
+		$categoria->municipalities_id = 386; 
+		$categoria->parishes = "El Paraíso";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 959; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Andrés Linares";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Andrés Linares";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 960; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Chiquinquirá";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Chiquinquirá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 961; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Cristóbal Mendoza";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Cristóbal Mendoza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 962; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Cruz Carrillo";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Cruz Carrillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 963; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Matriz";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Matriz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 964; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Monseñor Carrillo";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Monseñor Carrillo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 965; 
-		$categoria->municipio_id = 387; 
-		$categoria->parroquia = "Tres Esquinas";
+		$categoria->municipalities_id = 387; 
+		$categoria->parishes = "Tres Esquinas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 966; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "Cabimbú";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "Cabimbú";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 967; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "Jajó";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "Jajó";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 968; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "La Mesa de Esnujaque";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "La Mesa de Esnujaque";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 969; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "Santiago";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "Santiago";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 970; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "Tuñame";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "Tuñame";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 971; 
-		$categoria->municipio_id = 388; 
-		$categoria->parroquia = "La Quebrada";
+		$categoria->municipalities_id = 388; 
+		$categoria->parishes = "La Quebrada";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 972; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "Juan Ignacio Montilla";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "Juan Ignacio Montilla";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 973; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "La Beatriz";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "La Beatriz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 974; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "La Puerta";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "La Puerta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 975; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "Mendoza del Valle de Momboy";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "Mendoza del Valle de Momboy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 976; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "Mercedes Díaz";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "Mercedes Díaz";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 977; 
-		$categoria->municipio_id = 389; 
-		$categoria->parroquia = "San Luis";
+		$categoria->municipalities_id = 389; 
+		$categoria->parishes = "San Luis";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 978; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Caraballeda";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Caraballeda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 979; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Carayaca";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Carayaca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 980; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Carlos Soublette";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Carlos Soublette";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 981; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Caruao Chuspa";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Caruao Chuspa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 982; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Catia La Mar";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Catia La Mar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 983; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "El Junko";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "El Junko";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 984; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "La Guaira";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "La Guaira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 985; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Macuto";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Macuto";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 986; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Maiquetía";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Maiquetía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 987; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Naiguatá";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Naiguatá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 988; 
-		$categoria->municipio_id = 390; 
-		$categoria->parroquia = "Urimare";
+		$categoria->municipalities_id = 390; 
+		$categoria->parishes = "Urimare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 989; 
-		$categoria->municipio_id = 391; 
-		$categoria->parroquia = "Arístides Bastidas";
+		$categoria->municipalities_id = 391; 
+		$categoria->parishes = "Arístides Bastidas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 990; 
-		$categoria->municipio_id = 392; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 392; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 991; 
-		$categoria->municipio_id = 407; 
-		$categoria->parroquia = "Chivacoa";
+		$categoria->municipalities_id = 407; 
+		$categoria->parishes = "Chivacoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 992; 
-		$categoria->municipio_id = 407; 
-		$categoria->parroquia = "Campo Elías";
+		$categoria->municipalities_id = 407; 
+		$categoria->parishes = "Campo Elías";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 993; 
-		$categoria->municipio_id = 408; 
-		$categoria->parroquia = "Cocorote";
+		$categoria->municipalities_id = 408; 
+		$categoria->parishes = "Cocorote";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 994; 
-		$categoria->municipio_id = 409; 
-		$categoria->parroquia = "Independencia";
+		$categoria->municipalities_id = 409; 
+		$categoria->parishes = "Independencia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 995; 
-		$categoria->municipio_id = 410; 
-		$categoria->parroquia = "José Antonio Páez";
+		$categoria->municipalities_id = 410; 
+		$categoria->parishes = "José Antonio Páez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 996; 
-		$categoria->municipio_id = 411; 
-		$categoria->parroquia = "La Trinidad";
+		$categoria->municipalities_id = 411; 
+		$categoria->parishes = "La Trinidad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 997; 
-		$categoria->municipio_id = 412; 
-		$categoria->parroquia = "Manuel Monge";
+		$categoria->municipalities_id = 412; 
+		$categoria->parishes = "Manuel Monge";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 998; 
-		$categoria->municipio_id = 413; 
-		$categoria->parroquia = "Salóm";
+		$categoria->municipalities_id = 413; 
+		$categoria->parishes = "Salóm";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 999; 
-		$categoria->municipio_id = 413; 
-		$categoria->parroquia = "Temerla";
+		$categoria->municipalities_id = 413; 
+		$categoria->parishes = "Temerla";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1000; 
-		$categoria->municipio_id = 413; 
-		$categoria->parroquia = "Nirgua";
+		$categoria->municipalities_id = 413; 
+		$categoria->parishes = "Nirgua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1001; 
-		$categoria->municipio_id = 414; 
-		$categoria->parroquia = "San Andrés";
+		$categoria->municipalities_id = 414; 
+		$categoria->parishes = "San Andrés";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1002; 
-		$categoria->municipio_id = 414; 
-		$categoria->parroquia = "Yaritagua";
+		$categoria->municipalities_id = 414; 
+		$categoria->parishes = "Yaritagua";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1003; 
-		$categoria->municipio_id = 415; 
-		$categoria->parroquia = "San Javier";
+		$categoria->municipalities_id = 415; 
+		$categoria->parishes = "San Javier";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1004; 
-		$categoria->municipio_id = 415; 
-		$categoria->parroquia = "Albarico";
+		$categoria->municipalities_id = 415; 
+		$categoria->parishes = "Albarico";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1005; 
-		$categoria->municipio_id = 415; 
-		$categoria->parroquia = "San Felipe";
+		$categoria->municipalities_id = 415; 
+		$categoria->parishes = "San Felipe";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1006; 
-		$categoria->municipio_id = 416; 
-		$categoria->parroquia = "Sucre";
+		$categoria->municipalities_id = 416; 
+		$categoria->parishes = "Sucre";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1007; 
-		$categoria->municipio_id = 417; 
-		$categoria->parroquia = "Urachiche";
+		$categoria->municipalities_id = 417; 
+		$categoria->parishes = "Urachiche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1008; 
-		$categoria->municipio_id = 418; 
-		$categoria->parroquia = "El Guayabo";
+		$categoria->municipalities_id = 418; 
+		$categoria->parishes = "El Guayabo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1009; 
-		$categoria->municipio_id = 418; 
-		$categoria->parroquia = "Farriar";
+		$categoria->municipalities_id = 418; 
+		$categoria->parishes = "Farriar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1010; 
-		$categoria->municipio_id = 441; 
-		$categoria->parroquia = "Isla de Toas";
+		$categoria->municipalities_id = 441; 
+		$categoria->parishes = "Isla de Toas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1011; 
-		$categoria->municipio_id = 441; 
-		$categoria->parroquia = "Monagas";
+		$categoria->municipalities_id = 441; 
+		$categoria->parishes = "Monagas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1012; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "San Timoteo";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "San Timoteo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1013; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "General Urdaneta";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "General Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1014; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "Libertador";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "Libertador";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1015; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "Marcelino Briceño";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "Marcelino Briceño";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1016; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "Pueblo Nuevo";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "Pueblo Nuevo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1017; 
-		$categoria->municipio_id = 442; 
-		$categoria->parroquia = "Manuel Guanipa Matos";
+		$categoria->municipalities_id = 442; 
+		$categoria->parishes = "Manuel Guanipa Matos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1018; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Ambrosio";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Ambrosio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1019; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Carmen Herrera";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Carmen Herrera";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1020; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "La Rosa";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "La Rosa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1021; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Germán Ríos Linares";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Germán Ríos Linares";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1022; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "San Benito";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "San Benito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1023; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Rómulo Betancourt";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Rómulo Betancourt";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1024; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Jorge Hernández";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Jorge Hernández";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1025; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Punta Gorda";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Punta Gorda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1026; 
-		$categoria->municipio_id = 443; 
-		$categoria->parroquia = "Arístides Calvani";
+		$categoria->municipalities_id = 443; 
+		$categoria->parishes = "Arístides Calvani";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1027; 
-		$categoria->municipio_id = 444; 
-		$categoria->parroquia = "Encontrados";
+		$categoria->municipalities_id = 444; 
+		$categoria->parishes = "Encontrados";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1028; 
-		$categoria->municipio_id = 444; 
-		$categoria->parroquia = "Udón Pérez";
+		$categoria->municipalities_id = 444; 
+		$categoria->parishes = "Udón Pérez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1029; 
-		$categoria->municipio_id = 445; 
-		$categoria->parroquia = "Moralito";
+		$categoria->municipalities_id = 445; 
+		$categoria->parishes = "Moralito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1030; 
-		$categoria->municipio_id = 445; 
-		$categoria->parroquia = "San Carlos del Zulia";
+		$categoria->municipalities_id = 445; 
+		$categoria->parishes = "San Carlos del Zulia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1031; 
-		$categoria->municipio_id = 445; 
-		$categoria->parroquia = "Santa Cruz del Zulia";
+		$categoria->municipalities_id = 445; 
+		$categoria->parishes = "Santa Cruz del Zulia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1032; 
-		$categoria->municipio_id = 445; 
-		$categoria->parroquia = "Santa Bárbara";
+		$categoria->municipalities_id = 445; 
+		$categoria->parishes = "Santa Bárbara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1033; 
-		$categoria->municipio_id = 445; 
-		$categoria->parroquia = "Urribarrí";
+		$categoria->municipalities_id = 445; 
+		$categoria->parishes = "Urribarrí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1034; 
-		$categoria->municipio_id = 446; 
-		$categoria->parroquia = "Carlos Quevedo";
+		$categoria->municipalities_id = 446; 
+		$categoria->parishes = "Carlos Quevedo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1035; 
-		$categoria->municipio_id = 446; 
-		$categoria->parroquia = "Francisco Javier Pulgar";
+		$categoria->municipalities_id = 446; 
+		$categoria->parishes = "Francisco Javier Pulgar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1036; 
-		$categoria->municipio_id = 446; 
-		$categoria->parroquia = "Simón Rodríguez";
+		$categoria->municipalities_id = 446; 
+		$categoria->parishes = "Simón Rodríguez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1037; 
-		$categoria->municipio_id = 446; 
-		$categoria->parroquia = "Guamo-Gavilanes";
+		$categoria->municipalities_id = 446; 
+		$categoria->parishes = "Guamo-Gavilanes";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1038; 
-		$categoria->municipio_id = 448; 
-		$categoria->parroquia = "La Concepción";
+		$categoria->municipalities_id = 448; 
+		$categoria->parishes = "La Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1039; 
-		$categoria->municipio_id = 448; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 448; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1040; 
-		$categoria->municipio_id = 448; 
-		$categoria->parroquia = "Mariano Parra León";
+		$categoria->municipalities_id = 448; 
+		$categoria->parishes = "Mariano Parra León";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1041; 
-		$categoria->municipio_id = 448; 
-		$categoria->parroquia = "José Ramón Yépez";
+		$categoria->municipalities_id = 448; 
+		$categoria->parishes = "José Ramón Yépez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1042; 
-		$categoria->municipio_id = 449; 
-		$categoria->parroquia = "Jesús María Semprún";
+		$categoria->municipalities_id = 449; 
+		$categoria->parishes = "Jesús María Semprún";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1043; 
-		$categoria->municipio_id = 449; 
-		$categoria->parroquia = "Barí";
+		$categoria->municipalities_id = 449; 
+		$categoria->parishes = "Barí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1044; 
-		$categoria->municipio_id = 450; 
-		$categoria->parroquia = "Concepción";
+		$categoria->municipalities_id = 450; 
+		$categoria->parishes = "Concepción";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1045; 
-		$categoria->municipio_id = 450; 
-		$categoria->parroquia = "Andrés Bello";
+		$categoria->municipalities_id = 450; 
+		$categoria->parishes = "Andrés Bello";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1046; 
-		$categoria->municipio_id = 450; 
-		$categoria->parroquia = "Chiquinquirá";
+		$categoria->municipalities_id = 450; 
+		$categoria->parishes = "Chiquinquirá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1047; 
-		$categoria->municipio_id = 450; 
-		$categoria->parroquia = "El Carmelo";
+		$categoria->municipalities_id = 450; 
+		$categoria->parishes = "El Carmelo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1048; 
-		$categoria->municipio_id = 450; 
-		$categoria->parroquia = "Potreritos";
+		$categoria->municipalities_id = 450; 
+		$categoria->parishes = "Potreritos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1049; 
-		$categoria->municipio_id = 451; 
-		$categoria->parroquia = "Libertad";
+		$categoria->municipalities_id = 451; 
+		$categoria->parishes = "Libertad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1050; 
-		$categoria->municipio_id = 451; 
-		$categoria->parroquia = "Alonso de Ojeda";
+		$categoria->municipalities_id = 451; 
+		$categoria->parishes = "Alonso de Ojeda";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1051; 
-		$categoria->municipio_id = 451; 
-		$categoria->parroquia = "Venezuela";
+		$categoria->municipalities_id = 451; 
+		$categoria->parishes = "Venezuela";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1052; 
-		$categoria->municipio_id = 451; 
-		$categoria->parroquia = "Eleazar López Contreras";
+		$categoria->municipalities_id = 451; 
+		$categoria->parishes = "Eleazar López Contreras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1053; 
-		$categoria->municipio_id = 451; 
-		$categoria->parroquia = "Campo Lara";
+		$categoria->municipalities_id = 451; 
+		$categoria->parishes = "Campo Lara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1054; 
-		$categoria->municipio_id = 452; 
-		$categoria->parroquia = "Bartolomé de las Casas";
+		$categoria->municipalities_id = 452; 
+		$categoria->parishes = "Bartolomé de las Casas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1055; 
-		$categoria->municipio_id = 452; 
-		$categoria->parroquia = "Libertad";
+		$categoria->municipalities_id = 452; 
+		$categoria->parishes = "Libertad";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1056; 
-		$categoria->municipio_id = 452; 
-		$categoria->parroquia = "Río Negro";
+		$categoria->municipalities_id = 452; 
+		$categoria->parishes = "Río Negro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1057; 
-		$categoria->municipio_id = 452; 
-		$categoria->parroquia = "San José de Perijá";
+		$categoria->municipalities_id = 452; 
+		$categoria->parishes = "San José de Perijá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1058; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "San Rafael";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "San Rafael";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1059; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "La Sierrita";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "La Sierrita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1060; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "Las Parcelas";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "Las Parcelas";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1061; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "Luis de Vicente";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "Luis de Vicente";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1062; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "Monseñor Marcos Sergio Godoy";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "Monseñor Marcos Sergio Godoy";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1063; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "Ricaurte";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "Ricaurte";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1064; 
-		$categoria->municipio_id = 453; 
-		$categoria->parroquia = "Tamare";
+		$categoria->municipalities_id = 453; 
+		$categoria->parishes = "Tamare";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1065; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Antonio Borjas Romero";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Antonio Borjas Romero";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1066; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Bolívar";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Bolívar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1067; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Cacique Mara";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Cacique Mara";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1068; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Carracciolo Parra Pérez";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Carracciolo Parra Pérez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1069; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Cecilio Acosta";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Cecilio Acosta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1070; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Cristo de Aranza";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Cristo de Aranza";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1071; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Coquivacoa";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Coquivacoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1072; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Chiquinquirá";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Chiquinquirá";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1073; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Francisco Eugenio Bustamante";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Francisco Eugenio Bustamante";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1074; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Idelfonzo Vásquez";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Idelfonzo Vásquez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1075; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Juana de Ávila";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Juana de Ávila";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1076; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Luis Hurtado Higuera";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Luis Hurtado Higuera";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1077; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Manuel Dagnino";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Manuel Dagnino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1078; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Olegario Villalobos";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Olegario Villalobos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1079; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Raúl Leoni";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Raúl Leoni";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1080; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Santa Lucía";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Santa Lucía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1081; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "Venancio Pulgar";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "Venancio Pulgar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1082; 
-		$categoria->municipio_id = 454; 
-		$categoria->parroquia = "San Isidro";
+		$categoria->municipalities_id = 454; 
+		$categoria->parishes = "San Isidro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1083; 
-		$categoria->municipio_id = 455; 
-		$categoria->parroquia = "Altagracia";
+		$categoria->municipalities_id = 455; 
+		$categoria->parishes = "Altagracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1084; 
-		$categoria->municipio_id = 455; 
-		$categoria->parroquia = "Faría";
+		$categoria->municipalities_id = 455; 
+		$categoria->parishes = "Faría";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1085; 
-		$categoria->municipio_id = 455; 
-		$categoria->parroquia = "Ana María Campos";
+		$categoria->municipalities_id = 455; 
+		$categoria->parishes = "Ana María Campos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1086; 
-		$categoria->municipio_id = 455; 
-		$categoria->parroquia = "San Antonio";
+		$categoria->municipalities_id = 455; 
+		$categoria->parishes = "San Antonio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1087; 
-		$categoria->municipio_id = 455; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 455; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1088; 
-		$categoria->municipio_id = 456; 
-		$categoria->parroquia = "Donaldo García";
+		$categoria->municipalities_id = 456; 
+		$categoria->parishes = "Donaldo García";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1089; 
-		$categoria->municipio_id = 456; 
-		$categoria->parroquia = "El Rosario";
+		$categoria->municipalities_id = 456; 
+		$categoria->parishes = "El Rosario";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1090; 
-		$categoria->municipio_id = 456; 
-		$categoria->parroquia = "Sixto Zambrano";
+		$categoria->municipalities_id = 456; 
+		$categoria->parishes = "Sixto Zambrano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1091; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "San Francisco";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "San Francisco";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1092; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "El Bajo";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "El Bajo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1093; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "Domitila Flores";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "Domitila Flores";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1094; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "Francisco Ochoa";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "Francisco Ochoa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1095; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "Los Cortijos";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "Los Cortijos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1096; 
-		$categoria->municipio_id = 457; 
-		$categoria->parroquia = "Marcial Hernández";
+		$categoria->municipalities_id = 457; 
+		$categoria->parishes = "Marcial Hernández";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1097; 
-		$categoria->municipio_id = 458; 
-		$categoria->parroquia = "Santa Rita";
+		$categoria->municipalities_id = 458; 
+		$categoria->parishes = "Santa Rita";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1098; 
-		$categoria->municipio_id = 458; 
-		$categoria->parroquia = "El Mene";
+		$categoria->municipalities_id = 458; 
+		$categoria->parishes = "El Mene";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1099; 
-		$categoria->municipio_id = 458; 
-		$categoria->parroquia = "Pedro Lucas Urribarrí";
+		$categoria->municipalities_id = 458; 
+		$categoria->parishes = "Pedro Lucas Urribarrí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1100; 
-		$categoria->municipio_id = 458; 
-		$categoria->parroquia = "José Cenobio Urribarrí";
+		$categoria->municipalities_id = 458; 
+		$categoria->parishes = "José Cenobio Urribarrí";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1101; 
-		$categoria->municipio_id = 459; 
-		$categoria->parroquia = "Rafael Maria Baralt";
+		$categoria->municipalities_id = 459; 
+		$categoria->parishes = "Rafael Maria Baralt";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1102; 
-		$categoria->municipio_id = 459; 
-		$categoria->parroquia = "Manuel Manrique";
+		$categoria->municipalities_id = 459; 
+		$categoria->parishes = "Manuel Manrique";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1103; 
-		$categoria->municipio_id = 459; 
-		$categoria->parroquia = "Rafael Urdaneta";
+		$categoria->municipalities_id = 459; 
+		$categoria->parishes = "Rafael Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1104; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "Bobures";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "Bobures";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1105; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "Gibraltar";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "Gibraltar";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1106; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "Heras";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "Heras";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1107; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "Monseñor Arturo Álvarez";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "Monseñor Arturo Álvarez";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1108; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "Rómulo Gallegos";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "Rómulo Gallegos";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1109; 
-		$categoria->municipio_id = 460; 
-		$categoria->parroquia = "El Batey";
+		$categoria->municipalities_id = 460; 
+		$categoria->parishes = "El Batey";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1110; 
-		$categoria->municipio_id = 461; 
-		$categoria->parroquia = "Rafael Urdaneta";
+		$categoria->municipalities_id = 461; 
+		$categoria->parishes = "Rafael Urdaneta";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1111; 
-		$categoria->municipio_id = 461; 
-		$categoria->parroquia = "La Victoria";
+		$categoria->municipalities_id = 461; 
+		$categoria->parishes = "La Victoria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1112; 
-		$categoria->municipio_id = 461; 
-		$categoria->parroquia = "Raúl Cuenca";
+		$categoria->municipalities_id = 461; 
+		$categoria->parishes = "Raúl Cuenca";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1113; 
-		$categoria->municipio_id = 447; 
-		$categoria->parroquia = "Sinamaica";
+		$categoria->municipalities_id = 447; 
+		$categoria->parishes = "Sinamaica";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1114; 
-		$categoria->municipio_id = 447; 
-		$categoria->parroquia = "Alta Guajira";
+		$categoria->municipalities_id = 447; 
+		$categoria->parishes = "Alta Guajira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1115; 
-		$categoria->municipio_id = 447; 
-		$categoria->parroquia = "Elías Sánchez Rubio";
+		$categoria->municipalities_id = 447; 
+		$categoria->parishes = "Elías Sánchez Rubio";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1116; 
-		$categoria->municipio_id = 447; 
-		$categoria->parroquia = "Guajira";
+		$categoria->municipalities_id = 447; 
+		$categoria->parishes = "Guajira";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1117; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Altagracia";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Altagracia";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1118; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Antímano";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Antímano";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1119; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Caricuao";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Caricuao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1120; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Catedral";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Catedral";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1121; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Coche";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Coche";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1122; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "El Junquito";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "El Junquito";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1123; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "El Paraíso";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "El Paraíso";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1124; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "El Recreo";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "El Recreo";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1125; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "El Valle";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "El Valle";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1126; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "La Candelaria";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "La Candelaria";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1127; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "La Pastora";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "La Pastora";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1128; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "La Vega";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "La Vega";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1129; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Macarao";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Macarao";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1130; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "San Agustín";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "San Agustín";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1131; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "San Bernardino";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "San Bernardino";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1132; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "San José";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "San José";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1133; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "San Juan";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "San Juan";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1134; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "San Pedro";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "San Pedro";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1135; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Santa Rosalía";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Santa Rosalía";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1136; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Santa Teresa";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Santa Teresa";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1137; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "Sucre (Catia)";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "Sucre (Catia)";
 		$categoria->save();
 
-		$categoria = new Parroquia();
+		$categoria = new Parish();
 		$categoria->id = 1138; 
-		$categoria->municipio_id = 462; 
-		$categoria->parroquia = "23 de enero";
+		$categoria->municipalities_id = 462; 
+		$categoria->parishes = "23 de enero";
 		$categoria->save();
 	}
 

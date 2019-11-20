@@ -4,18 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Integrity_plan_persona extends Model
+class PersonIntegrityPlan extends Model
 {
-	protected $table = 'Integrity_plan_personas';
+	protected $table = 'person_integrity_plans';
 
     public function plan_persona_id()
     {
     	return $this->belongsTo('plan_persona_id');
     }
-
-
 }
-
-
-
-

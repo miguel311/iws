@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateIntegrityPlanPersonasTable extends Migration
+class CreateUsagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class CreateIntegrityPlanPersonasTable extends Migration
      */
     public function up()
     {
-
+        Schema::create('usages', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('usages');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class CreateIntegrityPlanPersonasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('integrity_plan_personas');
+        Schema::dropIfExists('usages');
     }
 }

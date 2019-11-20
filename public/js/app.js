@@ -48179,7 +48179,7 @@ var render = function() {
                     _vm._l(_vm.plan, function(item, index) {
                       return _c("option", {
                         key: index,
-                        attrs: { disabled: "", label: item.price },
+                        attrs: { disabled: "", label: item.coverage },
                         domProps: { value: item.id },
                         model: {
                           value: _vm.request.plan_persona_id,
@@ -48238,7 +48238,7 @@ var render = function() {
                     _vm._l(_vm.plan, function(item, index) {
                       return _c("option", {
                         key: index,
-                        attrs: { disabled: "", label: item.prima },
+                        attrs: { disabled: "", label: item.price },
                         domProps: { value: item.id },
                         model: {
                           value: _vm.request.plan_persona_id,
@@ -48278,7 +48278,7 @@ var render = function() {
                         placeholder: "Deducible",
                         name: "",
                         min: "0",
-                        max: "50"
+                        max: "0"
                       },
                       domProps: { value: _vm.request.deducible },
                       on: {

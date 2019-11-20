@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\HealthIntegrity;
 
-class CreateCotizaContractorsTable extends Migration
+class CreateContractingQuotesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +15,10 @@ class CreateCotizaContractorsTable extends Migration
     public function up()
     {
         // contratantes de cotizacion 
-        Schema::create('cotiza_contractors', function (Blueprint $table) {
+        Schema::create('contracting_quotes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('integrity_saluds_id')->unsigned();
-            $table->foreign('integrity_saluds_id')->references('id')->on('integrity__saluds');// clave foranea
+            $table->foreign('integrity_saluds_id')->references('id')->on('health_integrities');// clave foranea
             $table->string('name');//nombre
             $table->string('last_name');//apellido
             $table->string('sexo');//sexo
@@ -35,6 +36,6 @@ class CreateCotizaContractorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cotiza_contractors');
+        Schema::dropIfExists('contracting_quotes');
     }
 }

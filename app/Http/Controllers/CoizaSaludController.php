@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\cotiza_contractor;
-use App\Integrity_plan_persona;
+use App\PersonIntegrityPlan;
 use App\Integrity_Salud;
 use App\Estado;
 use App\Municipio;
@@ -19,12 +19,12 @@ class CoizaSaludController extends Controller
      */
     public function index(Request $request)
     {
-        // return Integrity_plan_persona::all();
+        // return PersonIntegrityPlan::all();
 
+            $plan = PersonIntegrityPlan::get();
+            return $plan;
 
         if($request->ajax()){
-            $plan = Integrity_plan_persona::get();
-            return $plan;
 
         }else{
             return view('cotizador.cotizadorsaludindex');
@@ -42,7 +42,7 @@ class CoizaSaludController extends Controller
         
         // $request = App\Request::all();
         // return view('request.request',compact('request'));
-            // $plan = Integrity_plan_persona::get();
+            // $plan = PersonIntegrityPlan::get();
             // return $plan;
             // return view('cotizador.cotizadorsalud', compact('plan'));
         // }else{
@@ -58,7 +58,7 @@ class CoizaSaludController extends Controller
     public function create(Request $request)
     {
         if($request->ajax()){
-            $plan = Integrity_plan_persona::get();
+            $plan = PersonIntegrityPlan::get();
             return $plan;
         }else{
             return view('cotizador.cotizadorsalud');
@@ -73,8 +73,6 @@ class CoizaSaludController extends Controller
      */
     public function store(Request $request)
     {
-
-        return back()->with('mensaje', 'entraste!');
 
 
         $salud = new integrity_salud();
@@ -94,8 +92,8 @@ class CoizaSaludController extends Controller
         $salud->user_id = auth()->user()->email;
 
         // POR CONSULTAR
-        // $plan = Integrity_plan_persona::findByid($request->plan_persona_id)->id;
-        // $plan = Integrity_plan_persona::where('id', $request->plan_persona_id)->get();
+        // $plan = PersonIntegrityPlan::findByid($request->plan_persona_id)->id;
+        // $plan = PersonIntegrityPlan::where('id', $request->plan_persona_id)->get();
         // $salud->suma = $plan->suma;
         // $salud->cuota = $plan->cuota;
         // $salud->user_id = "1";

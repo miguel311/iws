@@ -81,7 +81,7 @@
 								      <span class="input-group-text">Suma a Resguardar</span>
 					  </div>		   
 					<select  class="form-control" v-model="request.plan_persona_id">
-						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.price " :value=" item.id "></option>
+						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.coverage " :value=" item.id "></option>
 					</select> 
 				</div>
 
@@ -91,7 +91,7 @@
 								      <span class="input-group-text">Costo a pagar</span>
 					  </div>		   
 					<select  class="form-control" v-model="request.plan_persona_id">
-						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.prima " :value=" item.id "></option>
+						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.price " :value=" item.id "></option>
 					</select> 
 				</div>
 
@@ -101,7 +101,7 @@
 					    <div class="input-group-prepend">
 					      <span class="input-group-text">Deducible</span>
 					    </div>
-					  	<input type="number" placeholder="Deducible" name="" class="form-control"  min="0" max="50" v-model="request.deducible">
+					  	<input type="number" placeholder="Deducible" name="" class="form-control"  min="0" max="0" v-model="request.deducible">
 					</div>
 				</div>
 
