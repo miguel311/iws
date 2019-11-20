@@ -21,7 +21,7 @@
     			</tr>
     			<tr>  
 			    <td> <input v-model="user.name" class="form-control"></td>
-			    <td> <input v-model="user.lastname" class="form-control"></td>
+			    <td> <input v-model="user.last_name" class="form-control"></td>
 			    <td><select class="form-control" v-model="user.sexo" >
 					<option label="M" value="M"></option>
 					<option label="F" value="F"></option>
@@ -78,7 +78,7 @@
 				<!-- Suma a Resguardar -->
 				<div v-if="request.plan_persona_id" class="input-group mb-3">
 					  <div class="input-group-prepend">
-								      <span class="input-group-text">Suma a Resguardar</span>
+								      <span class="input-group-text">Suma a Resguardar $</span>
 					  </div>		   
 					<select  class="form-control" v-model="request.plan_persona_id">
 						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.coverage " :value=" item.id "></option>
@@ -88,7 +88,7 @@
 				<!-- prima -->
 				<div v-if="request.plan_persona_id" class="input-group mb-3">
 					  <div class="input-group-prepend">
-								      <span class="input-group-text">Costo a pagar</span>
+								      <span class="input-group-text">Costo a pagar $</span>
 					  </div>		   
 					<select  class="form-control" v-model="request.plan_persona_id">
 						<option disabled  v-model="request.plan_persona_id" v-for="(item, index) in plan" :key="index" :label=" item.price " :value=" item.id "></option>
@@ -99,7 +99,7 @@
 				<div v-if="request.plan_persona_id" class="input-group mb-3">
 				    <div class="input-group mb-3">
 					    <div class="input-group-prepend">
-					      <span class="input-group-text">Deducible</span>
+					      <span class="input-group-text">Deducible %</span>
 					    </div>
 					  	<input type="number" placeholder="Deducible" name="" class="form-control"  min="0" max="0" v-model="request.deducible">
 					</div>
@@ -297,7 +297,7 @@
 				//   'success'
 				// )
 			return{
-				users: [{ name: '',lastname:'',date: '', sexo: '', parent:'Titular', mother:false}],
+				users: [{ name: '',last_name:'',date: '', sexo: '', parent:'Titular', mother:false}],
 
 				 plan: [],
 				 request: [],
@@ -361,7 +361,7 @@
 			},
 			// add user test
 			addUser: function () {
-		      this.users.push({  name: '',lastname:'',date: '', sexo: '', parent:'', mother:false });
+		      this.users.push({  name: '',last_name:'',date: '', sexo: '', parent:'', mother:false });
 		    },
 			// delet user test
 		    deleteUser: function (index) {
@@ -495,7 +495,8 @@
 
 				const params ={
 					// user: users,
-					// _method: 'PUT',
+					// user: this.users.push(this.users),
+					// user: this.users.name,
 					plan_persona_id: this.request.plan_persona_id,
 					deducible: this.request.deducible,
 					forma_pago: this.request.forma_pago,
@@ -509,12 +510,17 @@
 					phone_movile: this.request.phone_movile,
 					email: this.request.email
 				};
+				// Array.prototype.push.apply(params, this.users);
+				[].push.call(params, this.users);//ingresa array de users en constante
+
+				// const cons = params.push(this.users);
+				// console.log(params);//ver que va a enviar en
 				axios
 				.post('/cotizasalud', params)
-		        .then((res) =>{
-		          const cotizaServer = res.data;
-		          this.request.push(cotizaServer);
-		        })
+		        // .then((res) =>{
+		        //   const cotizaServer = res.data;
+		        //    this.request.push(cotizaServer);
+		        // })
 		        .catch(e => {
 		            console.log(e);
 		        });

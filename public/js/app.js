@@ -2144,7 +2144,7 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     return _defineProperty({
       users: [{
         name: '',
-        lastname: '',
+        last_name: '',
         date: '',
         sexo: '',
         parent: 'Titular',
@@ -2193,7 +2193,7 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     addUser: function addUser() {
       this.users.push({
         name: '',
-        lastname: '',
+        last_name: '',
         date: '',
         sexo: '',
         parent: '',
@@ -2227,8 +2227,6 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     // },
     // Validacion de formulario
     agregar: function agregar() {
-      var _this2 = this;
-
       // validacion datos personales
       // if (
       // 	this.request.plan_persona_id.trim() === '' ||
@@ -2294,7 +2292,8 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
       // axios.post('/cotizasalud', cotizacion);
       var params = {
         // user: users,
-        // _method: 'PUT',
+        // user: this.users.push(this.users),
+        // user: this.users.name,
         plan_persona_id: this.request.plan_persona_id,
         deducible: this.request.deducible,
         forma_pago: this.request.forma_pago,
@@ -2307,12 +2306,17 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
         phone_movile_type: this.request.phone_movile_type,
         phone_movile: this.request.phone_movile,
         email: this.request.email
-      };
-      axios.post('/cotizasalud', params).then(function (res) {
-        var cotizaServer = res.data;
+      }; // Array.prototype.push.apply(params, this.users);
 
-        _this2.request.push(cotizaServer);
-      })["catch"](function (e) {
+      [].push.call(params, this.users); //ingresa array de users en constante
+      // const cons = params.push(this.users);
+      // console.log(params);//ver que va a enviar en
+
+      axios.post('/cotizasalud', params) // .then((res) =>{
+      //   const cotizaServer = res.data;
+      //    this.request.push(cotizaServer);
+      // })
+      ["catch"](function (e) {
         console.log(e);
       }); // alert('Hola ' + this.request.name + '!')
     }
@@ -47793,18 +47797,18 @@ var render = function() {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: user.lastname,
-                            expression: "user.lastname"
+                            value: user.last_name,
+                            expression: "user.last_name"
                           }
                         ],
                         staticClass: "form-control",
-                        domProps: { value: user.lastname },
+                        domProps: { value: user.last_name },
                         on: {
                           input: function($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.$set(user, "lastname", $event.target.value)
+                            _vm.$set(user, "last_name", $event.target.value)
                           }
                         }
                       })
@@ -48140,7 +48144,7 @@ var render = function() {
               ? _c("div", { staticClass: "input-group mb-3" }, [
                   _c("div", { staticClass: "input-group-prepend" }, [
                     _c("span", { staticClass: "input-group-text" }, [
-                      _vm._v("Suma a Resguardar")
+                      _vm._v("Suma a Resguardar $")
                     ])
                   ]),
                   _vm._v(" "),
@@ -48199,7 +48203,7 @@ var render = function() {
               ? _c("div", { staticClass: "input-group mb-3" }, [
                   _c("div", { staticClass: "input-group-prepend" }, [
                     _c("span", { staticClass: "input-group-text" }, [
-                      _vm._v("Costo a pagar")
+                      _vm._v("Costo a pagar $")
                     ])
                   ]),
                   _vm._v(" "),
@@ -48259,7 +48263,7 @@ var render = function() {
                   _c("div", { staticClass: "input-group mb-3" }, [
                     _c("div", { staticClass: "input-group-prepend" }, [
                       _c("span", { staticClass: "input-group-text" }, [
-                        _vm._v("Deducible")
+                        _vm._v("Deducible %")
                       ])
                     ]),
                     _vm._v(" "),

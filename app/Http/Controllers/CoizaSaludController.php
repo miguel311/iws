@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\cotiza_contractor;
+use App\ContractingQuote;
 use App\PersonIntegrityPlan;
-use App\Integrity_Salud;
-use App\Estado;
-use App\Municipio;
-use App\Parroquia;
+use App\HealthIntegrity;
+
 
 class CoizaSaludController extends Controller
 {
@@ -21,10 +19,10 @@ class CoizaSaludController extends Controller
     {
         // return PersonIntegrityPlan::all();
 
-            $plan = PersonIntegrityPlan::get();
-            return $plan;
 
         if($request->ajax()){
+            $plan = PersonIntegrityPlan::get();
+            return $plan;
 
         }else{
             return view('cotizador.cotizadorsaludindex');
@@ -75,12 +73,12 @@ class CoizaSaludController extends Controller
     {
 
 
-        $salud = new integrity_salud();
+        $salud = new HealthIntegrity();
         // DATOS ENVIADOS
         $salud->cedule_type = $request->cedule_type;
         $salud->cedule = $request->cedule;
         $salud->name = $request->name;
-        $salud->lastname = $request->lastname;
+        $salud->last_name = $request->lastname;
         $salud->phone_local_type = $request->phone_local_type;
         $salud->phone_local = $request->phone_local;
         $salud->phone_movile_type = $request->phone_movile_type;
@@ -89,15 +87,38 @@ class CoizaSaludController extends Controller
         $salud->forma_pago = $request->forma_pago;
         $salud->deducible = $request->deducible;
         $salud->plan_persona_id = $request->plan_persona_id;
-        $salud->user_id = auth()->user()->email;
+        $salud->user_id = auth()->user()->id;
+        // POR CONSULTAR PLAN
+        $planes = PersonIntegrityPlan::find($request->plan_persona_id);
+        $salud->suma = $planes->coverage;
+        $salud->cuota = $planes->price;
 
-        // POR CONSULTAR
-        // $plan = PersonIntegrityPlan::findByid($request->plan_persona_id)->id;
-        // $plan = PersonIntegrityPlan::where('id', $request->plan_persona_id)->get();
-        // $salud->suma = $plan->suma;
-        // $salud->cuota = $plan->cuota;
-        // $salud->user_id = "1";
+        // Guardar
         $salud->save();
+
+
+        // return $request{0}{1};
+        // RECOORRE EL ARRAY DE USUARIOS
+        foreach ($request{0} as $key => $value) {
+            $users = new ContractingQuote();
+            foreach ($value as $key => $value) {
+                // return $value ;
+                // if ($key == 'date') {
+                //     $users->$key = \Carbon::createFromFormat('YYYY-mm-dd', $value);
+                // }
+                // else{
+                $users->$key = $value;
+                // }
+            }
+            $users->integrity_saluds_id = $salud->id;
+            $users->save();
+        }
+
+
+
+
+
+
         return back()->with('mensaje', 'Nota Agregada!');
         // return $salud;
          // return view('cotizador.cotizadorsalud');
