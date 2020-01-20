@@ -122,7 +122,7 @@
                   <a class="nav-link" href="/cotizasalud">Cotizaciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Siniestro</a>
+                  <a class="nav-link" href="#">Documentos Digitales</a>
                 </li> 
                 <li class="nav-item">
                   <a class="nav-link" href="#">Planes</a>

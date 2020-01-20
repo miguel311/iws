@@ -2226,6 +2226,14 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     // 	}
     // },
     // Validacion de formulario
+    // validateFirstStep() {
+    // 	// return new Promise((resolve, reject) => {
+    // 	// 	this.$refs.ruleForm.validate((valid) => {
+    // 	// 		resolve(valid);           
+    // 	// 	});          
+    // 	// })     
+    // 	// alert('Yay. Done!');    
+    // },
     agregar: function agregar() {
       // validacion datos personales
       // if (

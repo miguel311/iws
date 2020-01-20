@@ -129,8 +129,8 @@
 
 
 
-			<tab-content title="Solicitante">
-
+			<tab-content title="Solicitante" >
+				<!-- :before-change="validateFirstStep" -->
 				<!-- cedula y tipo de cedula -->
 				<div class="input-group mb-3">
 			      <!-- type of cedule -->
@@ -398,6 +398,22 @@
 			// 	}
 			// },
 			// Validacion de formulario
+
+
+			// validateFirstStep() {
+			// 	// return new Promise((resolve, reject) => {
+			// 	// 	this.$refs.ruleForm.validate((valid) => {
+			// 	// 		resolve(valid);           
+			// 	// 	});          
+			// 	// })     
+			// 	// alert('Yay. Done!');    
+			// },
+
+
+
+
+
+
 			agregar: function (){
 				// validacion datos personales
 				// if (

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\ContractingQuote;
 use App\PersonIntegrityPlan;
 use App\HealthIntegrity;
+use PDF;
+use Elibyy\TCPDF\Facades\TCPDF;
 
 
 class CoizaSaludController extends Controller
@@ -63,6 +65,8 @@ class CoizaSaludController extends Controller
         }
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -92,12 +96,9 @@ class CoizaSaludController extends Controller
         $planes = PersonIntegrityPlan::find($request->plan_persona_id);
         $salud->suma = $planes->coverage;
         $salud->cuota = $planes->price;
-
         // Guardar
         $salud->save();
 
-
-        // return $request{0}{1};
         // RECOORRE EL ARRAY DE USUARIOS
         foreach ($request{0} as $key => $value) {
             $users = new ContractingQuote();
@@ -114,12 +115,20 @@ class CoizaSaludController extends Controller
             $users->save();
         }
 
+        return $salud;
+
+        // IMPRIME EN PDF
+        // $html_content = '<h1> Impresion de Prueba</h1>';
+        // $pdf = new TCPDF();
+        // PDF::SetTitle('Sample PDF');
+        // PDF::AddPage();
+        // PDF::writeHTML($html_content, true, false, true, false, '');
+
+        // PDF::Output(public_path(uniqid().'_cotiza.pdf'), 'D');
 
 
 
-
-
-        return back()->with('mensaje', 'Nota Agregada!');
+        // return back()->with('mensaje', 'Nota Agregada!');
         // return $salud;
          // return view('cotizador.cotizadorsalud');
         // // $salud->id;//id de contizacion guardada
