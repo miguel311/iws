@@ -157,7 +157,13 @@ class CoizaSaludController extends Controller
      */
     public function show($id)
     {
-        //
+        $show = HealthIntegrity::findOrFail($id);
+        // CONSULTA PLAN SELECCIONADO
+        $planes = PersonIntegrityPlan::find($show->plan_persona_id);
+        // CONSULTA PERSONAS RESGUARDADAS BAJO EL CONTRATANTE
+        $resguardados = ContractingQuote::where('integrity_saluds_id', $show->id)->get();
+        // return $resguardados;
+        return view('cotizador.cotizadorsaludshow', compact('show','planes','resguardados'));
     }
 
     /**
@@ -169,6 +175,7 @@ class CoizaSaludController extends Controller
     public function edit($id)
     {
         //
+        //    return view('cotizador.editar');
     }
 
     /**
@@ -191,7 +198,9 @@ class CoizaSaludController extends Controller
      */
     public function destroy($id)
     {
-        $request = integrity_salud::find($id);
-        $request->delete();
+        $destroy = HealthIntegrity::find($id);
+        $resguardados = ContractingQuote::where('integrity_saluds_id', $destroy->id)->delete();
+        $destroy->delete();
+        return back()->with('mensaje', 'Cotización Eliminada Correctamente' );
     }
 }

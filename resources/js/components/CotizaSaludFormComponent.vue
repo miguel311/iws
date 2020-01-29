@@ -20,8 +20,8 @@
 
     			</tr>
     			<tr>  
-			    <td> <input v-model="user.name" class="form-control"></td>
-			    <td> <input v-model="user.last_name" class="form-control"></td>
+			    <td> <input v-model="user.name" class="form-control" style="text-transform:uppercase;"></td>
+			    <td> <input v-model="user.last_name" class="form-control" style="text-transform:uppercase;"></td>
 			    <td><select class="form-control" v-model="user.sexo" >
 					<option label="M" value="M"></option>
 					<option label="F" value="F"></option>
@@ -148,12 +148,12 @@
 			      <div class="input-group-prepend">
 			        <span class="input-group-text">Nombre</span>
 			      </div>
-					<input type="text" placeholder="Nombre" name="" class="form-control" v-model="request.name">
+					<input type="text" style="text-transform:uppercase;" placeholder="Nombre" name="" class="form-control" v-model="request.name">
 					<!-- Apellido -->
 				  <div class="input-group-prepend">
 			        <span class="input-group-text">Apellido</span>
 			      </div>
-				    <input type="text" placeholder="Apellido" name="" class="form-control" v-model="request.lastname">
+					<input type="text" style="text-transform:uppercase;" placeholder="Apellido" name="" class="form-control" v-model="request.lastname">
 				</div>
 
 				<!-- Nombre -->
