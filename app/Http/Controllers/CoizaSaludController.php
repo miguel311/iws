@@ -27,10 +27,10 @@ class CoizaSaludController extends Controller
             return $plan;
 
         }else{
-            return view('cotizador.cotizadorsaludindex');
+            $integrities = HealthIntegrity::get();
+            return view('cotizador.cotizadorsaludindex', compact('integrities'));
 
         }
-
 
 
         // return Estado::all();

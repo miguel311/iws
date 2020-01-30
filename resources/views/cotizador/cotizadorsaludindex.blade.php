@@ -48,13 +48,13 @@
                           <a href="{{route('cotizasalud.show', $item)}}" class="btn btn-success btn-sm">Ver</a>
 
                           <a href="" class="btn btn-warning btn-sm">Editar</a>
-                          <a href="{{route('cotizasalud.delete', $item)}}" class="btn btn-danger btn-sm" onclick="return confirm('estas seguro')">Eliminar</a>
-
-
-
-
-
-
+                         {{--  <a href="{{route('cotizasalud.destroy', $item)}}" class="btn btn-danger btn-sm" onclick="return confirm('estas seguro')">Eliminar</a>
+                        --}}
+                    <form action="{{route('cotizasalud.destroy', $item)}}" class="d-inline" method="POST">
+                        @method('DELETE')
+                         @csrf
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('estas seguro')">Eliminar</button>
+                    </form> 
                       </td>
                     </tr>
                     @endforeach()

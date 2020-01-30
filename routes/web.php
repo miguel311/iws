@@ -20,10 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Cotizar Salud //expto destroy
-Route::resource('/cotizasalud', 'CoizaSaludController', ['except' => ['destroy']])->middleware('auth');
+Route::resource('/cotizasalud', 'CoizaSaludController')->middleware('auth');
 // Eliminar Cotizar Salud
-Route::get('/cotizasalud/delete/{id}', 'CoizaSaludController@destroy')->name('cotizasalud.delete')->middleware('auth');
-//  Cotizar Auto
+//Route::get('/cotizasalud/delete/{id}', 'CoizaSaludController@destroy')->name('cotizasalud.delete')->middleware('auth');
+// Cotizar Auto
 Route::resource('/cotizasauto', 'CoizaAutoController')->middleware('auth');
 // Formular Plan de salud
 Route::resource('/plan_salud', 'Plan_SaludController')->middleware('auth');
