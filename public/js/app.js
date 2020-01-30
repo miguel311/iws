@@ -47787,6 +47787,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "form-control",
+                        staticStyle: { "text-transform": "uppercase" },
                         domProps: { value: user.name },
                         on: {
                           input: function($event) {
@@ -47810,6 +47811,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "form-control",
+                        staticStyle: { "text-transform": "uppercase" },
                         domProps: { value: user.last_name },
                         on: {
                           input: function($event) {
@@ -48461,6 +48463,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
+                staticStyle: { "text-transform": "uppercase" },
                 attrs: { type: "text", placeholder: "Nombre", name: "" },
                 domProps: { value: _vm.request.name },
                 on: {
@@ -48489,6 +48492,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
+                staticStyle: { "text-transform": "uppercase" },
                 attrs: { type: "text", placeholder: "Apellido", name: "" },
                 domProps: { value: _vm.request.lastname },
                 on: {
@@ -61830,8 +61834,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\iws\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\iws\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/html/iws/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/iws/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
