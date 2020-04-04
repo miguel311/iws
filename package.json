@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.12.1",
         "pretty-checkbox": "^3.0.3",
         "select2": "^4.0.12",
         "sweetalert2": "^8.18.3",

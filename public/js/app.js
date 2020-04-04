@@ -2130,6 +2130,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2163,6 +2175,7 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
       phone_movile_type: '',
       phone_movile: '',
       plan_persona_id: '',
+      plan_persona_id2: '',
       forma_pago: '',
       deducible: '0'
     });
@@ -2170,11 +2183,33 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
   created: function created() {
     var _this = this;
 
+    //llama los datos
     axios.get('/cotizasalud').then(function (res) {
       _this.plan = res.data;
+      console.log(res);
+    })["catch"](function (e) {
+      console.log(e);
     });
   },
+  //test plan 1
+
+  /*mounted(){
+  	this.fetchplan();
+  },*/
   methods: {
+    //test plan 1
+
+    /*
+    addRow(){
+    	this.addRows.push({
+    		plan: null;
+    	});
+    },
+    fetchplan: function(){
+    	axios.get(../api/plan).then(response => _.map(response.data.plan, function(data){ return _.pick(data, 'name', 'id');})),
+    },
+    plan:[],
+    */
     // FILTRO DE PLANES
     planFormatter: function planFormatter(val) {
       var newVal = '';
@@ -2188,6 +2223,12 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     // Al cambiar
     onChange: function onChange(event) {// esto va en el div
       // @change="onChange($event)"
+    },
+    planx: function planx() {
+      console.log(plan);
+      axios.get('/cotizasalud/getplan').then(function (response) {
+        this.request.plan_persona_id2 = response.data;
+      }.bind(this));
     },
     // add user test
     addUser: function addUser() {
@@ -2226,6 +2267,14 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
     // 	}
     // },
     // Validacion de formulario
+    // validateFirstStep() {
+    // 	// return new Promise((resolve, reject) => {
+    // 	// 	this.$refs.ruleForm.validate((valid) => {
+    // 	// 		resolve(valid);           
+    // 	// 	});          
+    // 	// })     
+    // 	// alert('Yay. Done!');    
+    // },
     agregar: function agregar() {
       // validacion datos personales
       // if (
@@ -2318,7 +2367,8 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
       // })
       ["catch"](function (e) {
         console.log(e);
-      }); // alert('Hola ' + this.request.name + '!')
+      });
+      console.log(e); // alert('Hola ' + this.request.name + '!')
     }
   }
 });
@@ -47779,6 +47829,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "form-control",
+                        staticStyle: { "text-transform": "uppercase" },
                         domProps: { value: user.name },
                         on: {
                           input: function($event) {
@@ -47802,6 +47853,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "form-control",
+                        staticStyle: { "text-transform": "uppercase" },
                         domProps: { value: user.last_name },
                         on: {
                           input: function($event) {
@@ -48078,6 +48130,57 @@ var render = function() {
                   })
                 }),
                 0
+              ),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.plan_persona_id2,
+                      expression: "request.plan_persona_id2"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  on: {
+                    change: [
+                      function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.request,
+                          "plan_persona_id2",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      },
+                      function($event) {
+                        return _vm.planx()
+                      }
+                    ]
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "0" } }, [
+                    _vm._v("Select Plan")
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(_vm.plan, function(data) {
+                    return _c("option", { domProps: { value: data.id } }, [
+                      _vm._v(_vm._s(data.name))
+                    ])
+                  })
+                ],
+                2
               )
             ]),
             _vm._v(" "),
@@ -48453,6 +48556,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
+                staticStyle: { "text-transform": "uppercase" },
                 attrs: { type: "text", placeholder: "Nombre", name: "" },
                 domProps: { value: _vm.request.name },
                 on: {
@@ -48481,6 +48585,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
+                staticStyle: { "text-transform": "uppercase" },
                 attrs: { type: "text", placeholder: "Apellido", name: "" },
                 domProps: { value: _vm.request.lastname },
                 on: {

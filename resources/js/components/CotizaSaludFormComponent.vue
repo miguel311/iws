@@ -20,8 +20,8 @@
 
     			</tr>
     			<tr>  
-			    <td> <input v-model="user.name" class="form-control"></td>
-			    <td> <input v-model="user.last_name" class="form-control"></td>
+			    <td> <input v-model="user.name" class="form-control" style="text-transform:uppercase;"></td>
+			    <td> <input v-model="user.last_name" class="form-control" style="text-transform:uppercase;"></td>
 			    <td><select class="form-control" v-model="user.sexo" >
 					<option label="M" value="M"></option>
 					<option label="F" value="F"></option>
@@ -63,6 +63,18 @@
 						<option v-for="(item, index) in plan" :key="index"
 						  :label=" item.name " :value=" item.id "></option>
 					</select>
+
+
+
+            <select class='form-control' v-model='request.plan_persona_id2' @change='planx()'>
+              <option value='0' >Select Plan</option>
+              <option v-for='data in plan' :value='data.id'>{{ data.name }}</option>
+            </select>
+
+
+
+
+
 				</div>
 
 				<!-- descripcion -->
@@ -129,8 +141,8 @@
 
 
 
-			<tab-content title="Solicitante">
-
+			<tab-content title="Solicitante" >
+				<!-- :before-change="validateFirstStep" -->
 				<!-- cedula y tipo de cedula -->
 				<div class="input-group mb-3">
 			      <!-- type of cedule -->
@@ -148,12 +160,12 @@
 			      <div class="input-group-prepend">
 			        <span class="input-group-text">Nombre</span>
 			      </div>
-					<input type="text" placeholder="Nombre" name="" class="form-control" v-model="request.name">
+					<input type="text" style="text-transform:uppercase;" placeholder="Nombre" name="" class="form-control" v-model="request.name">
 					<!-- Apellido -->
 				  <div class="input-group-prepend">
 			        <span class="input-group-text">Apellido</span>
 			      </div>
-				    <input type="text" placeholder="Apellido" name="" class="form-control" v-model="request.lastname">
+				    <input type="text" style="text-transform:uppercase;" placeholder="Apellido" name="" class="form-control" v-model="request.lastname">
 				</div>
 
 				<!-- Nombre -->
@@ -290,7 +302,7 @@
 	export default {
 
 		data(){
-
+	    		
 				// Swal.fire(
 				//   'Good job!',
 				//   'You clicked the button!',
@@ -301,7 +313,7 @@
 
 				 plan: [],
 				 request: [],
-				 request: {name:'',lastname:'',cedule:'',cedule_type:'',email:'',phone_local:'',phone_local_type:'',phone_movile_type:'',phone_movile:'',plan_persona_id:'',forma_pago:'',deducible:'0'},
+				 request: {name:'',lastname:'',cedule:'',cedule_type:'',email:'',phone_local:'',phone_local_type:'',phone_movile_type:'',phone_movile:'',plan_persona_id:'',plan_persona_id2:'',forma_pago:'',deducible:'0'},
 				 
 
 
@@ -338,12 +350,35 @@
 			}
 		},
 		created(){
+			//llama los datos
 	    	axios.get('/cotizasalud')
 	    		.then(res =>{
 	    			this.plan = res.data
+		      		console.log(res);
+
 	    		})
+	    		.catch(e => {
+		            console.log(e);
+		        });
 		},
+		//test plan 1
+		/*mounted(){
+			this.fetchplan();
+		},*/
 		methods:{
+			//test plan 1
+			/*
+			addRow(){
+				this.addRows.push({
+					plan: null;
+				});
+			},
+			fetchplan: function(){
+				axios.get(../api/plan).then(response => _.map(response.data.plan, function(data){ return _.pick(data, 'name', 'id');})),
+			},
+			plan:[],
+			*/
+
 			// FILTRO DE PLANES
 		    planFormatter: function(val) {
 		        var newVal = '';
@@ -359,6 +394,15 @@
 				// esto va en el div
 				// @change="onChange($event)"
 			},
+
+			planx(){
+				console.log(plan);
+			 axios.get('/cotizasalud/getplan')
+              .then(function (response) {
+                 this.request.plan_persona_id2 = response.data;
+              }.bind(this));
+			},
+
 			// add user test
 			addUser: function () {
 		      this.users.push({  name: '',last_name:'',date: '', sexo: '', parent:'', mother:false });
@@ -398,6 +442,22 @@
 			// 	}
 			// },
 			// Validacion de formulario
+
+
+			// validateFirstStep() {
+			// 	// return new Promise((resolve, reject) => {
+			// 	// 	this.$refs.ruleForm.validate((valid) => {
+			// 	// 		resolve(valid);           
+			// 	// 	});          
+			// 	// })     
+			// 	// alert('Yay. Done!');    
+			// },
+
+
+
+
+
+
 			agregar: function (){
 				// validacion datos personales
 				// if (
@@ -524,6 +584,7 @@
 		        .catch(e => {
 		            console.log(e);
 		        });
+		        console.log(e);
 		        // alert('Hola ' + this.request.name + '!')
 			},
 		}
