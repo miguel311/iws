@@ -26,10 +26,12 @@ class CoizaSaludController extends Controller
         if($request->ajax()){
             //lsita de planes que se mostrara en vue /cotizasalud/create
             $plan = PersonIntegrityPlan::get();
+            //return response()->json(['plan' => $plan]);
+
             return $plan;
         }else{
             //llama toda la informacion de solicitantes.
-            $integrities = HealthIntegrity::all();
+            $integrities = HealthIntegrity::paginate(10);
             return view('cotizador.cotizadorsaludindex', compact('integrities'));
         }
 
@@ -52,6 +54,29 @@ class CoizaSaludController extends Controller
         // }    
     }
 
+
+    /**
+     * Display a listing  the search result.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function search(Request $request)
+    {
+        $search_field = $request->input('search_field');
+           if($search_field){
+             $search = HealthIntegrity::where('id','LIKE',"%$search_field%")
+             ->orWhere('name','LIKE',"%$search_field%")
+             ->orWhere('last_name','LIKE',"%$search_field%")
+             ->orWhere('cedule','LIKE',"%$search_field%")
+             ->orWhere('email','LIKE',"%$search_field%")
+             ->paginate(10);
+             return view('cotizador.cotizadorsaludindex',array('integrities'=>$search));
+           }else{
+            //llama toda la informacion de solicitantes.
+            $integrities = HealthIntegrity::paginate(10);
+            return view('cotizador.cotizadorsaludindex', compact('integrities'));
+           }
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -64,6 +89,7 @@ class CoizaSaludController extends Controller
 
     public function plan(Request $request)
     {
+            return $request;
             $plan = PersonIntegrityPlan::all();
             return response()->json(['cosa' => $plan]);
     }
@@ -104,7 +130,7 @@ class CoizaSaludController extends Controller
         $salud->save();
 
         // RECOORRE EL ARRAY DE USUARIOS REGUARDADOS
-        foreach ($request{0} as $key => $value) {
+        foreach ($request[0] as $key => $value) {
             $users = new ContractingQuote();
             foreach ($value as $key => $value) {
                 // return $value ;
@@ -118,8 +144,14 @@ class CoizaSaludController extends Controller
             $users->integrity_saluds_id = $salud->id;
             $users->save();
         }
-
         return $salud;
+       
+
+
+
+
+
+
 
         // IMPRIME EN PDF
         // $html_content = '<h1> Impresion de Prueba</h1>';
@@ -407,8 +439,6 @@ class CoizaSaludController extends Controller
         PDF::SetTitle('Solicitud Cotización Prevención 000000'.$show->id);
         PDF::AddPage();
         PDF::writeHTML($html_content, true, false, true, false, '');
-        PDF::Output(public_path(uniqid().'_cotiza.pdf'), 'D');
+        PDF::Output('Cotizacion_Salud_'.$show->id.'_'.uniqid().'.pdf', 'D');
     }
 }
-
-

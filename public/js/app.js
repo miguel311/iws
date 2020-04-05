@@ -2140,8 +2140,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 
 
@@ -2368,7 +2366,10 @@ Vue.use(vue_form_wizard__WEBPACK_IMPORTED_MODULE_1___default.a);
       ["catch"](function (e) {
         console.log(e);
       });
-      console.log(e); // alert('Hola ' + this.request.name + '!')
+      alert('Guardada su Cotización!'); //console.log(salud);
+      //window.location.href = '/cotizasalud'
+      //console.log(e);
+      // alert('Hola ' + this.request.name + '!')
     }
   }
 });
@@ -47785,7 +47786,12 @@ var render = function() {
         [
           _c(
             "tab-content",
-            { attrs: { title: "Información Contratante" } },
+            {
+              attrs: {
+                title: "Información Contratante",
+                icon: "fa fa-user-shield"
+              }
+            },
             [
               _c(
                 "button",
@@ -48075,78 +48081,40 @@ var render = function() {
                 ])
               }),
               _vm._v(" "),
-              _c("br")
+              _c("br"),
+              _vm._v(" "),
+              _c("pre", [_vm._v(_vm._s(_vm.$data.plan))])
             ],
             2
           ),
           _vm._v(" "),
-          _c("tab-content", { attrs: { title: "Planes" } }, [
-            _c("h3", [_vm._v("Planes y Cobertura")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Plan")
-                ])
-              ]),
+          _c(
+            "tab-content",
+            { attrs: { title: "Planes", icon: "fa fa-briefcase" } },
+            [
+              _c("h3", [_vm._v("Planes y Cobertura")]),
               _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.request.plan_persona_id,
-                      expression: "request.plan_persona_id"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.request,
-                        "plan_persona_id",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
-                    }
-                  }
-                },
-                _vm._l(_vm.plan, function(item, index) {
-                  return _c("option", {
-                    key: index,
-                    attrs: { label: item.name },
-                    domProps: { value: item.id }
-                  })
-                }),
-                0
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.request.plan_persona_id2,
-                      expression: "request.plan_persona_id2"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  on: {
-                    change: [
-                      function($event) {
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Plan")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.plan_persona_id,
+                        expression: "request.plan_persona_id"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    on: {
+                      change: function($event) {
                         var $$selectedVal = Array.prototype.filter
                           .call($event.target.options, function(o) {
                             return o.selected
@@ -48157,55 +48125,39 @@ var render = function() {
                           })
                         _vm.$set(
                           _vm.request,
-                          "plan_persona_id2",
+                          "plan_persona_id",
                           $event.target.multiple
                             ? $$selectedVal
                             : $$selectedVal[0]
                         )
-                      },
-                      function($event) {
-                        return _vm.planx()
                       }
-                    ]
-                  }
-                },
-                [
-                  _c("option", { attrs: { value: "0" } }, [
-                    _vm._v("Select Plan")
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(_vm.plan, function(data) {
-                    return _c("option", { domProps: { value: data.id } }, [
-                      _vm._v(_vm._s(data.name))
-                    ])
-                  })
-                ],
-                2
-              )
-            ]),
-            _vm._v(" "),
-            _vm.request.plan_persona_id
-              ? _c("div", { staticClass: "input-group mb-3" }, [
-                  _c("div", { staticClass: "input-group-prepend" }, [
-                    _c("span", { staticClass: "input-group-text" }, [
-                      _vm._v("Descripcion")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.request.plan_persona_id,
-                          expression: "request.plan_persona_id"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      on: {
-                        change: function($event) {
+                    }
+                  },
+                  _vm._l(_vm.plan, function(item, index) {
+                    return _c("option", {
+                      key: index,
+                      attrs: { label: item.name },
+                      domProps: { value: item.id }
+                    })
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.plan_persona_id2,
+                        expression: "request.plan_persona_id2"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    on: {
+                      change: [
+                        function($event) {
                           var $$selectedVal = Array.prototype.filter
                             .call($event.target.options, function(o) {
                               return o.selected
@@ -48216,681 +48168,749 @@ var render = function() {
                             })
                           _vm.$set(
                             _vm.request,
-                            "plan_persona_id",
+                            "plan_persona_id2",
                             $event.target.multiple
                               ? $$selectedVal
                               : $$selectedVal[0]
                           )
+                        },
+                        function($event) {
+                          return _vm.planx()
                         }
-                      }
-                    },
-                    _vm._l(_vm.plan, function(item, index) {
-                      return _c("option", {
-                        key: index,
-                        attrs: { disabled: "", label: item.description },
-                        domProps: { value: item.id },
-                        model: {
-                          value: _vm.request.plan_persona_id,
-                          callback: function($$v) {
-                            _vm.$set(_vm.request, "plan_persona_id", $$v)
-                          },
-                          expression: "request.plan_persona_id"
-                        }
-                      })
-                    }),
-                    0
-                  )
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.request.plan_persona_id
-              ? _c("div", { staticClass: "input-group mb-3" }, [
-                  _c("div", { staticClass: "input-group-prepend" }, [
-                    _c("span", { staticClass: "input-group-text" }, [
-                      _vm._v("Suma a Resguardar $")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.request.plan_persona_id,
-                          expression: "request.plan_persona_id"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      on: {
-                        change: function($event) {
-                          var $$selectedVal = Array.prototype.filter
-                            .call($event.target.options, function(o) {
-                              return o.selected
-                            })
-                            .map(function(o) {
-                              var val = "_value" in o ? o._value : o.value
-                              return val
-                            })
-                          _vm.$set(
-                            _vm.request,
-                            "plan_persona_id",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
-                        }
-                      }
-                    },
-                    _vm._l(_vm.plan, function(item, index) {
-                      return _c("option", {
-                        key: index,
-                        attrs: { disabled: "", label: item.coverage },
-                        domProps: { value: item.id },
-                        model: {
-                          value: _vm.request.plan_persona_id,
-                          callback: function($$v) {
-                            _vm.$set(_vm.request, "plan_persona_id", $$v)
-                          },
-                          expression: "request.plan_persona_id"
-                        }
-                      })
-                    }),
-                    0
-                  )
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.request.plan_persona_id
-              ? _c("div", { staticClass: "input-group mb-3" }, [
-                  _c("div", { staticClass: "input-group-prepend" }, [
-                    _c("span", { staticClass: "input-group-text" }, [
-                      _vm._v("Costo a pagar $")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.request.plan_persona_id,
-                          expression: "request.plan_persona_id"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      on: {
-                        change: function($event) {
-                          var $$selectedVal = Array.prototype.filter
-                            .call($event.target.options, function(o) {
-                              return o.selected
-                            })
-                            .map(function(o) {
-                              var val = "_value" in o ? o._value : o.value
-                              return val
-                            })
-                          _vm.$set(
-                            _vm.request,
-                            "plan_persona_id",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
-                        }
-                      }
-                    },
-                    _vm._l(_vm.plan, function(item, index) {
-                      return _c("option", {
-                        key: index,
-                        attrs: { disabled: "", label: item.price },
-                        domProps: { value: item.id },
-                        model: {
-                          value: _vm.request.plan_persona_id,
-                          callback: function($$v) {
-                            _vm.$set(_vm.request, "plan_persona_id", $$v)
-                          },
-                          expression: "request.plan_persona_id"
-                        }
-                      })
-                    }),
-                    0
-                  )
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.request.plan_persona_id
-              ? _c("div", { staticClass: "input-group mb-3" }, [
-                  _c("div", { staticClass: "input-group mb-3" }, [
+                      ]
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "0" } }, [
+                      _vm._v("Select Plan")
+                    ]),
+                    _vm._v("\n              // "),
+                    _vm._l(_vm.plan, function(data) {
+                      return _c("option", { domProps: { value: data.id } }, [
+                        _vm._v(_vm._s(data))
+                      ])
+                    })
+                  ],
+                  2
+                )
+              ]),
+              _vm._v(" "),
+              _vm.request.plan_persona_id
+                ? _c("div", { staticClass: "input-group mb-3" }, [
                     _c("div", { staticClass: "input-group-prepend" }, [
                       _c("span", { staticClass: "input-group-text" }, [
-                        _vm._v("Deducible %")
+                        _vm._v("Descripcion")
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.request.deducible,
-                          expression: "request.deducible"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "number",
-                        placeholder: "Deducible",
-                        name: "",
-                        min: "0",
-                        max: "0"
-                      },
-                      domProps: { value: _vm.request.deducible },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.request.plan_persona_id,
+                            expression: "request.plan_persona_id"
                           }
-                          _vm.$set(
-                            _vm.request,
-                            "deducible",
-                            $event.target.value
-                          )
+                        ],
+                        staticClass: "form-control",
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.request,
+                              "plan_persona_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
-                      }
-                    })
+                      },
+                      _vm._l(_vm.plan, function(item, index) {
+                        return _c("option", {
+                          key: index,
+                          attrs: { disabled: "", label: item.description },
+                          domProps: { value: item.id },
+                          model: {
+                            value: _vm.request.plan_persona_id,
+                            callback: function($$v) {
+                              _vm.$set(_vm.request, "plan_persona_id", $$v)
+                            },
+                            expression: "request.plan_persona_id"
+                          }
+                        })
+                      }),
+                      0
+                    )
                   ])
-                ])
-              : _vm._e()
-          ]),
-          _vm._v(" "),
-          _c("tab-content", { attrs: { title: "Forma de Pago" } }, [
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Forma de Pago")
-                ])
-              ]),
+                : _vm._e(),
               _vm._v(" "),
-              _c(
-                "select",
-                {
+              _vm.request.plan_persona_id
+                ? _c("div", { staticClass: "input-group mb-3" }, [
+                    _c("div", { staticClass: "input-group-prepend" }, [
+                      _c("span", { staticClass: "input-group-text" }, [
+                        _vm._v("Suma a Resguardar $")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.request.plan_persona_id,
+                            expression: "request.plan_persona_id"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.request,
+                              "plan_persona_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      _vm._l(_vm.plan, function(item, index) {
+                        return _c("option", {
+                          key: index,
+                          attrs: { disabled: "", label: item.coverage },
+                          domProps: { value: item.id },
+                          model: {
+                            value: _vm.request.plan_persona_id,
+                            callback: function($$v) {
+                              _vm.$set(_vm.request, "plan_persona_id", $$v)
+                            },
+                            expression: "request.plan_persona_id"
+                          }
+                        })
+                      }),
+                      0
+                    )
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.request.plan_persona_id
+                ? _c("div", { staticClass: "input-group mb-3" }, [
+                    _c("div", { staticClass: "input-group-prepend" }, [
+                      _c("span", { staticClass: "input-group-text" }, [
+                        _vm._v("Costo a pagar $")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.request.plan_persona_id,
+                            expression: "request.plan_persona_id"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.request,
+                              "plan_persona_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      _vm._l(_vm.plan, function(item, index) {
+                        return _c("option", {
+                          key: index,
+                          attrs: { disabled: "", label: item.price },
+                          domProps: { value: item.id },
+                          model: {
+                            value: _vm.request.plan_persona_id,
+                            callback: function($$v) {
+                              _vm.$set(_vm.request, "plan_persona_id", $$v)
+                            },
+                            expression: "request.plan_persona_id"
+                          }
+                        })
+                      }),
+                      0
+                    )
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.request.plan_persona_id
+                ? _c("div", { staticClass: "input-group mb-3" }, [
+                    _c("div", { staticClass: "input-group mb-3" }, [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c("span", { staticClass: "input-group-text" }, [
+                          _vm._v("Deducible %")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.request.deducible,
+                            expression: "request.deducible"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "number",
+                          placeholder: "Deducible",
+                          name: "",
+                          min: "0",
+                          max: "0"
+                        },
+                        domProps: { value: _vm.request.deducible },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.request,
+                              "deducible",
+                              $event.target.value
+                            )
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                : _vm._e()
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "tab-content",
+            { attrs: { title: "Forma de Pago", icon: "fa fa-dollar-sign" } },
+            [
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Forma de Pago")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.forma_pago,
+                        expression: "request.forma_pago"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.request,
+                          "forma_pago",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", {
+                      attrs: { label: "De contado", value: "De contado" }
+                    }),
+                    _vm._v(" "),
+                    _c("option", {
+                      attrs: { label: "Semestral", value: "Semestral" }
+                    }),
+                    _vm._v(" "),
+                    _c("option", {
+                      attrs: { label: "Trimestral", value: "Trimestral" }
+                    }),
+                    _vm._v(" "),
+                    _c("option", {
+                      attrs: { label: "Mensual", value: "Mensual" }
+                    })
+                  ]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "tab-content",
+            { attrs: { title: "Solicitante", icon: "fa fa-user" } },
+            [
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("C.I/RIF")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.cedule_type,
+                        expression: "request.cedule_type"
+                      }
+                    ],
+                    staticClass: "col-md-1",
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.request,
+                          "cedule_type",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { label: "V", value: "V" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "E", value: "E" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "J", value: "J" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "G", value: "G" } })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
                   directives: [
                     {
                       name: "model",
                       rawName: "v-model",
-                      value: _vm.request.forma_pago,
-                      expression: "request.forma_pago"
+                      value: _vm.request.cedule,
+                      expression: "request.cedule"
                     }
                   ],
                   staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Cédula", name: "" },
+                  domProps: { value: _vm.request.cedule },
                   on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.request,
-                        "forma_pago",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "cedule", $event.target.value)
                     }
                   }
-                },
-                [
-                  _c("option", {
-                    attrs: { label: "De contado", value: "De contado" }
-                  }),
-                  _vm._v(" "),
-                  _c("option", {
-                    attrs: { label: "Semestral", value: "Semestral" }
-                  }),
-                  _vm._v(" "),
-                  _c("option", {
-                    attrs: { label: "Trimestral", value: "Trimestral" }
-                  }),
-                  _vm._v(" "),
-                  _c("option", {
-                    attrs: { label: "Mensual", value: "Mensual" }
-                  })
-                ]
-              )
-            ])
-          ]),
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Nombre")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.name,
+                      expression: "request.name"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  staticStyle: { "text-transform": "uppercase" },
+                  attrs: { type: "text", placeholder: "Nombre", name: "" },
+                  domProps: { value: _vm.request.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "name", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Apellido")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.lastname,
+                      expression: "request.lastname"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  staticStyle: { "text-transform": "uppercase" },
+                  attrs: { type: "text", placeholder: "Apellido", name: "" },
+                  domProps: { value: _vm.request.lastname },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "lastname", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Telefono Local")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.phone_local_type,
+                        expression: "request.phone_local_type"
+                      }
+                    ],
+                    staticClass: "col-md-2",
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.request,
+                          "phone_local_type",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { label: "0212", value: "0212" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0234", value: "0234" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0235", value: "0235" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0237", value: "0237" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0238", value: "0238" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0239", value: "0239" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0240", value: "0240" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0241", value: "0241" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0242", value: "0242" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0243", value: "0243" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0244", value: "0244" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0245", value: "0245" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0246", value: "0246" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0247", value: "0247" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0248", value: "0248" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0249", value: "0249" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0251", value: "0251" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0252", value: "0252" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0253", value: "0253" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0254", value: "0254" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0255", value: "0255" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0256", value: "0256" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0257", value: "0257" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0258", value: "0258" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0259", value: "0259" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0261", value: "0261" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0262", value: "0262" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0263", value: "0263" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0264", value: "0264" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0265", value: "0265" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0266", value: "0266" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0267", value: "0267" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0268", value: "0268" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0269", value: "0269" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0271", value: "0271" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0272", value: "0272" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0273", value: "0273" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0274", value: "0274" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0275", value: "0275" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0276", value: "0276" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0277", value: "0277" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0278", value: "0278" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0279", value: "0279" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0281", value: "0281" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0282", value: "0282" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0283", value: "0283" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0284", value: "0284" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0285", value: "0285" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0286", value: "0286" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0287", value: "0287" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0288", value: "0288" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0289", value: "0289" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0291", value: "0291" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0292", value: "0292" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0293", value: "0293" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0294", value: "0294" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0295", value: "0295" } })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.phone_local,
+                      expression: "request.phone_local"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "Teléfono Local",
+                    name: ""
+                  },
+                  domProps: { value: _vm.request.phone_local },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "phone_local", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Telefono Movil")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.request.phone_movile_type,
+                        expression: "request.phone_movile_type"
+                      }
+                    ],
+                    staticClass: "col-md-2",
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.request,
+                          "phone_movile_type",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { label: "0412", value: "0412" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0414", value: "0414" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0424", value: "0424" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0416", value: "0416" } }),
+                    _vm._v(" "),
+                    _c("option", { attrs: { label: "0426", value: "0426" } })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.phone_movile,
+                      expression: "request.phone_movile"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "Teléfono Movil",
+                    name: ""
+                  },
+                  domProps: { value: _vm.request.phone_movile },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "phone_movile", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("div", { staticClass: "input-group-prepend" }, [
+                  _c("span", { staticClass: "input-group-text" }, [
+                    _vm._v("Email")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.request.email,
+                      expression: "request.email"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Email", name: "" },
+                  domProps: { value: _vm.request.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.request, "email", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("tab-content", { attrs: { title: "Solicitante" } }, [
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("C.I/RIF")
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.request.cedule_type,
-                      expression: "request.cedule_type"
-                    }
-                  ],
-                  staticClass: "col-md-1",
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.request,
-                        "cedule_type",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { label: "V", value: "V" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "E", value: "E" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "J", value: "J" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "G", value: "G" } })
-                ]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.cedule,
-                    expression: "request.cedule"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Cédula", name: "" },
-                domProps: { value: _vm.request.cedule },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "cedule", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Nombre")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.name,
-                    expression: "request.name"
-                  }
-                ],
-                staticClass: "form-control",
-                staticStyle: { "text-transform": "uppercase" },
-                attrs: { type: "text", placeholder: "Nombre", name: "" },
-                domProps: { value: _vm.request.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "name", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Apellido")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.lastname,
-                    expression: "request.lastname"
-                  }
-                ],
-                staticClass: "form-control",
-                staticStyle: { "text-transform": "uppercase" },
-                attrs: { type: "text", placeholder: "Apellido", name: "" },
-                domProps: { value: _vm.request.lastname },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "lastname", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Telefono Local")
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.request.phone_local_type,
-                      expression: "request.phone_local_type"
-                    }
-                  ],
-                  staticClass: "col-md-2",
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.request,
-                        "phone_local_type",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { label: "0212", value: "0212" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0234", value: "0234" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0235", value: "0235" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0237", value: "0237" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0238", value: "0238" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0239", value: "0239" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0240", value: "0240" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0241", value: "0241" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0242", value: "0242" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0243", value: "0243" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0244", value: "0244" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0245", value: "0245" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0246", value: "0246" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0247", value: "0247" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0248", value: "0248" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0249", value: "0249" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0251", value: "0251" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0252", value: "0252" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0253", value: "0253" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0254", value: "0254" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0255", value: "0255" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0256", value: "0256" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0257", value: "0257" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0258", value: "0258" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0259", value: "0259" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0261", value: "0261" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0262", value: "0262" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0263", value: "0263" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0264", value: "0264" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0265", value: "0265" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0266", value: "0266" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0267", value: "0267" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0268", value: "0268" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0269", value: "0269" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0271", value: "0271" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0272", value: "0272" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0273", value: "0273" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0274", value: "0274" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0275", value: "0275" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0276", value: "0276" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0277", value: "0277" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0278", value: "0278" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0279", value: "0279" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0281", value: "0281" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0282", value: "0282" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0283", value: "0283" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0284", value: "0284" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0285", value: "0285" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0286", value: "0286" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0287", value: "0287" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0288", value: "0288" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0289", value: "0289" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0291", value: "0291" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0292", value: "0292" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0293", value: "0293" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0294", value: "0294" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0295", value: "0295" } })
-                ]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.phone_local,
-                    expression: "request.phone_local"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "Teléfono Local",
-                  name: ""
-                },
-                domProps: { value: _vm.request.phone_local },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "phone_local", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Telefono Movil")
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.request.phone_movile_type,
-                      expression: "request.phone_movile_type"
-                    }
-                  ],
-                  staticClass: "col-md-2",
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.request,
-                        "phone_movile_type",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { label: "0412", value: "0412" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0414", value: "0414" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0424", value: "0424" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0416", value: "0416" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { label: "0426", value: "0426" } })
-                ]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.phone_movile,
-                    expression: "request.phone_movile"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "Teléfono Movil",
-                  name: ""
-                },
-                domProps: { value: _vm.request.phone_movile },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "phone_movile", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _vm._v("Email")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.request.email,
-                    expression: "request.email"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Email", name: "" },
-                domProps: { value: _vm.request.email },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.request, "email", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tab-content", { attrs: { title: "Resumen" } })
+          _c("tab-content", { attrs: { title: "Resumen", icon: "fa fa-save" } })
         ],
         1
       )

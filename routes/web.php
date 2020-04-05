@@ -18,9 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+// busqueda de cotizaciones
+Route::get('/cotizasalud/search', 'CoizaSaludController@search')->name('cotizasalud.search');
 // llamar plan de salud
-Route::get('/cotizasalud', 'CoizaSaludController@plan')->name('cotizasalud.planes');
+Route::get('/cotizasalud/getplan', 'CoizaSaludController@plan')->name('cotizasalud.planes');
 // Cotizar Salud //expto destroy
 Route::resource('/cotizasalud', 'CoizaSaludController', ['except' => ['destroy']])->middleware('auth');
 // Eliminar Cotizar Salud

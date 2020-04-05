@@ -9,10 +9,8 @@
                 <div class="card-header"><h4>Detalle de Cotización de Prevención N° {{ $show->id }}</h4></div>
                 {{-- CONTRATANTE --}}
                 <div class="card-header">
-                  <h3><div  class="btn btn-info">
-                    <span style="font-size: 48px; color:white">
+                  <h3><div  class="btn btn-info print-icons">
                       <i class="fas fa-user-alt"></i>
-                    </span>
                   </div> Contratante</h3>
                     <h5>Nombre: {{ $show->name }} {{ $show->last_name }}</h5>
                     <h5> Cédula: {{ $show->cedule_type }} {{ $show->cedule }}</h5>
@@ -23,10 +21,8 @@
                 </div>
                 {{-- PLAN --}}
                 <div class="card-header">
-                  <h3><div class="btn btn-info">
-                    <span style="font-size: 48px; color:white">
+                  <h3><div class="btn btn-info print-icons">
                       <i class="fas fa-book-open"></i>
-                    </span>
                   </div> Plan Seleccionado</h3>
                     <h5>Nombre del Plan: {{ $planes->name }}</h5>
                     <h5>Descripción: {{ $planes->description }}</h5>
@@ -35,10 +31,8 @@
                 </div>
                 {{-- lista de resguardados --}}
                 <div class="card-header">
-                  <h3><div class="btn btn-info">
-                    <span style="font-size: 48px; color:white">
-                      <i class="fas fa-user-shield"></i>
-                    </span>  
+                  <h3><div class="btn btn-info print-icons">
+                      <i class="fas fa-user-shield "></i>
                   </div> Resguardados</h3>
                     <table class="table">
                       <thead>
@@ -66,18 +60,18 @@
                       </tbody>
                     </table>
                       {{-- Crear Nueva cotización --}}
-                      <a type="button" class="btn btn-info" href="/cotizasalud/create">
+                      <a type="button" class="btn btn-info buton-icons" href="/cotizasalud/create">
                         <span style="font-size: 48px; color: white">
                           <i class="fas fa-plus-circle"></i>
                         </span>
-                          <center style=" font-size: 20px; color:white">Crear Cotización</center>
+                          <center style=" font-size: 20px; color:white">Nueva</center>
                       </a>
                       {{-- Imprimir cotización --}}
-                      <a type="button" class="btn btn-info" href="{{route('cotizasalud.print', $show->id)}}">
+                      <a type="button" class="btn btn-info buton-icons" href="{{route('cotizasalud.print', $show->id)}}">
                         <span style="font-size: 48px; color: white">
                           <i class="fas fa-print"></i>
                         </span>
-                          <center style=" font-size: 20px; color:white">Imprimir Cotización</center>
+                          <center style=" font-size: 20px; color:white">Imprimir</center>
                       </a>
                 </div>
             </div>

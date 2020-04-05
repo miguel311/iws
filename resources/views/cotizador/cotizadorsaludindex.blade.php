@@ -14,11 +14,11 @@
 {{--                 @foreach ($plan as $item)
                     <div class="card-header">{{ $item->name }}</div>
                 @endforeach --}}
-                <a type="button" class="btn btn-info" href="/cotizasalud/create">
+                <a type="button" class="btn btn-info buton-icons" href="/cotizasalud/create">
                   <span style="font-size: 48px; color:white">
                     <i src="{{ asset('images/cruz.svg') }}" class="fas fa-plus-circle"></i>
                   </span>
-                    <center style=" font-size: 20px; color:white">Crear Cotización</center> 
+                    <center style=" font-size: 20px; color:white">Cotización</center> 
                 </a>
 
                 <div class="container my-4">
@@ -27,6 +27,18 @@
                     @endif
                 </div>
 
+
+  <div class="panel panel-success">
+    <form action="/cotizasalud/search" method="get">
+      <div class="panel-body">
+        <input type="text" name="search_field" class="form-control" placeholder="Ingrese cotización a Buscar">
+      </div>
+      <div class="panel-footer">
+        <button type="submit" class="btn btn-success edit-icons"><i class="fa fa-search"></i></button>
+        <a href="{{route('cotizasalud.index')}}" class="btn btn-primary btn-sm edit-icons"><i class="fa fa-backward"></i></a>
+      </div><br>
+    </form>
+  </div>
                 <table class="table">
                   <thead>
                     <tr>
@@ -48,17 +60,16 @@
                       <td>{{ $item->email }}</td>
                       <td>
 
-                          <a href="{{route('cotizasalud.show', $item)}}" class="btn btn-success btn-sm">Ver <i class="fa fa-search-plus"></i></a>
-                          <a href="{{route('cotizasalud.print', $item)}}" class="btn btn-warning btn-sm">imprimir <i class="fa fa-print"></i></a>
+                          <a href="{{route('cotizasalud.show', $item)}}" class="btn btn-success btn-sm edit-icons"><i class="fa fa-search-plus"></i></a>
+                          <a href="{{route('cotizasalud.print', $item)}}" class="btn btn-warning btn-sm edit-icons"><i class="fa fa-print"></i></a>
                          {{-- <a href="" class="btn btn-warning btn-sm">Editar</a>--}}
-                          <a href="{{route('cotizasalud.delete', $item)}}" class="btn btn-danger btn-sm" onclick="return confirm('estas seguro')">Eliminar <i class="fa fa-trash"></i></a>
+                          <a href="{{route('cotizasalud.delete', $item)}}" class="btn btn-danger btn-sm edit-icons" onclick="return confirm('estas seguro')"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>
                     @endforeach()
                   </tbody>
                 </table>
-
-
+                {{$integrities->links()}}{{-- Paginador --}}
                 </div>
             </div>
         </div>

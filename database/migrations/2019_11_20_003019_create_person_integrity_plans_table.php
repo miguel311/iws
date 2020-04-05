@@ -20,6 +20,7 @@ class CreatePersonIntegrityPlansTable extends Migration
             $table->bigInteger('coverage');//Cobertura
             $table->string('price');//precio
             $table->string('deductible');//deducible
+            $table->softDeletes(); //borrado lógico
             $table->timestamps();
         });
     }

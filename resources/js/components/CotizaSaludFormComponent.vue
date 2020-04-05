@@ -2,7 +2,7 @@
 	<div>
 		<form-wizard next-button-text="Siguiente" shape="" back-button-text="Atras" finish-button-text="Guardar Solicitud" @on-complete="agregar" @submit.prevent="agregar" title="" subtitle="" color="#096EAB">
 			<!-- :before-change="validateFirstStep" -->
-			<tab-content title="Información Contratante" >
+			<tab-content title="Información Contratante" icon="fa fa-user-shield">
 
 
   			  <button class="btn btn-success" @click="addUser">
@@ -46,12 +46,12 @@
 			  </div>
 			  <br>
 			  
-			  <!-- <pre>{{ $data }}</pre> -->
+			   <pre>{{ $data.plan }}</pre>
 
 
 
 			</tab-content>
-			<tab-content title="Planes">
+			<tab-content title="Planes" icon="fa fa-briefcase">
 				<h3>Planes y Cobertura</h3>
 				<!-- Plan a Seleccionar -->
 			    <div class="input-group mb-3">
@@ -68,10 +68,8 @@
 
             <select class='form-control' v-model='request.plan_persona_id2' @change='planx()'>
               <option value='0' >Select Plan</option>
-              <option v-for='data in plan' :value='data.id'>{{ data.name }}</option>
+              // <option v-for='data in plan' :value='data.id'>{{ data }}</option>
             </select>
-
-
 
 
 
@@ -120,7 +118,7 @@
 			</tab-content>
 
 
-			<tab-content title="Forma de Pago">
+			<tab-content title="Forma de Pago" icon="fa fa-dollar-sign">
 
 				<!-- Forma de pago -->
 			    <div class="input-group mb-3">
@@ -141,7 +139,7 @@
 
 
 
-			<tab-content title="Solicitante" >
+			<tab-content title="Solicitante" icon="fa fa-user">
 				<!-- :before-change="validateFirstStep" -->
 				<!-- cedula y tipo de cedula -->
 				<div class="input-group mb-3">
@@ -266,7 +264,7 @@
 
 
 
-			<tab-content title="Resumen">
+			<tab-content title="Resumen" icon="fa fa-save">
 				<!-- Genera reporte y imprime cotizacion -->
 			</tab-content>
 
@@ -584,7 +582,13 @@
 		        .catch(e => {
 		            console.log(e);
 		        });
-		        console.log(e);
+		        alert('Guardada su Cotización!');
+
+
+		        //console.log(salud);
+		        //window.location.href = '/cotizasalud'
+		        
+		        //console.log(e);
 		        // alert('Hola ' + this.request.name + '!')
 			},
 		}

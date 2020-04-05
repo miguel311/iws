@@ -39,6 +39,24 @@
         #footer-bar{
           background: linear-gradient(to right, #ffffff, #33AEFF);
         }
+        .buton-icons { 
+        display: inline-block;border-radius: 100px;box-shadow: 10px 10px 5px #888;background: rgb(9, 110, 171);font-size: 20px; height: 140px;   
+             width: 140px; margin-left: 0.3em; margin-top: 0.3em;
+        }
+        .edit-icons { 
+        display: inline-block;border-radius: 100px;box-shadow: 5px 5px 5px #888;padding: 0.5em 0.6em; font-size: 20px; height: 48px;   
+             width: 48px; margin-left: 0.3em; margin-top: 0.3em;
+        }
+        .print-icons { 
+        display: inline-block;border-radius: 100px;box-shadow: 3px 3px 5px #888;background: rgb(9, 110, 171);font-size: 48px; height: 100px;   
+             width: 100px; color:white
+        }
+        td{
+            text-align: center;
+        }
+        th{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
