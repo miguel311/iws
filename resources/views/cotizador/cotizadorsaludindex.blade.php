@@ -11,34 +11,32 @@
             <div class="card">
                 <div class="card-header"><h4>Consulta de Cotizaciones</h4></div>
                 <div class="card-body">
-{{--                 @foreach ($plan as $item)
-                    <div class="card-header">{{ $item->name }}</div>
-                @endforeach --}}
+                {{-- Botón Crear --}}
                 <a type="button" class="btn btn-info buton-icons" href="/cotizasalud/create">
                   <span style="font-size: 48px; color:white">
                     <i src="{{ asset('images/cruz.svg') }}" class="fas fa-plus-circle"></i>
                   </span>
                     <center style=" font-size: 20px; color:white">Cotización</center> 
                 </a>
-
+                {{-- mensaje de error --}}
                 <div class="container my-4">
                     @if ( session('mensaje') )
                         <div class="alert alert-danger">{{ session('mensaje') }}</div>
                     @endif
                 </div>
-
-
-  <div class="panel panel-success">
-    <form action="/cotizasalud/search" method="get">
-      <div class="panel-body">
-        <input type="text" name="search_field" class="form-control" placeholder="Ingrese cotización a Buscar">
-      </div>
-      <div class="panel-footer">
-        <button type="submit" class="btn btn-success edit-icons"><i class="fa fa-search"></i></button>
-        <a href="{{route('cotizasalud.index')}}" class="btn btn-primary btn-sm edit-icons"><i class="fa fa-backward"></i></a>
-      </div><br>
-    </form>
-  </div>
+                {{-- Buscador --}}
+                <div class="panel panel-success">
+                  <form action="/cotizasalud/search" method="get">
+                    <div class="panel-body">
+                      <input type="text" name="search_field" class="form-control" placeholder="Ingrese cotización a Buscar">
+                    </div>
+                    <div class="panel-footer">
+                      <button type="submit" class="btn btn-success edit-icons"><i class="fa fa-search"></i></button>
+                      <a href="{{route('cotizasalud.index')}}" class="btn btn-primary btn-sm edit-icons"><i class="fa fa-backward"></i></a>
+                    </div><br>
+                  </form>
+                </div>
+                {{-- Tabla --}}
                 <table class="table">
                   <thead>
                     <tr>

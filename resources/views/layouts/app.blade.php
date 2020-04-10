@@ -123,11 +123,28 @@
                 <img src="{{ asset('images/logo2.svg') }}" width="90" height="49" class="d-inline-block align-top" alt="">
                 Integrity Web Services
               </a> --}}
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     {{-- 
+            <div class="dropdown">
+              <a class="btn btn-secondary" href="#">Inicio</a>
+              <a class="btn btn-secondary" href="#">Consultas</a>
+              <a class="btn btn-secondary" href="/cotizasalud">Cotizaciones</a>
+              <a class="btn btn-secondary" href="#">Emisión</a>
+              <a class="btn btn-secondary" href="#">Documentos Digitales</a>
+              <a class="btn btn-secondary" href="#">Financiamiento</a>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Planes
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/plan_salud">Salud</a>
+                <a class="dropdown-item" href="#">Funerario</a>
+                <a class="dropdown-item" href="#">Atomovil</a>
+              </div>
+            </div>
+--}}
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
               <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Inicio </a>
@@ -139,10 +156,20 @@
                   <a class="nav-link" href="/cotizasalud">Cotizaciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Documentos Digitales</a>
+                  <a class="nav-link" href="#">Emisión</a>
                 </li> 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Planes</a>
+                  <a class="nav-link" href="#">Documentos Digitales</a>
+                </li> 
+                <li class="dropdown">
+                  <a href="#" class="nav-link" data-toggle="dropdown">Planes</a>
+                  <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="/plan_salud">Salud & Funerario</a>
+                      <a class="dropdown-item" href="#">Atomovil</a>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Financiamiento</a>
                 </li> 
               </ul>
             </div>

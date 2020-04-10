@@ -89,9 +89,8 @@ class CoizaSaludController extends Controller
 
     public function plan(Request $request)
     {
-            return $request;
-            $plan = PersonIntegrityPlan::all();
-            return response()->json(['cosa' => $plan]);
+            $plan = PersonIntegrityPlan::find($request->plan_persona_id2);
+            return response()->json(['plan2' => $plan]);
     }
 
 
@@ -195,8 +194,8 @@ class CoizaSaludController extends Controller
     {
         //
             $show = HealthIntegrity::findOrFail($id);
-            // CONSULTA PLAN SELECCIONADO
-            $planes = PersonIntegrityPlan::find($show->plan_persona_id);
+            // CONSULTA PLAN SELECCIONADO incluso los borrados
+            $planes = PersonIntegrityPlan::withTrashed()->find($show->plan_persona_id);
             // CONSULTA PERSONAS RESGUARDADAS BAJO EL CONTRATANTE
             $resguardados = ContractingQuote::where('integrity_saluds_id', $show->id)->get();
             // return $resguardados;
@@ -249,8 +248,8 @@ class CoizaSaludController extends Controller
     //CONSULTA DATOS  
     $show = HealthIntegrity::findOrFail($id);
     //return $show;
-    // CONSULTA PLAN SELECCIONADO
-    $planes = PersonIntegrityPlan::find($show->plan_persona_id);
+    // CONSULTA PLAN SELECCIONADO incluso los borrados
+    $planes = PersonIntegrityPlan::withTrashed()->find($show->plan_persona_id);
     // CONSULTA PERSONAS RESGUARDADAS BAJO EL CONTRATANTE
     $resguardados = ContractingQuote::where('integrity_saluds_id', $show->id)->get();
     //Aliado comercial 

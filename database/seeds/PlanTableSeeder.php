@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\PersonIntegrityPlan;
 
-class planesTableSeeder extends Seeder
+class PlanTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class planesTableSeeder extends Seeder
     {
 		/* Plan Salud */
 		$plan = new PersonIntegrityPlan();
-		$plan->id = 1; 
+
 		$plan->name = "Plan 1 de prueba";
 		$plan->description = "Plan de prueba description"; 
 		$plan->coverage = "200"; 
