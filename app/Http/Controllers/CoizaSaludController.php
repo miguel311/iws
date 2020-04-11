@@ -143,7 +143,7 @@ class CoizaSaludController extends Controller
             $users->integrity_saluds_id = $salud->id;
             $users->save();
         }
-        return $salud;
+        return $salud; 
        
 
 
@@ -388,34 +388,77 @@ class CoizaSaludController extends Controller
           </tr>
         </table>
         ';
+        $html_content .= '
+        <table>
+          <tr>
+            <th style="font-weight:bold">Nombre</th>
+            <th style="font-weight:bold">Edad</th>
+            <th style="font-weight:bold">Fecha NAC.</th>
+            <th style="font-weight:bold">Maternidad</th>
+            <th style="font-weight:bold">Sexo</th>
+            <th style="font-weight:bold">Parentesco</th>
+          </tr>
+        ';
         foreach ($resguardados as $key => $value) {
             /** Sexo de la persona */
             $sexo = ($value->sexo == 'M') ? 'Masculino' : 'Femenino';
             /** Maternidad */
             $maternidad = ($value->mother == 1) ? 'Si' : 'No';
             /** Fecha de nacimiento */
-            $birth = \Carbon\Carbon::parse($value->date)->format('Y-m-d');
+            $birth = \Carbon\Carbon::parse($value->date)->format('d-m-Y');
             /** Cantidad de años meses y dias */
-            $age = \Carbon\Carbon::parse($value->date)->diff(\Carbon\Carbon::now())->format('%y Años, %m Meses y %d Días');
+            $age = \Carbon\Carbon::parse($value->date)->diff(\Carbon\Carbon::now())->format('%y Años');
             $html_content .= '
-            <table class="tg">
             <tr>
-                <td class="tg-kwiq" colspan="2"><span style="font-weight:bold">Nombre: '.$value->name.' '.$value->last_name.' Sexo: '.$sexo.' Fecha de Nacimiento: '.$birth.'</span><br>
-                <span style="font-weight:bold">Edad: '.$age.' Parentesco: '.$value->parent.' Maternidad: '.$maternidad.'</span></td>
+              <th>'.$value->name.' '.$value->last_name.'</th>
+              <th>'.$age.'</th>
+              <th>'.$birth.'</th>
+              <th>'.$maternidad.'</th>
+              <th>'.$sexo.'</th>
+              <th>'.$value->parent.'</th>
             </tr>
-
-            <br>
-            </table><br><br>
             ';
         }
+        $html_content .= '</table><br><br>';
 
         $html_content .= '
             <p>
             Fecha de Cobro: ______________________<br>
             Forma de Pago Efectivo: ___ Cheque N°: ___________________<br>
             Banco: ______________________<br>
-            Fecha: </p><br><p>
-            FAVOR EMITIR CHEQUE NO ENDOSABLE A NOMBRE DE <strong>INTEGRITY WEB SERVICES C.A</strong>, ESTE TENDRÁ VALIDEZ SI ESTÁ FECHADO Y FIRMADO POR LA PERSONA AUTORIZADA Y SE CONSIDERA ANULADO AUTOMÁTICAMENTE SI A LOS 15 DÍAS DE SU EMISIÓN NO HA SIDO PAGADO. LAS COBERTURAS REFLEJADAS EN ESTE CUADRO RECIBO SOLO SURTIRÁN EFECTO SI SON PAGADAS CON CHEQUE NO ENDOSABLE A FAVOR DE <strong>INTEGRITY WEB SERVICES C.A</strong></p>
+            Fecha: </p>
+        ';
+        $html_content .= '
+
+
+          <table >
+          <tr>
+            <th colspan="4">Día Cancelación</th>
+            <th>Firma Autorizada</center></th>
+          </tr>
+          <tr><br>
+            <th colspan="4">FAVOR EMITIR CHEQUE NO ENDOSABLE A NOMBRE DE <strong>INTEGRITY WEB SERVICES C.A</strong>, ESTE TENDRÁ VALIDEZ SI ESTÁ FECHADO Y FIRMADO POR LA PERSONA AUTORIZADA Y SE CONSIDERA ANULADO AUTOMÁTICAMENTE SI A LOS 15 DÍAS DE SU EMISIÓN NO HA SIDO PAGADO. LAS COBERTURAS REFLEJADAS EN ESTE CUADRO RECIBO SOLO SURTIRÁN EFECTO SI SON PAGADAS CON CHEQUE NO ENDOSABLE A FAVOR DE <strong>INTEGRITY WEB SERVICES C.A</strong>
+            </th>
+            <td><br><br><img class="card-img-top" src="images/firmajj2.png"></td>
+          </tr>
+          <tr>
+            <th>Cancelado con:</th>
+            <td>Banco:</td>
+            <td>Cheque:</td>
+            <td colspan="2">Firma de Cobrador</td>
+          </tr>
+          <tr>
+            <th><br>
+            Cheque: [ ]<br>
+            Efectivo: [ ]<br>
+            Otros: [ ]
+            </th>
+            <td></td>
+            <td></td>
+            <td colspan="2"><br>Fecha: _____/_____/_______</td>
+          </tr>
+        </table>
+
         ';
 
         $footerText = 'Integrity Web Services, compruebe el estatus de su cotización con el codigo QR o por el enlace: http://iws.test/cotizasalud/'.$show->id;

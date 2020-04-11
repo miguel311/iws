@@ -582,7 +582,7 @@
 		        .catch(e => {
 		            console.log(e);
 		        });
-		        alert('Guardada su Cotización!');
+		        alert('Guardada su Cotización Correctamente!' salud);
 
 
 		        //console.log(salud);

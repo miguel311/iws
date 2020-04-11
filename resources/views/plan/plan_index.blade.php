@@ -39,7 +39,7 @@
                                 <form action="{{ route('plan_salud.store') }}" method="POST">
                                     @csrf
                                     <div class="panel-body">
-                                        <h4>Crear Nuevo Plan</h4>
+                                        <h4>Crear Nuevo Plan de Salud & Funerario</h4>
                                         <input required="" type="text" name="name" class="form-control" placeholder="Nombre del plan"><br>
                                         <input required="" type="text" name="descrip" class="form-control" placeholder="Descripción del plan"><br>
                                         <input required="" type="number" name="suma" class="form-control" placeholder="Suma a Resguardar"><br>

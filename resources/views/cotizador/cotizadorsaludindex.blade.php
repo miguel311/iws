@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header"><h4>Consulta de Cotizaciones</h4></div>
+                <div class="card-header"><h4>Crear Nuevas Cotizaciones & Consultar</h4></div>
                 <div class="card-body">
                 {{-- Botón Crear --}}
                 <a type="button" class="btn btn-info buton-icons" href="/cotizasalud/create">
@@ -32,7 +32,6 @@
                     </div>
                     <div class="panel-footer">
                       <button type="submit" class="btn btn-success edit-icons"><i class="fa fa-search"></i></button>
-                      <a href="{{route('cotizasalud.index')}}" class="btn btn-primary btn-sm edit-icons"><i class="fa fa-backward"></i></a>
                     </div><br>
                   </form>
                 </div>

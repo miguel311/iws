@@ -38,8 +38,8 @@
                       <thead>
                         <tr>
                           <th scope="col">Nombre</th>
-                          <th scope="col">Apellido</th>
                           <th scope="col">Sexo</th>
+                          <th scope="col">Edad</th>
                           <th scope="col">Fecha de Nacimiento</th>
                           <th scope="col">Parentesco</th>
                           <th scope="col">Maternidad</th>
@@ -49,10 +49,10 @@
                         {{-- RECORRRE LA LISTA DE REGUARDADOS --}}
                         @foreach($resguardados as $item)
                         <tr>
-                            <td>{{ $item->name }}</td>
-                          <td>{{ $item->last_name }}</td>
+                          <td>{{ $item->name }} {{ $item->last_name }}</td>
                           <td>{{ $item->sexo }}</td>
-                          <td>{{ $item->date }}</td>
+                          <td>{{ (\Carbon\Carbon::parse($item->date)->diff(\Carbon\Carbon::now())->format('%y Años')) }}</td>
+                          <td>{{ (\Carbon\Carbon::parse($item->date)->format('d-m-Y')) }}</td>
                           <td>{{ $item->parent }}</td>
                           @if($item->mother)<td>Si</td>@else<td>No</td>@endif
                         </tr>
