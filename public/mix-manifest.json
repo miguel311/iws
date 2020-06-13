@@ -1,4 +1,12 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/custom.css": "/css/custom.css",
+    "/js/shared-components.js": "/js/shared-components.js",
+    "/js/components/cotiza-salud-list.js": "/js/components/cotiza-salud-list.js",
+    "/js/components/healt-quote-form.js": "/js/components/healt-quote-form.js",
+    "/js/components/multi-selects.js": "/js/components/multi-selects.js",
+    "/js/components/selects.js": "/js/components/selects.js",
+    "/js/components/vendors~multi-selects.js": "/js/components/vendors~multi-selects.js",
+    "/js/components/vendors~selects.js": "/js/components/vendors~selects.js"
 }
