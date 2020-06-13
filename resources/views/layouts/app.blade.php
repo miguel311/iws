@@ -7,12 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
     <title>{{ config('app.name') }} | Integrity Web Services</title>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png', Request::secure()) }}">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
     <!--<link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
     {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
@@ -58,8 +55,15 @@
             text-align: center;
         }
     </style>
+
+    {{-- Sección para estilos extras dispuestos por las plantillas según requerimientos particulares --}}
+    @yield('extra-css')
 </head>
 <body>
+    @auth
+        {{-- Ventana modal para mostrar mensaje de espera mientras cargan los datos --}}
+        @include('layouts.loading-message')
+    @endauth
     <div id="app">
         {{-- navar 1 --}}
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" id="footer-bar">
@@ -182,12 +186,32 @@
             @yield('content')
         </main>
     </div>
+    
+    {{-- footer --}}
+    @extends('layouts.footer')
+    {{-- end footer --}}
 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js', Request::secure()) }}" id="appjs" data-domain="{{ config('app.url') }}"></script>
+    <!-- Componentes compartidos de la aplicación -->
+    <script src="{{ asset('js/shared-components.js', Request::secure()) }}"></script>
 
+    <script>
+      $(document).ready(function() {
+          /** oculta el mensaje de carga al renderizar por completo el DOM de la página */
+          $('.preloader').fadeOut(1000);
+      });
+    </script>
 
+    {{-- Sección para scripts extras dispuestos por las plantillas según requerimientos particulares --}}
+    @yield('extra-js')
 
-{{-- footer --}}
-@extends('layouts.footer')
-{{-- end footer --}}
+    {{-- Sección que permite renderizar los componentes de VueJS --}}
+    <script>
+      /** @type {object} Constante que crea el elemento Vue */
+      var app = new Vue({
+          el: '#app',
+      });
+    </script>
 </body>
 </html>
