@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
+use App\Roles\Models\Role;
+use Carbon\Carbon;
 use App\User;
 
 class UsersTableSeeder extends Seeder
@@ -13,32 +14,28 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        model::unguard();
+        DB::transaction(function () {
+            /** @var object Crea el usuario por defecto de la aplicación */
+            $user_admin = User::updateOrCreate(
+                ['email' => 'admin@admin.com'],
+                [
+                    'name'              => 'Administrador',
+                    'email'             => 'admin@admin.com',
+                    'password'          => bcrypt('12345678'),
+                    'created_at' => Carbon::now(),
+                    'email_verified_at' => Carbon::now()
+                ]
+            );
+            if (!$user_admin) {
+                throw new Exception('Error creando el usuario administrador por defecto');
+            }
 
-        $users = [
-            [
-                'name'              => 'Administrador',
-                'email'             => 'admin@admin.com',
-                'email_verified_at' => now(),
-                'password'          => bcrypt('12345678'),
-                'remember_token'    => Str::random(10)
-            ],
-        ];
+            /** @var object Busca el rol de administrador del sistema */
+            $adminRole = Role::where('slug', 'admin')->first();
 
-        DB::transaction(function () use ($users) {
-            foreach ($users as $user) {
-                $usr = User::updateOrCreate(
-                    [
-                        'email'             => $user['email']
-                    ],
-                    [
-                        'name'              => $user['name'],
-                        'email'             => $user['email'],
-                        'email_verified_at' => $user['email_verified_at'],
-                        'password'          => $user['password'],
-                        'remember_token'    => $user['remember_token']
-                    ]
-                );
+            if ($adminRole) {
+                /** Asigna el rol de administrador */
+                $user_admin->attachRole($adminRole);
             }
         });
     }

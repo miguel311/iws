@@ -11,9 +11,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        /** Registro de roles por defecto */
+        $this->call(RolesTableSeeder::class);
+        /** Registro de permisos por defecto */
+        $this->call(PermissionsTableSeeder::class);
+        /** Registro de usuarios por defecto */
         $this->call(UsersTableSeeder::class);
-        $this->call(PlanTableSeeder::class);
-    	$this->call(AutomovilTableSeeder::class);
-    	$this->call(EstadoTableSeeder::class);
+    	
+        
+        /** Revisar */
+        /** Registros de automoviles */
+        //$this->call(AutomovilTableSeeder::class);
+        //$this->call(PlanTableSeeder::class);
     }
 }

@@ -13,16 +13,21 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            // $table->string('level');
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('users')) {
+            Schema::create('users', function (Blueprint $table) {
+                $table->bigIncrements('id')->comment('Identificador único del registro');
+                $table->string('name');
+                $table->string('email')->unique();
+                $table->string('password')->comment('Contraseña cifrada');
+                $table->boolean('active')->default(true)
+                      ->comment('Estatus actual del usuario. (False) inactivo, (True) activo');
+                $table->timestamp('email_verified_at')->nullable()
+                      ->comment('validación para determinar si la dirección de correo fue verificada');
+                $table->rememberToken();
+                $table->timestamps();
+                $table->softDeletes()->comment('Fecha y hora en la que el registro fue eliminado');
+            });
+        };
     }
 
     /**
