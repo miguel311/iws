@@ -176,6 +176,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Proveedores de Servicios de Terceros...
+         */
+        App\Roles\RolesServiceProvider::class,
+
     ],
 
     /*
