@@ -11,6 +11,9 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    /** Requerido para los mensajes sweetalert2 */
+    window.Swal = require('sweetalert2');
+    
 } catch (e) {}
 
 /**

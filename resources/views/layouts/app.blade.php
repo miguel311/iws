@@ -15,7 +15,10 @@
     {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css', Request::secure()) }}">
+    {{-- Hoja de estilo para los mensajes de la aplicación (requerida) --}}
+    <link rel="stylesheet" href="{{ asset('vendor/jquery.gritter/css/jquery.gritter.css', Request::secure()) }}">
+
     <style type="text/css">
         body {
           background: #007bff;
@@ -195,6 +198,11 @@
     <script src="{{ asset('js/app.js', Request::secure()) }}" id="appjs" data-domain="{{ config('app.url') }}"></script>
     <!-- Componentes compartidos de la aplicación -->
     <script src="{{ asset('js/shared-components.js', Request::secure()) }}"></script>
+    {{-- Plugin Gritter --}}
+    <script src="{{ asset('vendor/jquery.gritter/js/jquery.gritter.min.js', Request::secure()) }}" defer></script>
+
+    {{-- Mensaje de espera al cargar procesos del sistema --}}
+    @include('layouts.messages')
 
     <script>
       $(document).ready(function() {
@@ -202,6 +210,7 @@
           $('.preloader').fadeOut(1000);
       });
     </script>
+
 
     {{-- Sección para scripts extras dispuestos por las plantillas según requerimientos particulares --}}
     @yield('extra-js')
