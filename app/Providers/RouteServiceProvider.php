@@ -1,5 +1,6 @@
 <?php
 
+/** Proveedores de servicios generales del sistema */
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -51,6 +52,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
+        /** Rutas para la gestión de la aplicación base */
         Route::middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/web.php'));
@@ -65,6 +67,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
+        /** Rutas para la gestión de APIs de la aplicación */
         Route::prefix('api')
              ->middleware('api')
              ->namespace($this->namespace)
