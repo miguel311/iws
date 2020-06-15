@@ -56,16 +56,18 @@
                             </div>
                         </div> --}}
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                        <div class="form-group row mb-1 ml-1">
+                            <div class="col-md-12" style="text-align: center;">
                                 <button type="submit" class="btn btn-primary">
-                                    Inicio de Sesión
+                                    Iniciar de Sesión
                                 </button>
-
                                 @if (Route::has('register'))
                                     <a class="btn btn-outline-dark" href="{{ route('register') }}">Registrar</a>
                                 @endif
-
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-md-12" style="text-align: center;">
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         Olvidó su Contraseña
@@ -73,7 +75,7 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="card-header"><center>2019 © Integrity Web Services, C.A Rif J-41260910-6</center></div>
+                        <div class="card-footer"><center>2019 © Integrity Web Services, C.A Rif J-41260910-6</center></div>
                     </form>
                 </div>
             </div>

@@ -17,7 +17,12 @@ class DatabaseSeeder extends Seeder
         $this->call(PermissionsTableSeeder::class);
         /** Registro de usuarios por defecto */
         $this->call(UsersTableSeeder::class);
-    	
+    	/** Registro de estados de venezuela */
+        $this->call(EstatesTableSeeder::class);
+        /** Registro de municipios asociados a los estados */
+        $this->call(MunicipalitiesTableSeeder::class);
+        /** Registro de parroquias asociadas a los municipios */
+        $this->call(ParishesTableSeeder::class);
         
         /** Revisar */
         /** Registros de automoviles */

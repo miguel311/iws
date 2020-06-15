@@ -1,9 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Municipality;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateParishesTable extends Migration
 {
@@ -14,13 +13,20 @@ class CreateParishesTable extends Migration
      */
     public function up()
     {
-        Schema::create('parishes', function ($table) {
-            $table->increments('id');
-            $table->string('parishes');
-            $table->integer('municipalities_id')->unsigned();
-            $table->foreign('municipalities_id')->references('id')->on('municipalities');
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('parishes')) {
+            Schema::create('parishes', function (Blueprint $table) {
+                $table->bigIncrements('id')->comment('Identificador único del registro');
+                $table->string('name', 100)->comment('Nombre de la Parroquia');
+                $table->string('code', 10)->nullable()->comment('Código que identifica a la Parroquia');
+                $table->bigInteger('municipality_id')->unsigned()
+                      ->comment('Identificador asociado al Municipio al que pertenece');
+                $table->foreign('municipality_id')->references('id')->on('municipalities')
+                      ->onDelete('restrict')->onUpdate('cascade');
+                $table->timestamps();
+                $table->softDeletes()->comment('Fecha y hora en la que el registro fue eliminado');
+                $table->unique(['municipality_id', 'name'])->comment('Clave única para el registro');
+            });
+        }
     }
 
     /**

@@ -1,10 +1,17 @@
 <?php
 
+/** Controladores para la gestión de autenticación de usuarios */
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+/**
+ * @class LoginController
+ * @brief Gestiona información de autenticación
+ *
+ * Controlador para gestionar la autenticación de usuarios
+ */
 class LoginController extends Controller
 {
     /*
@@ -25,7 +32,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.

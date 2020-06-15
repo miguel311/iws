@@ -11,42 +11,81 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * -----------------------------------------------------------------------
+ * Ruta para la gestión de acceso a la aplicación
+ * -----------------------------------------------------------------------
+ *
+ * Condiciona el acceso a la aplicación y evalúa si el usuario esta
+ * autenticado en el sistema, si lo está, redirecciona a la página principal
+ * de lo contrario muestra la interfaz de autenticación
+ */
+Route::get('/', 'HomeController@index')->name('home');
 
-Auth::routes();
+/**
+ * -----------------------------------------------------------------------
+ * Rutas para la gestión de acceso al sistema
+ * -----------------------------------------------------------------------
+ *
+ * Gestiona las rutas de:
+ * - login (GET|POST)
+ * - logout
+ * - password/email
+ * - password/reset
+ * - password/reset/{token}
+ */
+Auth::routes(['verify' => true]);
 
 
-// HOME
-	Route::get('/home', 'HomeController@index')->name('home');
-
-
-// COTIZADOR SALUD
-	// busqueda de cotizaciones
+/**
+ * -----------------------------------------------------------------------
+ * Grupo de rutas para la gestión general de registros
+ * -----------------------------------------------------------------------
+ *
+ * Permite gestionar los distintos modelos de uso común en la aplicación y
+ * el acceso a los distintos discos establecidos en la configuración de
+ * config/filesystems.php
+ */
+Route::group(['middleware' => ['auth', 'verified']], function () {
+	/**
+     * -----------------------------------------------------------------------
+     * Rutas para gestión de cotizaciones de salud
+     * -----------------------------------------------------------------------
+     */
+	
+	Route::resource('/cotizasalud', 'CoizaSaludController', ['except' => ['destroy']]);
+	/** Ruta para obtener datos de cotizaciones de salud */
 	Route::get('/cotizasalud/search', 'CoizaSaludController@search')->name('cotizasalud.search');
-	// llamar plan de salud
+	/** Ruta para obtener los planes de cotizaciones de salud */
 	Route::get('/cotizasalud/getplan', 'CoizaSaludController@plan')->name('cotizasalud.planes');
-	// Cotizar Salud //expto destroy
-	Route::resource('/cotizasalud', 'CoizaSaludController', ['except' => ['destroy']])->middleware('auth');
-	// Eliminar Cotizar Salud
-	Route::get('/cotizasalud/delete/{id}', 'CoizaSaludController@destroy')->name('cotizasalud.delete')->middleware('auth');
-	// imprimir cotización
-	Route::get('/cotizasalud/print/{id}', 'CoizaSaludController@print')->name('cotizasalud.print')->middleware('auth');
+	/** Ruta para eliminar cotización de salud */
+	Route::get('/cotizasalud/delete/{id}', 'CoizaSaludController@destroy')->name('cotizasalud.delete');
+	/** Ruta para imprimir cotización de salud */
+	Route::get('/cotizasalud/print/{id}', 'CoizaSaludController@print')->name('cotizasalud.print');
 
 
-// PLANES INDEX
-	// busqueda Plan de salud
+	/**
+     * -----------------------------------------------------------------------
+     * Rutas para gestión de planes de salud
+     * -----------------------------------------------------------------------
+     */
+	Route::resource('/plan_salud', 'Plan_SaludController');
+	/** Ruta para obtener datos de los planes */
 	Route::get('/plan_salud/search', 'Plan_SaludController@search')->name('plan_salud.search');
-	// Formular Plan de salud
-	Route::resource('/plan_salud', 'Plan_SaludController')->middleware('auth');
 
-	// Formular plan de auto
-	Route::resource('/plan_auto', 'Plan_AutoController')->middleware('auth');
+	/**
+     * -----------------------------------------------------------------------
+     * Rutas para gestión de planes de auto
+     * -----------------------------------------------------------------------
+     */
+	Route::resource('/plan_auto', 'Plan_AutoController');
 
 
+	/**
+     * -----------------------------------------------------------------------
+     * Rutas para gestión de cotizaciones de auto
+     * -----------------------------------------------------------------------
+     */
+	Route::resource('/cotizasauto', 'CoizaAutoController');
 
-// AUTO
-
-	//  Cotizar Auto
-	Route::resource('/cotizasauto', 'CoizaAutoController')->middleware('auth');
+});

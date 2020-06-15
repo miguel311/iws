@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ config('app.name') }} | Integrity Web Services</title>
+        <link rel="shortcut icon" href="{{ asset('images/favicon.png', Request::secure()) }}">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -82,7 +83,7 @@
             <div class="content">
                 <img src="{{ asset('images/logo.svg') }}" width="900" height="490" class="d-inline-block align-top" alt="">
 
-               {{--  <div class="title m-b-md">
+                {{--  <div class="title m-b-md">
                     Integrity Web Services
                 </div> --}}
 

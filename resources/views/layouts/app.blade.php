@@ -14,50 +14,11 @@
     <!--<link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
     {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
+    
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css', Request::secure()) }}">
     {{-- Hoja de estilo para los mensajes de la aplicación (requerida) --}}
     <link rel="stylesheet" href="{{ asset('vendor/jquery.gritter/css/jquery.gritter.css', Request::secure()) }}">
-
-    <style type="text/css">
-        body {
-          background: #007bff;
-          background: linear-gradient(to right, #ffffff, #33AEFF);
-        }
-        #sticky-footer {
-          flex-shrink: none;
-          background: #263238;
-          color: white;
-        }
-        #sticky-footer2 {
-          flex-shrink: none;
-          background: #1e282d;
-        }
-        #navbar2{
-          background: #263238;
-        }
-        #footer-bar{
-          background: linear-gradient(to right, #ffffff, #33AEFF);
-        }
-        .buton-icons { 
-        display: inline-block;border-radius: 100px;box-shadow: 10px 10px 5px #888;background: rgb(9, 110, 171);font-size: 20px; height: 140px;   
-             width: 140px; margin-left: 0.3em; margin-top: 0.3em;
-        }
-        .edit-icons { 
-        display: inline-block;border-radius: 100px;box-shadow: 5px 5px 5px #888;padding: 0.5em 0.6em; font-size: 20px; height: 48px;   
-             width: 48px; margin-left: 0.3em; margin-top: 0.3em;
-        }
-        .print-icons { 
-        display: inline-block;border-radius: 100px;box-shadow: 3px 3px 5px #888;background: rgb(9, 110, 171);font-size: 48px; height: 100px;   
-             width: 100px; color:white
-        }
-        td{
-            text-align: center;
-        }
-        th{
-            text-align: center;
-        }
-    </style>
 
     {{-- Sección para estilos extras dispuestos por las plantillas según requerimientos particulares --}}
     @yield('extra-css')
