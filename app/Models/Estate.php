@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * @class Estate
- * @brief Datos de Estados
+ * @class     Estate
+ * @brief     Datos de Estados
  *
  * Gestiona el modelo de datos para los Estados
+ *
+ * @author    Henry Paredes <hparedes@cenditel.gob.ve> | <henryp2804@gmail.com>
  */
 class Estate extends Model
 {
@@ -26,7 +28,9 @@ class Estate extends Model
      * Lista de atributos que pueden ser asignados masivamente
      * @var array $fillable
      */
-    protected $fillable = ['name', 'code'];
+    protected $fillable = [
+        'name', 'code'
+    ];
 
     /**
      * Método que obtiene los Municipios de un Estado

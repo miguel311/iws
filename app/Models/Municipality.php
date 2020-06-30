@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * @class Municipality
- * @brief Datos de Municipios
+ * @class     Municipality
+ * @brief     Datos de municipios
  *
- * Gestiona el modelo de datos para los Municipios
+ * Gestiona el modelo de datos para los municipios
+ *
+ * @author    Henry Paredes <hparedes@cenditel.gob.ve> | <henryp2804@gmail.com>
  */
 class Municipality extends Model
 {
@@ -26,7 +28,9 @@ class Municipality extends Model
      * Lista de atributos que pueden ser asignados masivamente
      * @var array $fillable
      */
-    protected $fillable = ['name', 'code', 'estate_id'];
+    protected $fillable = [
+        'name', 'code', 'estate_id'
+    ];
 
     /**
      * Método que obtiene el Estado de un Municipio

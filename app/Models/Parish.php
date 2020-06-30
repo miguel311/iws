@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * @class Parish
- * @brief Datos de Parroquias
+ * @class     Parish
+ * @brief     Datos de Parroquias
  *
  * Gestiona el modelo de datos para las Parroquias
+ *
+ * @author    Henry Paredes <hparedes@cenditel.gob.ve> | <henryp2804@gmail.com>
  */
 class Parish extends Model
 {
@@ -26,7 +28,9 @@ class Parish extends Model
      * Lista de atributos que pueden ser asignados masivamente
      * @var array $fillable
      */
-    protected $fillable = ['name', 'code', 'municipality_id'];
+    protected $fillable = [
+        'name', 'code', 'municipality_id'
+    ];
 
     /**
      * Método que obtiene el Municipio de una Parroquia
