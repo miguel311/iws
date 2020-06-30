@@ -56,6 +56,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 	Route::resource('/cotiza-salud', 'HealthQuoteController', ['except' => ['edit', 'show' ]]);
     /** Ruta para editar cotizaciones de salud */
     Route::get('/cotiza-salud/edit/{id}', 'HealthQuoteController@edit')->name('cotiza-salud.edit');
+    /** Ruta para ver una cotización de salud */
+    Route::get('/cotiza-salud/show/{id}', 'HealthQuoteController@show')->name('cotiza-salud.show');
     /** Ruta para editar cotizaciones de salud */
     Route::delete('/cotiza-salud/delete/{id}', 'HealthQuoteController@destroy')->name('cotiza-salud.destroy');
     /** Ruta para obtener las cotizaciones de salud */

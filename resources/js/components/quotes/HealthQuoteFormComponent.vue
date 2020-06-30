@@ -1,7 +1,6 @@
 <template>
     <section id="HealthQuoteFormComponent">
-        <form-wizard @on-complete="onComplete"
-                     @on-loading="setLoading"
+        <form-wizard @on-complete="createRecord('cotiza-salud')"
                      @on-validate="handleValidation"
                      @on-error="handleErrorMessage"
                      next-button-text="Siguiente"
@@ -159,75 +158,50 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="list-group"
-                             v-for="commercial_plan in commercial_plans">
+                             v-for="plan in commercial_plans">
                             <button type="button"
+                                    @click="geCommercialPlan(plan, $event)"
                                     class="list-group-item list-group-item-action">
-                                <span> {{ commercial_plan.name }} </span>
+                                <span> {{ plan.name }} </span>
                             </button>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <span>Prueba</span>
-                    </div>
-                </div>
-                <!-- descripcion -->
-                <div v-if="request.plan_persona_id"
-                     class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Descripcion</span>
-                    </div>
-                    <select class="form-control"
-                            v-model="request.plan_persona_id">
-                        <option disabled
-                                v-model="request.plan_persona_id"
-                                v-for="(item, index) in plan"
-                                :key="index" :label="item.description"
-                                :value="item.id">
-                        </option>
-                    </select> 
-                </div>
-                <!-- Suma a Resguardar -->
-                <div v-if="request.plan_persona_id"
-                     class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Suma a Resguardar $</span>
-                    </div>           
-                    <select class="form-control"
-                            v-model="request.plan_persona_id">
-                        <option disabled
-                                v-model="request.plan_persona_id"
-                                v-for="(item, index) in plan"
-                                :key="index" :label="item.coverage"
-                                :value="item.id">
-                        </option>
-                    </select> 
-                </div>
-                <!-- prima -->
-                <div v-if="request.plan_persona_id"
-                     class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Costo a pagar $</span>
-                    </div>
-                    <select class="form-control"
-                            v-model="request.plan_persona_id">
-                        <option disabled
-                                v-model="request.plan_persona_id"
-                                v-for="(item, index) in plan"
-                                :key="index" :label="item.price"
-                                :value="item.id">
-                        </option>
-                    </select> 
-                </div>
-                <!-- Deducible -->
-                <div v-if="request.plan_persona_id"
-                     class="input-group mb-3">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">Deducible %</span>
+                    <div class="col-8"
+                         v-if="record.commercial_plan_id">
+                        <!-- descripcion -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Descripción</span>
+                            </div>
+                            <input class="form-control" type="text" readonly
+                                   v-model="commercial_plan.description">
                         </div>
-                    <input class="form-control" type="number"
-                           placeholder="Deducible" min="0" max="0"
-                           v-model="request.deducible">
+                        <!-- Suma a Resguardar -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Cobertura</span>
+                            </div>           
+                            <input class="form-control" type="text" readonly
+                                   v-model="commercial_plan.coverage">
+                        </div>
+                        <!-- prima -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Costo a pagar</span>
+                            </div>
+                            <input class="form-control" type="text" readonly
+                                   v-model="commercial_plan.price">
+                        </div>
+                        <!-- Deducible -->
+                        <div class="input-group mb-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Deducible %</span>
+                                </div>
+                                <input class="form-control" type="text" readonly
+                                       v-model="commercial_plan.deductible">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </tab-content>
@@ -235,19 +209,23 @@
             <tab-content title="Forma de Pago"
                          icon="fa fa-dollar-sign"
                          :before-change="validateAsync">
-                <!-- Forma de pago -->
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Forma de Pago</span>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-8">
+                        <!-- Forma de pago -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Forma de Pago</span>
+                            </div>
+                            <!-- forma de pago -->
+                            <select class="form-control"
+                                    v-model="record.way_to_pay">
+                                <option label="De contado" value="De contado"></option>
+                                <option label="Semestral" value="Semestral"></option>
+                                <option label="Trimestral" value="Trimestral"></option>
+                                <option label="Mensual" value="Mensual"></option>
+                            </select>
+                        </div>
                     </div>
-                    <!-- forma de pago -->
-                    <select class="form-control"
-                            v-model="request.forma_pago">
-                        <option label="De contado" value="De contado"></option>
-                        <option label="Semestral" value="Semestral"></option>
-                        <option label="Trimestral" value="Trimestral"></option>
-                        <option label="Mensual" value="Mensual"></option>
-                    </select>
                 </div>
             </tab-content>
 
@@ -255,147 +233,135 @@
                          icon="fa fa-user"
                          :before-change="validateAsync">
                 <div class="row" style="justify-content: center;">
-                    <div class="col-md-5">
-                        <div class="input-group">
-                            <!-- type of cedule -->
+                    <div class="col-md-8">
+                        <!-- Documento de identidad -->
+                        <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">Tipo de Documento</span>
+                                <span class="input-group-text">Documento de Identidad</span>
                             </div>
-                            <select class="col-md-3" 
-                                    v-model="request.cedule_type">
+                            <select class="col-md-1" 
+                                    v-model="record.document_type">
                                 <option label="V" value="V"></option>
                                 <option label="E" value="E"></option>
                                 <option label="J" value="J"></option>
                                 <option label="G" value="G"></option>
                             </select>
+                            <input class="form-control"
+                                   type="text"
+                                   v-model="record.document_number">
                         </div>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-5">
-                        <div class="input-group">
-                            <!-- cedule -->
+                        <!-- Nombre -->
+                        <div class="input-group mb-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">Documento:</span>
+                                <span class="input-group-text">Nombre</span>
+                            </div>
+                            <input class="form-control" style="text-transform:uppercase;"
+                                   type="text" placeholder="Nombre"
+                                   v-model="record.name">
+                        </div>
+                        <!-- Apellido -->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Apellido</span>
+                            </div>
+                            <input class="form-control" style="text-transform:uppercase;"
+                                   type="text" placeholder="Apellido"
+                                   v-model="record.last_name">
+                        </div>
+                        <!-- Telefono Local -->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Telefono Local</span>
+                            </div>
+                            <select class="col-md-2"
+                                    v-model="local_phone.area_code">
+                                <option label="0212" value="0212"></option>
+                                <option label="0234" value="0234"></option>
+                                <option label="0235" value="0235"></option>
+                                <option label="0237" value="0237"></option>
+                                <option label="0238" value="0238"></option>
+                                <option label="0239" value="0239"></option>
+                                <option label="0240" value="0240"></option>
+                                <option label="0241" value="0241"></option>
+                                <option label="0242" value="0242"></option>
+                                <option label="0243" value="0243"></option>
+                                <option label="0244" value="0244"></option>
+                                <option label="0245" value="0245"></option>
+                                <option label="0246" value="0246"></option>
+                                <option label="0247" value="0247"></option>
+                                <option label="0248" value="0248"></option>
+                                <option label="0249" value="0249"></option>
+                                <option label="0251" value="0251"></option>
+                                <option label="0252" value="0252"></option>
+                                <option label="0253" value="0253"></option>
+                                <option label="0254" value="0254"></option>
+                                <option label="0255" value="0255"></option>
+                                <option label="0256" value="0256"></option>
+                                <option label="0257" value="0257"></option>
+                                <option label="0258" value="0258"></option>
+                                <option label="0259" value="0259"></option>
+                                <option label="0261" value="0261"></option>
+                                <option label="0262" value="0262"></option>
+                                <option label="0263" value="0263"></option>
+                                <option label="0264" value="0264"></option>
+                                <option label="0265" value="0265"></option>
+                                <option label="0266" value="0266"></option>
+                                <option label="0267" value="0267"></option>
+                                <option label="0268" value="0268"></option>
+                                <option label="0269" value="0269"></option>
+                                <option label="0271" value="0271"></option>
+                                <option label="0272" value="0272"></option>
+                                <option label="0273" value="0273"></option>
+                                <option label="0274" value="0274"></option>
+                                <option label="0275" value="0275"></option>
+                                <option label="0276" value="0276"></option>
+                                <option label="0277" value="0277"></option>
+                                <option label="0278" value="0278"></option>
+                                <option label="0279" value="0279"></option>
+                                <option label="0281" value="0281"></option>
+                                <option label="0282" value="0282"></option>
+                                <option label="0283" value="0283"></option>
+                                <option label="0284" value="0284"></option>
+                                <option label="0285" value="0285"></option>
+                                <option label="0286" value="0286"></option>
+                                <option label="0287" value="0287"></option>
+                                <option label="0288" value="0288"></option>
+                                <option label="0289" value="0289"></option>
+                                <option label="0291" value="0291"></option>
+                                <option label="0292" value="0292"></option>
+                                <option label="0293" value="0293"></option>
+                                <option label="0294" value="0294"></option>
+                                <option label="0295" value="0295"></option>
+                            </select>
+                            <input class="form-control" type="text"
+                                   v-model="local_phone.number">
+                        </div>
+                        <!-- Telefono celular -->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Telefono Móvil</span>
+                            </div>
+                            <select class="col-md-2"
+                                    v-model="mobile_phone.area_code">
+                                <option label="0412" value="0412"></option>
+                                <option label="0414" value="0414"></option>
+                                <option label="0424" value="0424"></option>
+                                <option label="0416" value="0416"></option>
+                                <option label="0426" value="0426"></option>
+                            </select>
+                            <input class="form-control" type="text"
+                                   v-model="mobile_phone.number">
+                        </div>
+                        <!-- Email -->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Email</span>
                             </div>
                             <input class="form-control"
-                                   type="text" placeholder="Cédula"
-                                   v-model="request.cedule">
+                                   type="text" placeholder="Email"
+                                   v-model="record.email">
                         </div>
                     </div>
-                    
-                </div>
-                <!-- cedula y tipo de cedula -->
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Nombre</span>
-                    </div>
-                    <input class="form-control" style="text-transform:uppercase;"
-                           type="text" placeholder="Nombre"
-                           v-model="request.name">
-                    <!-- Apellido -->
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Apellido</span>
-                    </div>
-                    <input class="form-control" style="text-transform:uppercase;"
-                           type="text" placeholder="Apellido"
-                           v-model="request.lastname">
-                </div>
-                <!-- Telefono Local -->
-                <div class="input-group mb-3">
-                    <!-- type of telefono Local -->
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Telefono Local</span>
-                    </div>
-                    <select class="col-md-2"
-                            v-model="request.phone_local_type">
-                        <option label="0212" value="0212"></option>
-                        <option label="0234" value="0234"></option>
-                        <option label="0235" value="0235"></option>
-                        <option label="0237" value="0237"></option>
-                        <option label="0238" value="0238"></option>
-                        <option label="0239" value="0239"></option>
-                        <option label="0240" value="0240"></option>
-                        <option label="0241" value="0241"></option>
-                        <option label="0242" value="0242"></option>
-                        <option label="0243" value="0243"></option>
-                        <option label="0244" value="0244"></option>
-                        <option label="0245" value="0245"></option>
-                        <option label="0246" value="0246"></option>
-                        <option label="0247" value="0247"></option>
-                        <option label="0248" value="0248"></option>
-                        <option label="0249" value="0249"></option>
-                        <option label="0251" value="0251"></option>
-                        <option label="0252" value="0252"></option>
-                        <option label="0253" value="0253"></option>
-                        <option label="0254" value="0254"></option>
-                        <option label="0255" value="0255"></option>
-                        <option label="0256" value="0256"></option>
-                        <option label="0257" value="0257"></option>
-                        <option label="0258" value="0258"></option>
-                        <option label="0259" value="0259"></option>
-                        <option label="0261" value="0261"></option>
-                        <option label="0262" value="0262"></option>
-                        <option label="0263" value="0263"></option>
-                        <option label="0264" value="0264"></option>
-                        <option label="0265" value="0265"></option>
-                        <option label="0266" value="0266"></option>
-                        <option label="0267" value="0267"></option>
-                        <option label="0268" value="0268"></option>
-                        <option label="0269" value="0269"></option>
-                        <option label="0271" value="0271"></option>
-                        <option label="0272" value="0272"></option>
-                        <option label="0273" value="0273"></option>
-                        <option label="0274" value="0274"></option>
-                        <option label="0275" value="0275"></option>
-                        <option label="0276" value="0276"></option>
-                        <option label="0277" value="0277"></option>
-                        <option label="0278" value="0278"></option>
-                        <option label="0279" value="0279"></option>
-                        <option label="0281" value="0281"></option>
-                        <option label="0282" value="0282"></option>
-                        <option label="0283" value="0283"></option>
-                        <option label="0284" value="0284"></option>
-                        <option label="0285" value="0285"></option>
-                        <option label="0286" value="0286"></option>
-                        <option label="0287" value="0287"></option>
-                        <option label="0288" value="0288"></option>
-                        <option label="0289" value="0289"></option>
-                        <option label="0291" value="0291"></option>
-                        <option label="0292" value="0292"></option>
-                        <option label="0293" value="0293"></option>
-                        <option label="0294" value="0294"></option>
-                        <option label="0295" value="0295"></option>
-                    </select>
-                    <input class="form-control"
-                           type="text" placeholder="Teléfono Local"
-                           v-model="request.phone_local">
-                    <!-- type of telefono celular-->
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Telefono Movil</span>
-                    </div>
-                    <!-- Telefono celular -->
-                    <select class="col-md-2"
-                            v-model="request.phone_movile_type">
-                        <option label="0412" value="0412"></option>
-                        <option label="0414" value="0414"></option>
-                        <option label="0424" value="0424"></option>
-                        <option label="0416" value="0416"></option>
-                        <option label="0426" value="0426"></option>
-                    </select>
-                    <input class="form-control"
-                           type="text" placeholder="Teléfono Movil"
-                           v-model="request.phone_movile">
-                </div>
-                <!-- Email -->
-                <div class="input-group mb-3">
-                    <!-- Email -->
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Email</span>
-                    </div>
-                    <input class="form-control"
-                           type="text" placeholder="Email"
-                           v-model="request.email">
                 </div>
             </tab-content>
 
@@ -410,38 +376,64 @@
     export default {
         data() {
             return {
-                record:  {},
+                record:  {
+                    name:               '',
+                    last_name:          '',
+                    document_type:      '',
+                    document_number:    '',
+                    email:              '',
+                    local_phone_id:     '',
+                    mobile_phone_id:    '',
+                    commercial_plan_id: '',
+                    user_id:            '',
+                    sum:                '',
+                    fee:                '',
+                    deductible:         '',
+                    way_to_pay:         ''
+                },
+
+                commercial_plan: {
+                    name:        '',
+                    description: '',
+                    coverage:    '',
+                    price:       '',
+                    deductible:  '',
+                    type:        ''
+                },
+                local_phone: {
+                    area_code: '',
+                    number:    '',
+                    type:      'H'
+                },
+                mobile_phone: {
+                    area_code: '',
+                    number:    '',
+                    type:      'M'
+                },
 
                 quote_contractors: [],
-
                 commercial_plans: [],
-                request: [],
-                request: {
-                    name:'',
-                    lastname:'',
-                    cedule:'',
-                    cedule_type:'',
-                    email:'',
-                    phone_local:'',
-                    phone_local_type:'',
-                    phone_movile_type:'',
-                    phone_movile:'',
-                    plan_persona_id:'',
-                    plan_persona_id2:'',
-                    forma_pago:'',
-                    deducible:'0'
-                },
+
                 editIndex: '',
                 errors:  [],
                 records: []
 
             }
         },
+        props: {
+            health_quote_id: Number,
+        },
         created() {
             const vm = this;
             vm.editIndex = 0;
             vm.setContractor();
             vm.getCommercialPlan();
+        },
+        mounted() {
+            const vm = this;
+            if(vm.health_quote_id) {
+                vm.getHealthQuote();
+            }
         },
         methods: {
             setContractor() {
@@ -468,44 +460,15 @@
                     console.log(error);
                 });
             },
-            onComplete() {
-                /** Revisar */
-                const params = {
-                    plan_persona_id: this.request.plan_persona_id,
-                    deducible: this.request.deducible,
-                    forma_pago: this.request.forma_pago,
-                    cedule_type: this.request.cedule_type,
-                    cedule: this.request.cedule,
-                    name: this.request.name,
-                    lastname: this.request.lastname,
-                    phone_local_type: this.request.phone_local_type,
-                    phone_local: this.request.phone_local,
-                    phone_movile_type: this.request.phone_movile_type,
-                    phone_movile: this.request.phone_movile,
-                    email: this.request.email
-                };
-
-                [].push.call(params, this.users);//ingresa array de users en constante
-
-                axios.post('/cotiza-salud', params).then((response) =>{
-                }).catch(error => {
-                    console.log(error);
-                });
-                alert('Guardada su Cotización Correctamente!');
-            },
-            setLoading(value) {
-                const vm = this;
-                vm.loading = value;
-            },
             handleValidation(isValid, tabIndex) {
-                //Resultado de la validación
-                console.log('Tab: ' + tabIndex + ' valid: ' + isValid);
+                /** Resultado de la validación */
+                //console.log('Tab: ' + tabIndex + ' valid: ' + isValid);
             },
             handleErrorMessage(errorMsg) {
-                //Se procesa el mensaje de error
+                /** Se procesa el mensaje de error */
             },
             validateAsync() {
-                //Se valida el componente
+                /** Se valida el componente */
                 return new Promise((resolve, reject) => {
                     setTimeout(() => {
                         //reject('This is a custom validation error message. Click next again to get rid of the validation');
@@ -514,8 +477,94 @@
                 })
             },
             saveRow(index, event) {
-                
-            }
+                const vm = this;
+                let contractor = {};
+                contractor = vm.quote_contractors[index];
+                /** Agregar validación de campos mas personalizada.
+                 *  REVISAR: libreria inputmask
+                 */
+                if (contractor.name == ''
+                 || contractor.last_name == ''
+                 || contractor.gender == ''
+                 || contractor.birthdate == ''
+                 || contractor.parent == ''
+                 || (contractor.gender == 'F' && contractor.maternity == '')) {
+                    return false;
+                }
+                vm.editIndex = null;
+            },
+            geCommercialPlan(field, event) {
+                const vm = this;
+                vm.commercial_plan = field;
+                vm.record.commercial_plan_id = vm.commercial_plan['id'];
+                event.preventDefault();
+            },
+
+            /**
+             * Reescribe el método createRecord para cambiar su comportamineto por defecto
+             * Método que permite crear o actualizar un registro
+             *
+             * @author  Ing. Roldan Vargas <rvargas@cenditel.gob.ve> | <roldandvg@gmail.com>
+             *
+             * @param  {string} url    Ruta de la acción a ejecutar para la creación o actualización de datos
+             * @param  {string} list   Condición para establecer si se cargan datos en un listado de tabla.
+             *                         El valor por defecto es verdadero.
+             * @param  {string} reset  Condición que evalúa si se inicializan datos del formulario.
+             *                         El valor por defecto es verdadero.
+             */
+            createRecord(url, list = true, reset = true) {
+                const vm = this;
+                if (this.record.id) {
+                    this.updateRecord(url);
+                }
+                else {
+                    vm.loading = true;
+                    var fields = {};
+                    for (var index in this.record) {
+                        fields[index] = this.record[index];
+                    }
+                    fields['quote_contractors'] = vm.quote_contractors;
+                    fields['local_phone'] = vm.local_phone;
+                    fields['mobile_phone'] = vm.mobile_phone;
+
+                    axios.post('/' + url, fields).then(response => {
+                        if (typeof(response.data.redirect) !== "undefined") {
+                            location.href = response.data.redirect;
+                        }
+                        else {
+                            vm.errors = [];
+                            if (reset) {
+                                vm.reset();
+                            }
+                            if (list) {
+                                vm.readRecords(url);
+                            }
+                            vm.loading = false;
+                            vm.showMessage('store');
+                        }
+
+                    }).catch(error => {
+                        vm.errors = [];
+
+                        if (typeof(error.response) !="undefined") {
+                            for (var index in error.response.data.errors) {
+                                if (error.response.data.errors[index]) {
+                                    vm.errors.push(error.response.data.errors[index][0]);
+                                }
+                            }
+                        }
+
+                        vm.loading = false;
+                    });
+                }
+
+            },
+            getHealthQuote() {
+                const vm = this;
+                axios.get(`/cotiza-salud/show/${vm.health_quote_id}`).then(response => {
+                    vm.record = response.data.record;
+                });
+            },
         }
     }
 </script>

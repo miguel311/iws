@@ -3,6 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use App\Models\HealthQuote;
+use App\Models\QuoteContractor;
+use App\Models\Phone;
+use Auth;
+
+/** Revisar */
+
 use App\ContractingQuote;
 use App\PersonIntegrityPlan;
 use App\HealthIntegrity;
@@ -13,6 +23,48 @@ use Elibyy\TCPDF\Facades\TCPDF;
 
 class HealthQuoteController extends Controller
 {
+  use ValidatesRequests;
+
+  /**
+     * Arreglo con las reglas de validación sobre los datos de un formulario
+     * @var Array $validateRules
+     */
+    protected $validateRules;
+
+    /**
+     * Arreglo con los mensajes para las reglas de validación
+     * @var Array $messages
+     */
+    protected $messages;
+
+    /**
+     * Define la configuración de la clase
+     *
+     * @author
+     */
+    public function __construct()
+    {
+        /** Define las reglas de validación para el formulario */
+        $this->validateRules = [
+            'name'            => ['required', 'max:100'],
+            'last_name'       => ['required', 'max:100'],
+            'document_type'   => ['required', 'max:200'],
+            'document_number' => ['required', 'max:200'],
+            'email'           => ['required'],
+            'way_to_pay'      => ['required']
+        ];
+
+        /** Define los mensajes de validación para las reglas del formulario */
+        $this->messages = [
+            'name.required'            => 'El campo nombre es obligatorio.',
+            'last_name.required'       => 'El campo apellido es obligatorio.',
+            'document_type.required'   => 'El campo tipo de documento es obligatorio.',
+            'document_number.required' => 'El campo número del documento es obligatorio.',
+            'email.required'           => 'El campo email es obligatorio.',
+            'way_to_pay.required'      => 'El campo forma de pago es obligatorio.'
+        ];
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -24,29 +76,6 @@ class HealthQuoteController extends Controller
 
     }
 
-
-    /**
-     * Display a listing  the search result.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function search(Request $request)
-    {
-        $search_field = $request->input('search_field');
-           if($search_field){
-             $search = HealthIntegrity::where('id','LIKE',"%$search_field%")
-             ->orWhere('name','LIKE',"%$search_field%")
-             ->orWhere('last_name','LIKE',"%$search_field%")
-             ->orWhere('cedule','LIKE',"%$search_field%")
-             ->orWhere('email','LIKE',"%$search_field%")
-             ->paginate(10);
-             return view('health_quotes.index',array('integrities'=>$search));
-           }else{
-            //llama toda la informacion de solicitantes.
-            $integrities = HealthIntegrity::paginate(10);
-            return view('health_quotes.index', compact('integrities'));
-           }
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -57,15 +86,6 @@ class HealthQuoteController extends Controller
         return view('health_quotes.create');
     }
 
-    public function plan(Request $request)
-    {
-            $plan = PersonIntegrityPlan::find($request->plan_persona_id2);
-            return response()->json(['plan2' => $plan]);
-    }
-
-
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -74,84 +94,62 @@ class HealthQuoteController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, $this->validateRules, $this->messages);
 
+        /**
+         * Objeto asociado al modelo Phone
+         * @var Object $localPhone
+         */
+        $localPhone = Phone::create([
+            'area_code' => $request->local_phone['area_code'],
+            'number'    => $request->local_phone['number'],
+            'type'      => $request->local_phone['type']
+        ]);
 
-        $salud = new HealthIntegrity();
-        // DATOS ENVIADOS
-        $salud->cedule_type = $request->cedule_type;
-        $salud->cedule = $request->cedule;
-        $salud->name = $request->name;
-        $salud->last_name = $request->lastname;
-        $salud->phone_local_type = $request->phone_local_type;
-        $salud->phone_local = $request->phone_local;
-        $salud->phone_movile_type = $request->phone_movile_type;
-        $salud->phone_movile = $request->phone_movile;
-        $salud->email = $request->email;
-        $salud->forma_pago = $request->forma_pago;
-        $salud->deducible = $request->deducible;
-        $salud->plan_persona_id = $request->plan_persona_id;
-        $salud->user_id = auth()->user()->id;
-        // CONSULTA PLAN A GUARDAR
-        $planes = PersonIntegrityPlan::find($request->plan_persona_id);
-        $salud->suma = $planes->coverage;
-        $salud->cuota = $planes->price;
-        // Guardar
-        $salud->save();
+        /**
+         * Objeto asociado al modelo Phone
+         * @var Object $mobilePhone
+         */
+        $mobilePhone = Phone::create([
+            'area_code' => $request->mobile_phone['area_code'],
+            'number'    => $request->mobile_phone['number'],
+            'type'      => $request->mobile_phone['type']
+        ]);
 
-        // RECOORRE EL ARRAY DE USUARIOS REGUARDADOS
-        foreach ($request[0] as $key => $value) {
-            $users = new ContractingQuote();
-            foreach ($value as $key => $value) {
-                // return $value ;
-                // if ($key == 'date') {
-                //     $users->$key = \Carbon::createFromFormat('YYYY-mm-dd', $value);
-                // }
-                // else{
-                $users->$key = $value;
-                // }
-            }
-            $users->integrity_saluds_id = $salud->id;
-            $users->save();
+        /**
+         * Objeto asociado al modelo HealthQuote
+         * @var Object $healthQuote
+         */
+        $healthQuote = HealthQuote::create([
+            'name'               => $request->name,
+            'last_name'          => $request->last_name,
+            'document_type'      => $request->document_type,
+            'document_number'    => $request->document_number,
+            'email'              => $request->email,
+            'local_phone_id'     => $localPhone->id,
+            'mobile_phone_id'    => $mobilePhone->id,
+            'commercial_plan_id' => $request->commercial_plan_id,
+            'user_id'            => Auth::id(),
+            'way_to_pay'         => $request->way_to_pay
+        ]);
+
+        foreach ($request->quote_contractors as $quote_contractor) {
+            /**
+             * Objeto asociado al modelo QuoteContractor
+             * @var Object $quoteContractor
+             */
+            $quoteContractor = QuoteContractor::create([
+                'name'            => $quote_contractor['name'],
+                'last_name'       => $quote_contractor['last_name'],
+                'gender'          => $quote_contractor['gender'],
+                'birthdate'       => $quote_contractor['birthdate'],
+                'parent'          => $quote_contractor['parent'],
+                'maternity'       => $quote_contractor['maternity'] ?? false,
+                'health_quote_id' => $healthQuote->id
+            ]);
         }
-        return $salud; 
-       
-
-
-
-
-
-
-
-        // IMPRIME EN PDF
-        // $html_content = '<h1> Impresion de Prueba</h1>';
-        // $pdf = new TCPDF();
-        // PDF::SetTitle('Sample PDF');
-        // PDF::AddPage();
-        // PDF::writeHTML($html_content, true, false, true, false, '');
-
-        // PDF::Output(public_path(uniqid().'_cotiza.pdf'), 'D');
-
-
-
-        // return back()->with('mensaje', 'Nota Agregada!');
-        // return $salud;
-         // return view('cotizador.cotizadorsalud');
-        // // $salud->id;//id de cotizacion guardada
-        // $id = $salud['id'];//id de contizacion guardada
-        // // hacer foreache
-
-        // $user = $request->users;//llama el array con los dados de contratantes
-        // foreach ($user as $key => $value) {
-        //     $contractor = new cotiza_contractor();
-        //     $contractor->integrity_saluds_id = $id;
-        //     $contractor->name = $user['name'];
-        //     $contractor->lastname = $user['lastname'];
-        //     $contractor->sexo = $user['sexo'];
-        //     $contractor->date = $user['date'];
-        //     $contractor->parent = $user['parent'];
-        //     $contractor->mother = $user['mother'];
-        //     $contractor->save();
-        // }
+        $request->session()->flash('message', ['type' => 'store']);
+        return response()->json(['result' => true, 'redirect' => route('cotiza-salud.index')], 200);
     }
 
     /**
@@ -162,15 +160,8 @@ class HealthQuoteController extends Controller
      */
     public function show($id)
     {
-        //
-            $show = HealthIntegrity::findOrFail($id);
-            // CONSULTA PLAN SELECCIONADO incluso los borrados
-            $planes = PersonIntegrityPlan::withTrashed()->find($show->plan_persona_id);
-            // CONSULTA PERSONAS RESGUARDADAS BAJO EL CONTRATANTE
-            $resguardados = ContractingQuote::where('integrity_saluds_id', $show->id)->get();
-            // return $resguardados;
-            return view('health_quotes.show', compact('show','planes','resguardados'));
-
+        $healthQuote = HealthQuote::find($id);
+        return response()->json(['record' => $healthQuote], 200);
     }
 
     /**
@@ -181,8 +172,8 @@ class HealthQuoteController extends Controller
      */
     public function edit($id)
     {
-        //
-        //    return view('cotizador.editar');
+        $healthQuote = HealthQuote::find($id);
+        return view('health_quotes.create', compact('healthQuote'));
 
     }
 
@@ -206,10 +197,9 @@ class HealthQuoteController extends Controller
      */
     public function destroy($id)
     {
-        $show = HealthIntegrity::find($id);
-        $resguardados = ContractingQuote::where('integrity_saluds_id', $show->id)->delete();
-        $show->delete();
-        return back()->with('mensaje', 'Cotización Eliminada Correctamente' );
+        $healthQuote = HealthQuote::find($id);
+        $healthQuote->delete();
+        return response()->json(['message' => 'destroy'], 200);
     }
 
     //imprimir
@@ -455,6 +445,6 @@ class HealthQuoteController extends Controller
     }
 
     public function vueList() {
-      return response()->json(['records' => HealthIntegrity::all()]);
+      return response()->json(['records' => HealthQuote::all()]);
     }
 }
