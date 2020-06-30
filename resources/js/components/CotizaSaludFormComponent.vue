@@ -345,7 +345,7 @@
 		},
 		created(){
 			//llama los datos
-	    	axios.get('/cotizasalud')
+	    	axios.get('/cotiza-salud')
 	    		.then(res =>{
 	    			this.plan = res.data
 		      		console.log(res);
@@ -391,7 +391,7 @@
 
 			planx(){
 				console.log(plan);
-			 axios.get('/cotizasalud/getplan')
+			 axios.get('/cotiza-salud/get-plan')
               .then(function (response) {
                  this.request.plan_persona_id2 = response.data;
               }.bind(this));
@@ -570,7 +570,7 @@
 				// const cons = params.push(this.users);
 				// console.log(params);//ver que va a enviar en
 				axios
-				.post('/cotizasalud', params)
+				.post('/cotiza-salud', params)
 		        // .then((res) =>{
 		        //   const cotizaServer = res.data;
 		        //    this.request.push(cotizaServer);

@@ -1,0 +1,25 @@
+.btn {
+    &.btn-icon {
+        &.btn-xs {
+            height:1.4rem;
+            min-width:1.4rem;
+            width:1.4rem;
+
+            i {
+                font-size: .7rem;
+            }
+        }
+        margin: 3px;
+    }
+}
+
+.btn-action {
+    font-size: 0.58rem !important;
+    padding: 3px 6px !important;
+    font-weight: bold !important;
+    cursor:pointer !important;
+}
+
+.btn-sm {
+    font-size: 0.8571em;
+}

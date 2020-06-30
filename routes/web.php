@@ -52,33 +52,48 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
      * Rutas para gestión de cotizaciones de salud
      * -----------------------------------------------------------------------
      */
-	
-	Route::resource('/cotizasalud', 'CoizaSaludController', ['except' => ['destroy']]);
-	/** Ruta para obtener datos de cotizaciones de salud */
-	Route::get('/cotizasalud/search', 'CoizaSaludController@search')->name('cotizasalud.search');
+    
+	Route::resource('/cotiza-salud', 'HealthQuoteController', ['except' => ['edit', 'show' ]]);
+    /** Ruta para editar cotizaciones de salud */
+    Route::get('/cotiza-salud/edit/{id}', 'HealthQuoteController@edit')->name('cotiza-salud.edit');
+    /** Ruta para editar cotizaciones de salud */
+    Route::delete('/cotiza-salud/delete/{id}', 'HealthQuoteController@destroy')->name('cotiza-salud.destroy');
+    /** Ruta para obtener las cotizaciones de salud */
+    Route::get('/cotiza-salud/vue-list', 'HealthQuoteController@vueList')->name('cotiza-salud.vue-list');
+    /** Ruta para imprimir cotización de salud */
+    Route::get('/cotiza-salud/print/{id}', 'HealthQuoteController@print')->name('cotiza-salud.print');
 	/** Ruta para obtener los planes de cotizaciones de salud */
-	Route::get('/cotizasalud/getplan', 'CoizaSaludController@plan')->name('cotizasalud.planes');
-	/** Ruta para eliminar cotización de salud */
-	Route::get('/cotizasalud/delete/{id}', 'CoizaSaludController@destroy')->name('cotizasalud.delete');
-	/** Ruta para imprimir cotización de salud */
-	Route::get('/cotizasalud/print/{id}', 'CoizaSaludController@print')->name('cotizasalud.print');
-
+	Route::get('/cotiza-salud/get-plan', 'HealthQuoteController@plan')->name('cotiza-salud.get-plan');
 
 	/**
      * -----------------------------------------------------------------------
      * Rutas para gestión de planes de salud
      * -----------------------------------------------------------------------
      */
-	Route::resource('/plan_salud', 'Plan_SaludController');
-	/** Ruta para obtener datos de los planes */
-	Route::get('/plan_salud/search', 'Plan_SaludController@search')->name('plan_salud.search');
+	Route::resource('/plan-salud', 'HealthPlanController', ['except' => ['edit', 'show', 'destroy']]);
+    /** Ruta para editar planes de salud */
+    Route::get('/plan-salud/edit/{id}', 'HealthPlanController@edit')->name('plan-salud.edit');
+    /** Ruta para ver planes de salud */
+    Route::get('/plan-salud/show/{id}', 'HealthPlanController@show')->name('plan-salud.show');
+    /** Ruta para editar planes de salud */
+    Route::delete('/plan-salud/delete/{id}', 'HealthPlanController@destroy')->name('plan-salud.destroy');
+    /** Ruta para obtener los planes de salud */
+    Route::get('/plan-salud/vue-list', 'HealthPlanController@vueList')->name('plan-salud.vue-list');
 
 	/**
      * -----------------------------------------------------------------------
      * Rutas para gestión de planes de auto
      * -----------------------------------------------------------------------
      */
-	Route::resource('/plan_auto', 'Plan_AutoController');
+    Route::resource('/plan-auto', 'CarPlanController', ['except' => ['edit', 'show', 'destroy']]);
+    /** Ruta para editar planes de auto */
+    Route::get('/plan-auto/edit/{id}', 'CarPlanController@edit')->name('plan-auto.edit');
+    /** Ruta para ver planes de auto */
+    Route::get('/plan-auto/show/{id}', 'CarPlanController@show')->name('plan-auto.show');
+    /** Ruta para editar planes de auto */
+    Route::delete('/plan-auto/delete/{id}', 'CarPlanController@destroy')->name('plan-auto.destroy');
+    /** Ruta para obtener los planes de auto */
+    Route::get('/plan-auto/vue-list', 'CarPlanController@vueList')->name('plan-auto.vue-list');
 
 
 	/**
@@ -86,6 +101,6 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
      * Rutas para gestión de cotizaciones de auto
      * -----------------------------------------------------------------------
      */
-	Route::resource('/cotizasauto', 'CoizaAutoController');
+	Route::resource('/cotiza-auto', 'CarQuoteController');
 
-});
+}); 

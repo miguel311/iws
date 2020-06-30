@@ -24,19 +24,39 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 /**
- * Componente para la gestión del cotizador de salud
+ * Componentes para la gestión del cotizador de salud
  */
-Vue.component('cotiza-salud', () => import(
+Vue.component('health-quote-form', () => import(
     /* webpackChunkName: "healt-quote-form" */
-    './components/HealthQuoteFormComponent.vue'
+    './components/quotes/HealthQuoteFormComponent.vue'
+));
+Vue.component('health-quote-list', () => import(
+    /* webpackChunkName: "healt-quote-list" */
+    './components/quotes/HealthQuoteListComponent.vue'
 ));
 
 /**
- * Componente para mostrar el listado de las cotizaciones
+ * Componentes para la gestión de planes de salud
  */
-Vue.component('index-salud', () => import(
-    /* webpackChunkName: "cotiza-salud-list" */
-    './components/IndexSaludFormComponent.vue'
+Vue.component('health-plan-form', () => import(
+    /* webpackChunkName: "health-plan-form" */
+    './components/plans/HealthPlanFormComponent.vue'
+));
+Vue.component('health-plan-list', () => import(
+    /* webpackChunkName: "health-plan-list" */
+    './components/plans/HealthPlanListComponent.vue'
+));
+
+/**
+ * Componentes para la gestión de planes de automóviles
+ */
+Vue.component('car-plan-form', () => import(
+    /* webpackChunkName: "car-plan-form" */
+    './components/plans/CarPlanFormComponent.vue'
+));
+Vue.component('car-plan-list', () => import(
+    /* webpackChunkName: "car-plan-list" */
+    './components/plans/CarPlanListComponent.vue'
 ));
 
 /**

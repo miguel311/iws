@@ -115,13 +115,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent2">
               <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio </a>
+                  <a class="nav-link" href="{{ route('home') }}">Inicio </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Consultas</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/cotizasalud">Cotizaciones</a>
+                <li class="dropdown">
+                  <a href="#" class="nav-link" data-toggle="dropdown">Cotizaciones</a>
+                  <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="{{ route('cotiza-salud.index') }}">Salud</a>
+                      <a class="dropdown-item" href="{{ route('cotiza-auto.index') }}">Automóvil</a>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Emisión</a>
@@ -132,8 +136,8 @@
                 <li class="dropdown">
                   <a href="#" class="nav-link" data-toggle="dropdown">Planes</a>
                   <ul class="dropdown-menu">
-                      <a class="dropdown-item" href="/plan_salud">Salud & Funerario</a>
-                      <a class="dropdown-item" href="#">Atomovil</a>
+                      <a class="dropdown-item" href="{{ route('plan-salud.index') }}">Salud & Funerario</a>
+                      <a class="dropdown-item" href="{{ route('plan-auto.index') }}">Automóvil</a>
                   </ul>
                 </li>
                 <li class="nav-item">

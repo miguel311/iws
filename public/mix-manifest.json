@@ -1,12 +1,16 @@
 {
-    "/js/app.js": "/js/app.js?id=73a822ac39c8a24552f3",
-    "/css/app.css": "/css/app.css?id=d1078d6aea95c1702924",
-    "/css/custom.css": "/css/custom.css?id=fd25e9a61e63540e67bc",
-    "/js/shared-components.js": "/js/shared-components.js?id=9d9d16abcfddefa431b2",
-    "/js/components/core/94aeada1b4742ae03a9a.js": "/js/components/core/94aeada1b4742ae03a9a.js?id=1cc1f746ed3e1efa5c11",
-    "/js/components/core/28b819f035f9913c483b.js": "/js/components/core/28b819f035f9913c483b.js?id=73d23186546b43479872",
-    "/js/components/core/9c6da5456a49a881cd1d.js": "/js/components/core/9c6da5456a49a881cd1d.js?id=d06b9a284d426f4efc0c",
-    "/js/components/core/3ea388d65725abae1b4f.js": "/js/components/core/3ea388d65725abae1b4f.js?id=06c1657b2bbcefdc4e4f",
-    "/js/components/core/6aa17d7f1557d63e3321.js": "/js/components/core/6aa17d7f1557d63e3321.js?id=6a0a47737731901d0052",
-    "/js/components/core/dddbb9832cb68476d34f.js": "/js/components/core/dddbb9832cb68476d34f.js?id=79b3d125008aaa340c15"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/custom.css": "/css/custom.css",
+    "/js/shared-components.js": "/js/shared-components.js",
+    "/js/components/car-plan-form.js": "/js/components/car-plan-form.js",
+    "/js/components/car-plan-list.js": "/js/components/car-plan-list.js",
+    "/js/components/healt-quote-form.js": "/js/components/healt-quote-form.js",
+    "/js/components/healt-quote-list.js": "/js/components/healt-quote-list.js",
+    "/js/components/health-plan-form.js": "/js/components/health-plan-form.js",
+    "/js/components/health-plan-list.js": "/js/components/health-plan-list.js",
+    "/js/components/multi-selects.js": "/js/components/multi-selects.js",
+    "/js/components/selects.js": "/js/components/selects.js",
+    "/js/components/vendors~multi-selects.js": "/js/components/vendors~multi-selects.js",
+    "/js/components/vendors~selects.js": "/js/components/vendors~selects.js"
 }

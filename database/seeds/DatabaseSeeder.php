@@ -25,8 +25,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ParishesTableSeeder::class);
         
         /** Revisar */
-        /** Registros de automoviles */
-        //$this->call(AutomovilTableSeeder::class);
+        /** Registros de automóviles */
+        $this->call(AutomovilTableSeeder::class);
+        /** Registros de planes comerciales */
         //$this->call(PlanTableSeeder::class);
     }
 }
