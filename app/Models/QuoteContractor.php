@@ -29,7 +29,7 @@ class QuoteContractor extends Model
      * @var array $fillable
      */
     protected $fillable = [
-        'name', 'last_name', 'gender', 'birthdate', 'parent', 'maternity',
+        'first_name', 'last_name', 'gender', 'birthdate', 'parent', 'maternity',
         'health_quote_id'
     ];
 

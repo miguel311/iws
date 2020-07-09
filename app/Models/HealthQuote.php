@@ -29,7 +29,7 @@ class HealthQuote extends Model
      * @var array $fillable
      */
     protected $fillable = [
-        'name', 'last_name', 'document_type', 'document_number', 'email',
+        'first_name', 'last_name', 'document_type', 'document_number', 'email',
         'local_phone_id', 'mobile_phone_id', 'commercial_plan_id', 'user_id',
         'sum', 'fee', 'deductible', 'way_to_pay'
     ];

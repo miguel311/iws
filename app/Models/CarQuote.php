@@ -29,7 +29,7 @@ class CarQuote extends Model
      * @var array $fillable
      */
     protected $fillable = [
-        'name', 'last_name', 'document_type', 'document_number', 'birthdate',
+        'first_name', 'last_name', 'document_type', 'document_number', 'birthdate',
         'address', 'gender', 'marital_status', 'activity', 'email', 'local_phone_id',
         'mobile_phone_id', 'marca', 'model', 'type', 'use', 'license_plate',
         'engine_serial', 'chassis_serial', 'commercial_plan_id', 'user_id', 'car_model_id'

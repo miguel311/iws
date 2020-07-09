@@ -187,7 +187,8 @@
                                  :before-change="validateStep2">
                         <!-- Planes y cobertura -->
                         <h3>Planes y Cobertura</h3>
-                        <div class="row">
+                        <div class="row"
+                             v-if="commercial_plans.length > 0">
                             <div class="col-4">
                                 <div class="list-group"
                                      v-for="plan in commercial_plans">
@@ -235,6 +236,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-8"
+                                 v-else>
+                                <span class="text-danger"
+                                      style="width: 100%;"
+                                      v-if="errors.commercial_plan_id"
+                                      v-text="errors.commercial_plan_id">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row"
+                             v-else>
+                             <div class="alert alert-danger">
+                                <div class="container">
+                                    <strong>Error, no se encontraron planes registrados!</strong>
+                                </div>
+                            </div>
+                            
                         </div>
                     </tab-content>
 
@@ -276,7 +294,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Documento de Identidad</span>
                                     </div>
-                                    <select v-bind:class="['col-md-1', isInvalid('document_type')]"
+                                    <select v-bind:class="['col-md-1', isInvalid('document_number')]"
                                             v-model="record.document_type">
                                         <option label="V" value="V"></option>
                                         <option label="E" value="E"></option>
@@ -288,7 +306,7 @@
                                            v-model="record.document_number">
                                     <span class="text-danger"
                                           style="width: 100%;"
-                                          v-if="errors.document_number"
+                                          v-if="errors.document_number || errors.document_type"
                                           v-text="errors.document_number">
                                     </span>
                                 </div>
@@ -297,25 +315,37 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Nombre</span>
                                     </div>
-                                    <input class="form-control" style="text-transform:uppercase;"
-                                           type="text" placeholder="Nombre"
+                                    <input type="text" placeholder="Nombre"
+                                           v-bind:class="['form-control input-sm', isInvalid('first_name')]"
+                                           style="text-transform:uppercase;"
                                            v-model="record.first_name">
+                                    <span class="text-danger"
+                                          style="width: 100%;"
+                                          v-if="errors.first_name"
+                                          v-text="errors.first_name">
+                                    </span>
                                 </div>
                                 <!-- Apellido -->
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Apellido</span>
                                     </div>
-                                    <input class="form-control" style="text-transform:uppercase;"
-                                           type="text" placeholder="Apellido"
+                                    <input type="text" placeholder="Apellido"
+                                           v-bind:class="['form-control input-sm', isInvalid('last_name')]"
+                                           style="text-transform:uppercase;"
                                            v-model="record.last_name">
+                                    <span class="text-danger"
+                                          style="width: 100%;"
+                                          v-if="errors.last_name"
+                                          v-text="errors.last_name">
+                                    </span>
                                 </div>
                                 <!-- Telefono Local -->
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Telefono Local</span>
                                     </div>
-                                    <select class="col-md-2"
+                                    <select v-bind:class="['col-md-2', isInvalid('local_phone')]"
                                             v-model="local_phone.area_code">
                                         <option label="0212" value="0212"></option>
                                         <option label="0234" value="0234"></option>
@@ -375,15 +405,21 @@
                                         <option label="0294" value="0294"></option>
                                         <option label="0295" value="0295"></option>
                                     </select>
-                                    <input class="form-control" type="text"
+                                    <input type="text"
+                                           v-bind:class="['form-control input-sm', isInvalid('local_phone')]"
                                            v-model="local_phone.number">
+                                    <span class="text-danger"
+                                          style="width: 100%;"
+                                          v-if="errors.local_phone"
+                                          v-text="errors.local_phone">
+                                    </span>
                                 </div>
                                 <!-- Telefono celular -->
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Telefono Móvil</span>
                                     </div>
-                                    <select class="col-md-2"
+                                    <select v-bind:class="['col-md-2', isInvalid('mobile_phone')]"
                                             v-model="mobile_phone.area_code">
                                         <option label="0412" value="0412"></option>
                                         <option label="0414" value="0414"></option>
@@ -391,17 +427,28 @@
                                         <option label="0416" value="0416"></option>
                                         <option label="0426" value="0426"></option>
                                     </select>
-                                    <input class="form-control" type="text"
+                                    <input type="text"
+                                           v-bind:class="['form-control input-sm', isInvalid('mobile_phone')]"
                                            v-model="mobile_phone.number">
+                                    <span class="text-danger"
+                                          style="width: 100%;"
+                                          v-if="errors.mobile_phone"
+                                          v-text="errors.mobile_phone">
+                                    </span>
                                 </div>
                                 <!-- Email -->
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Email</span>
                                     </div>
-                                    <input class="form-control"
-                                           type="text" placeholder="Email"
+                                    <input type="text" placeholder="Email"
+                                           v-bind:class="['form-control input-sm', isInvalid('email')]"
                                            v-model="record.email">
+                                    <span class="text-danger"
+                                          style="width: 100%;"
+                                          v-if="errors.email"
+                                          v-text="errors.email">
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -570,10 +617,23 @@
             },
             validateStep2() {
                 /** Se valida el componente */
+                const vm = this;
+                let confirmated = false;
+                vm.errors = {};
+                if (vm.record['commercial_plan_id'] == '') {
+                    if (typeof(vm.errors['commercial_plan_id']) === 'undefined') {
+                        vm.errors['commercial_plan_id'] = 'El campo plan comercial es requerido.';
+                    }
+                } else {
+                    confirmated = true;
+                }
                 return new Promise((resolve, reject) => {
                     setTimeout(() => {
-                        //reject('This is a custom validation error message. Click next again to get rid of the validation');
-                        resolve(true);
+                        if (confirmated) {
+                            resolve(true);
+                        } else {
+                            reject('');
+                        }
                     }, 1000)
                 })
             },
@@ -601,10 +661,45 @@
             },
             validateStep4() {
                 /** Se valida el componente */
+                const vm = this;
+                vm.errors = {};
+                if ((vm.record['document_number'].trim() === '') || (vm.record['document_type'].trim() === '')) {
+                    if (typeof(vm.errors['document_number']) === 'undefined') {
+                        vm.errors['document_number'] = 'El campo documento de identidad es requerido.';
+                    }
+                }
+                if (vm.record['first_name'].trim() === '') {
+                    if (typeof(vm.errors['first_name']) === 'undefined') {
+                        vm.errors['first_name'] = 'El campo nombre es requerido.';
+                    }
+                }
+                if (vm.record['last_name'].trim() === '') {
+                    if (typeof(vm.errors['last_name']) === 'undefined') {
+                        vm.errors['last_name'] = 'El campo apellido es requerido.';
+                    }
+                }
+                if ((vm.local_phone['area_code'].trim() === '') || (vm.local_phone['number'].trim() === '')) {
+                    if (typeof(vm.errors['local_phone']) === 'undefined') {
+                        vm.errors['local_phone'] = 'El campo teléfono local es requerido.';
+                    }
+                }
+                if ((vm.mobile_phone['area_code'].trim() === '') || (vm.local_phone['number'].trim() === '')) {
+                    if (typeof(vm.errors['mobile_phone']) === 'undefined') {
+                        vm.errors['mobile_phone'] = 'El campo teléfono móvil es requerido.';
+                    }
+                }
+                if (vm.record['email'].trim() === '') {
+                    if (typeof(vm.errors['email']) === 'undefined') {
+                        vm.errors['email'] = 'El campo email es requerido.';
+                    }
+                }
                 return new Promise((resolve, reject) => {
                     setTimeout(() => {
-                        //reject('This is a custom validation error message. Click next again to get rid of the validation');
-                        resolve(true);
+                        if (Object.keys(vm.errors).length > 0) {
+                            reject('');
+                        } else {
+                            resolve(true);
+                        }
                     }, 1000)
                 })
             },

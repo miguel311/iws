@@ -25,7 +25,7 @@ class CreateQuoteContractorsTable extends Migration
         if (!Schema::hasTable('quote_contractors')) {
             Schema::create('quote_contractors', function (Blueprint $table) {
                 $table->id()->comment('Identificador único del registro');
-                $table->string('name')->comment('Nombre del contratante');
+                $table->string('first_name')->comment('Nombre del contratante');
                 $table->string('last_name')->comment('Apellido del contratante');
                 $table->enum('gender', ['F', 'M'])->default('M')
                       ->comment('Género del contratante: (F)emenino, (M)asculino');

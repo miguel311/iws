@@ -46,7 +46,7 @@ class HealthQuoteController extends Controller
     {
         /** Define las reglas de validación para el formulario */
         $this->validateRules = [
-            'name'            => ['required', 'max:100'],
+            'first_name'      => ['required', 'max:100'],
             'last_name'       => ['required', 'max:100'],
             'document_type'   => ['required', 'max:200'],
             'document_number' => ['required', 'max:200'],
@@ -56,7 +56,7 @@ class HealthQuoteController extends Controller
 
         /** Define los mensajes de validación para las reglas del formulario */
         $this->messages = [
-            'name.required'            => 'El campo nombre es obligatorio.',
+            'first_name.required'      => 'El campo nombre es obligatorio.',
             'last_name.required'       => 'El campo apellido es obligatorio.',
             'document_type.required'   => 'El campo tipo de documento es obligatorio.',
             'document_number.required' => 'El campo número del documento es obligatorio.',
@@ -121,7 +121,7 @@ class HealthQuoteController extends Controller
          * @var Object $healthQuote
          */
         $healthQuote = HealthQuote::create([
-            'name'               => $request->name,
+            'first_name'         => $request->name,
             'last_name'          => $request->last_name,
             'document_type'      => $request->document_type,
             'document_number'    => $request->document_number,
@@ -139,7 +139,7 @@ class HealthQuoteController extends Controller
              * @var Object $quoteContractor
              */
             $quoteContractor = QuoteContractor::create([
-                'name'            => $quote_contractor['name'],
+                'first_name'      => $quote_contractor['name'],
                 'last_name'       => $quote_contractor['last_name'],
                 'gender'          => $quote_contractor['gender'],
                 'birthdate'       => $quote_contractor['birthdate'],

@@ -26,7 +26,7 @@ class CreateHealthQuotesTable extends Migration
             Schema::create('health_quotes', function (Blueprint $table) {
                 $table->id()->comment('Identificado único del registro');
                 /** Datos de la persona solicitante */
-                $table->string('name')->comment('Nombre del solicitante');
+                $table->string('first_name')->comment('Nombre del solicitante');
                 $table->string('last_name')->comment('Apellido del solicitante');
                 $table->string('document_type', 5)->comment('Tipo de documento de identificación del solicitante');
                 $table->string('document_number', 20)
