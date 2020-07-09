@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         if (!Schema::hasTable('users')) {
             Schema::create('users', function (Blueprint $table) {
-                $table->bigIncrements('id')->comment('Identificador único del registro');
+                $table->id()->comment('Identificador único del registro');
                 $table->string('name');
                 $table->string('email')->unique();
                 $table->string('password')->comment('Contraseña cifrada');

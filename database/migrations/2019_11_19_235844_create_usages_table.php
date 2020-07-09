@@ -14,7 +14,7 @@ class CreateUsagesTable extends Migration
     public function up()
     {
         Schema::create('usages', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id()->comment('Identificador único del registro');
             $table->string('usages');
             $table->timestamps();
         });

@@ -15,10 +15,10 @@ class CreateBrandsTable extends Migration
     public function up()
     {
         Schema::create('brands', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id()->comment('Identificador único del registro');
             $table->string('brands');
-            $table->integer('usages_id')->unsigned();
-            $table->foreign('usages_id')->references('id')->on('usages');
+            $table->foreignId('usage_id')->constrained()
+                  ->onDelete('restrict')->onUpdate('cascade');
             $table->timestamps();
         });
     }

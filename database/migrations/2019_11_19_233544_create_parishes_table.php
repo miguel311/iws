@@ -15,12 +15,11 @@ class CreateParishesTable extends Migration
     {
         if (!Schema::hasTable('parishes')) {
             Schema::create('parishes', function (Blueprint $table) {
-                $table->bigIncrements('id')->comment('Identificador único del registro');
+                $table->id()->comment('Identificador único del registro');
                 $table->string('name', 100)->comment('Nombre de la Parroquia');
                 $table->string('code', 10)->nullable()->comment('Código que identifica a la Parroquia');
-                $table->bigInteger('municipality_id')->unsigned()
-                      ->comment('Identificador asociado al Municipio al que pertenece');
-                $table->foreign('municipality_id')->references('id')->on('municipalities')
+                $table->foreignId('municipality_id')
+                      ->comment('Identificador asociado al Municipio al que pertenece')->constrained()
                       ->onDelete('restrict')->onUpdate('cascade');
                 $table->timestamps();
                 $table->softDeletes()->comment('Fecha y hora en la que el registro fue eliminado');

@@ -14,11 +14,9 @@ class CreateRoleUserTable extends Migration
     {
         if (!Schema::hasTable('role_user')) {
             Schema::create('role_user', function (Blueprint $table) {
-                $table->increments('id')->unsigned();
-                $table->integer('role_id')->unsigned()->index();
-                $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
-                $table->integer('user_id')->unsigned()->index();
-                $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+                $table->id()->comment('Identificador único del registro');
+                $table->foreignId('role_id')->constrained()->onDelete('cascade');
+                $table->foreignId('user_id')->constrained()->onDelete('cascade');
                 $table->timestamps();
             });
         }

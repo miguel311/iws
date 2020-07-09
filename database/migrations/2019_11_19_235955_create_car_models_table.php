@@ -14,10 +14,10 @@ class CreateCarModelsTable extends Migration
     public function up()
     {
         Schema::create('car_models', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id()->comment('Identificador único del registro');
             $table->string('models');
-            $table->integer('brands_id')->unsigned();
-            $table->foreign('brands_id')->references('id')->on('brands');
+            $table->foreignId('brand_id')->constrained()
+                  ->onDelete('restrict')->onUpdate('cascade');
             $table->timestamps();
         });
     }
