@@ -35,7 +35,7 @@
         data() {
             return {
                 record:  {},
-                errors:  [],
+                errors:  {},
                 records: [],
                 columns: ['number', 'name', 'last_name', 'document', 'email', 'id']
             }

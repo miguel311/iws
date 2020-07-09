@@ -28,7 +28,7 @@
         data() {
             return {
                 record:  {},
-                errors:  [],
+                errors:  {},
                 records: [],
                 columns: ['number', 'name', 'description', 'coverage', 'price', 'deductible', 'id']
             }

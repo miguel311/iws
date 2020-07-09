@@ -103,7 +103,7 @@ Vue.mixin({
          * @param {string} modal_id Identificador del modal a mostrar con la información solicitada
          */
         initRecords(url, modal_id) {
-            this.errors = [];
+            this.errors = {};
             this.reset();
             const vm = this;
 
@@ -137,7 +137,7 @@ Vue.mixin({
         readRecords(url) {
             const vm = this;
             vm.loading = true;
-            axios.get('/' + url).then(response => {
+            axios.get(`${vm.domain}/${url}`).then(response => {
                 if (typeof(response.data.records) !== "undefined") {
                     vm.records = response.data.records;
                 }
@@ -182,12 +182,12 @@ Vue.mixin({
                 for (var index in this.record) {
                     fields[index] = this.record[index];
                 }
-                axios.post('/' + url, fields).then(response => {
+                axios.post(`${vm.domain}/${url}`, fields).then(response => {
                     if (typeof(response.data.redirect) !== "undefined") {
                         location.href = response.data.redirect;
                     }
                     else {
-                        vm.errors = [];
+                        vm.errors = {};
                         if (reset) {
                             vm.reset();
                         }
@@ -199,12 +199,12 @@ Vue.mixin({
                     }
 
                 }).catch(error => {
-                    vm.errors = [];
+                    vm.errors = {};
 
                     if (typeof(error.response) !="undefined") {
                         for (var index in error.response.data.errors) {
                             if (error.response.data.errors[index]) {
-                                vm.errors.push(error.response.data.errors[index][0]);
+                                vm.errors[index] = error.response.data.errors[index][0];
                             }
                         }
                     }
@@ -224,13 +224,9 @@ Vue.mixin({
          */
         initUpdate(index, event) {
             const vm = this;
-            vm.errors = [];
+            vm.errors = {};
             vm.record = vm.records[index - 1];
             
-            if (typeof(vm.editIndex) != 'undefined') {
-                vm.editIndex = index;
-            }
-
             event.preventDefault();
         },
         /**
@@ -259,13 +255,13 @@ Vue.mixin({
                 }
 
             }).catch(error => {
-                vm.errors = [];
+                vm.errors = {};
 
                 if (typeof(error.response) !="undefined") {
                     for (var index in error.response.data.errors) {
                         if (error.response.data.errors[index]) {
-                            vm.errors.push(error.response.data.errors[index][0]);
-                        }
+                                vm.errors[index] = error.response.data.errors[index][0];
+                            }
                     }
                 }
                 vm.loading = false;
@@ -366,9 +362,13 @@ Vue.mixin({
          */
         removeRow: function(index, el, event) {
             const vm = this;
-            el.splice(index, 1);
-            if (typeof(vm.editIndex) != 'undefined') {
-                vm.editIndex = '';
+            if (el.length == 1) {
+                return false;
+            } else {
+                el.splice(index, 1);
+                if (typeof(vm.editIndex) != 'undefined') {
+                    vm.editIndex = '';
+                }
             }
             event.preventDefault();
         },
@@ -385,6 +385,9 @@ Vue.mixin({
                             ? this.route_edit.replace("{id}", id)
                             : this.route_edit + '/' + id;
         },
+        isInvalid(index) {
+            return this.errors[index] ? 'is-invalid': '';
+        }
     },
     created() {
         const vm = this;
