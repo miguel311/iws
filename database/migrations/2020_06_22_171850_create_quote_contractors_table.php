@@ -39,6 +39,7 @@ class CreateQuoteContractorsTable extends Migration
                       ->comment('Identificador único de la cotización de salud')->constrained()
                       ->onDelete('restrict')->onUpdate('cascade');
                 $table->timestamps();
+                $table->softDeletes()->comment('Fecha y hora en la que el registro fue eliminado');
             });
         };
     }

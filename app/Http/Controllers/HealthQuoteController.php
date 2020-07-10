@@ -121,7 +121,7 @@ class HealthQuoteController extends Controller
          * @var Object $healthQuote
          */
         $healthQuote = HealthQuote::create([
-            'first_name'         => $request->name,
+            'first_name'         => $request->first_name,
             'last_name'          => $request->last_name,
             'document_type'      => $request->document_type,
             'document_number'    => $request->document_number,
@@ -139,7 +139,7 @@ class HealthQuoteController extends Controller
              * @var Object $quoteContractor
              */
             $quoteContractor = QuoteContractor::create([
-                'first_name'      => $quote_contractor['name'],
+                'first_name'      => $quote_contractor['first_name'],
                 'last_name'       => $quote_contractor['last_name'],
                 'gender'          => $quote_contractor['gender'],
                 'birthdate'       => $quote_contractor['birthdate'],
@@ -160,7 +160,7 @@ class HealthQuoteController extends Controller
      */
     public function show($id)
     {
-        $healthQuote = HealthQuote::find($id);
+        $healthQuote = HealthQuote::with('localPhone', 'mobilePhone', 'commercialPlan', 'quoteContractors')->find($id);
         return response()->json(['record' => $healthQuote], 200);
     }
 
@@ -445,6 +445,6 @@ class HealthQuoteController extends Controller
     }
 
     public function vueList() {
-      return response()->json(['records' => HealthQuote::all()]);
+      return response()->json(['records' => HealthQuote::with('localPhone', 'mobilePhone', 'commercialPlan', 'quoteContractors')->get()]);
     }
 }
